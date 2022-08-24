@@ -13,7 +13,7 @@ info:
       
 externalDocs:
   description: Customer API
-  url: https://developer.finetech.dk/customer
+  url: https://developer.finetech.dk/sales
 servers:
   - description: local
     url: http://localhost:8080
