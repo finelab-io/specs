@@ -150,11 +150,12 @@ components:
         type:
           type: string
           enum:
-            - boolean
-            - integer
-            - decimal
-            - date
-            - string
+            - BOOLEAN
+            - INTEGER
+            - DECIMAL
+            - DATE
+            - STRING
+            - EMAIL
         allow_values:
           type: array
           items:
