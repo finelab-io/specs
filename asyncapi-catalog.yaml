@@ -25,7 +25,7 @@ channels:
     description: The channel on which catalog events is published.
     publish:
       summary: Inform about created or updated catalogs.
-      operationId: publishCatalogEvent
+      operationId: CatalogEvent
       bindings:
         kafka:
           clientId:
@@ -39,7 +39,7 @@ channels:
     description: The channel on which product events is published.
     publish:
       summary: Inform about created or updated catalogs.
-      operationId: publishProductEvent
+      operationId: ProductEvent
       bindings:
         kafka:
           clientId:
