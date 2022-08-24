@@ -26,6 +26,12 @@ channels:
     publish:
       summary: Inform about created or updated catalogs.
       operationId: publishCatalogEvent
+      bindings:
+        kafka:
+          clientId:
+            type: string
+          groupId:
+            type: string
       message:
         $ref: '#/components/messages/CatalogEvent'
 
@@ -34,6 +40,12 @@ channels:
     publish:
       summary: Inform about created or updated catalogs.
       operationId: publishProductEvent
+      bindings:
+        kafka:
+          clientId:
+            type: string
+          groupId:
+            type: string
       message:
         $ref: '#/components/messages/ProductEvent'
 
