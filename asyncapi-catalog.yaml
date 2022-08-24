@@ -1,0 +1,122 @@
+asyncapi: '2.4.0'
+id: 'finetech:sales:catalog'
+info:
+  title: FineTech Catalog API
+  version: '1.0.0'
+  description: |
+    The Catalog API publishes events when a catalog or product is created or updated.
+  contact:
+    email: api@finetech.dk
+  license:
+    name: Apache 2.0
+    url: https://www.apache.org/licenses/LICENSE-2.0
+
+servers:
+  test-broker:
+    url: test-broker.finetech.dk:8092
+    protocol: kafka
+    protocolVersion: 2.6.0
+    description: Finetech Test Broker
+
+defaultContentType: application/json
+
+channels:
+  finetech.sales.catalog:
+    description: The channel on which catalog events is published.
+    publish:
+      summary: Inform about created or updated catalogs.
+      operationId: publishCatalogEvent
+      message:
+        $ref: '#/components/messages/CatalogEvent'
+
+  finetech.sales.product:
+    description: The channel on which product events is published.
+    publish:
+      summary: Inform about created or updated catalogs.
+      operationId: publishProductEvent
+      message:
+        $ref: '#/components/messages/ProductEvent'
+
+components:
+  messages:
+    CatalogEvent:
+      name: CatalogEvent
+      title: Catalog Event
+      summary: Informs about catalog events
+      contentType: application/json
+      payload:
+        $ref: "#/components/schemas/Catalog"
+    ProductEvent:
+      name: ProductEvent
+      title: ProductEvent
+      summary: Informs about product events
+      contentType: application/json
+      payload:
+        $ref: "#/components/schemas/Product"
+  schemas:
+    Catalog:
+      type: object
+      properties:
+        name: 
+          type: string
+        products:
+          type: array
+          items:
+            $ref: '#/components/schemas/Product'
+    Product:
+      type: object
+      properties:
+        catalog_name:
+          type: string
+        number:
+          type: string
+        display_name:
+          type: string
+        quote_criteria:
+          type: array
+          items:
+            $ref: '#/components/schemas/Criterion'
+    Criterion:
+      type: object
+      properties:
+        name:
+          type: string
+        display_name:
+          type: string
+        value:
+          type: string
+        type:
+          type: string
+          enum:
+            - boolean
+            - integer
+            - decimal
+            - date
+            - string
+            - email
+        allow_values:
+          type: array
+          items:
+            $ref: '#/components/schemas/CriterionAllowValue'
+        allow_mulitiselect:
+          type: boolean
+        allow_limit:
+          type: object
+          properties:
+            min_value:
+              type: string
+            min_inclusive:
+              type: boolean
+            max_value:
+              type: string
+            max_inclusive:
+              type: string
+    CriterionAllowValue:
+      type: object
+      properties:
+        key:
+          type: string
+        display_value:
+          type: string
+        selected:
+          type: boolean        
