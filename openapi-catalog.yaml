@@ -2,8 +2,7 @@ openapi: 3.0.1
 info:
   title: FineTech Catalog API
   version: '1.0.0'
-  description: |
-    The Catalog API allows you recieve products from FineTech's product catalog.
+  description: The Catalog API allows you recieve products from FineTech's product catalog.
   license:
     name: Apache 2.0
     url: https://www.apache.org/licenses/LICENSE-2.0
@@ -153,14 +152,7 @@ components:
         allow_values:
           type: array
           items:
-            type: object
-            properties:
-              key:
-                type: string
-              display_value:
-                type: string
-              selected:
-                type: boolean
+            $ref: '#/components/schemas/AllowValue'
         allow_mulitiselect:
           type: boolean
         allow_limit:
@@ -174,7 +166,17 @@ components:
               type: string
             max_inclusive:
               type: string
-            
+    AllowValue:
+      type: array
+      items:
+        type: object
+        properties:
+          key:
+            type: string
+          display_value:
+            type: string
+          selected:
+            type: boolean        
     Problem:
       type: object
       properties:
