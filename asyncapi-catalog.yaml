@@ -151,17 +151,25 @@ components:
       type: object
       properties:
         catalog:
-          type: object
-          properties: 
-            name:
-              type: string
+          $ref: '#/components/schemas/ProductCatalogName'
         product: 
-          properties: 
-            name:
-              type: string
+          $ref: '#/components/schemas/ProductName'
         price: 
-          properties: 
-            amount:
-              type: string
-            currency:
-              type: string
+          $ref: '#/components/schemas/ProductPriceAmountCurrency'
+    ProductCatalogName:
+      type: object
+      properties: 
+        name:
+          type: string
+    ProductName:
+      type: object
+      properties: 
+        name:
+          type: string
+    ProductPriceAmountCurrency:
+      properties: 
+        amount:
+          type: number
+        currency:
+          type: string
+
