@@ -53,18 +53,18 @@ components:
       name: ProductCatalogEvent
       contentType: application/json
       payload:
-        $ref: "#/components/schemas/ProductCatalogEvent"
+        $ref: "#/components/schemas/ProductCatalogData"
     ProductPriceEvent:
       name: ProductPriceEvent
       contentType: application/json
       payload:
-        $ref: "#/components/schemas/ProductPriceEvent"
+        $ref: "#/components/schemas/ProductPriceData"
   schemas:
-    ProductCatalogEvent:      
-      type: object
-      allOf:
-        - $ref: 'https://raw.githubusercontent.com/cloudevents/spec/v1.0.1/spec.json'
-        - $ref: '#/components/schemas/ProductCatalogData'
+#    ProductCatalogEvent:      
+#      type: object
+#      allOf:
+#        - $ref: 'https://raw.githubusercontent.com/cloudevents/spec/v1.0.1/spec.json'
+#        - $ref: '#/components/schemas/ProductCatalogData'
     ProductCatalogData:
       type: object
       properties:
@@ -137,11 +137,11 @@ components:
           type: string
         selected:
           type: boolean        
-    ProductPriceEvent:
-      type: object
-      allOf:
-        - $ref: 'https://raw.githubusercontent.com/cloudevents/spec/v1.0.1/spec.json'
-        - $ref: '#/components/schemas/ProductPriceData'
+#    ProductPriceEvent:
+#      type: object
+#      allOf:
+#        - $ref: 'https://raw.githubusercontent.com/cloudevents/spec/v1.0.1/spec.json'
+#        - $ref: '#/components/schemas/ProductPriceData'
     ProductPriceData:
       type: object
       properties:
