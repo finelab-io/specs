@@ -1,0 +1,72 @@
+asyncapi: '2.4.0'
+id: 'finetech:sales:product'
+info:
+  title: Finetech Product API
+  version: '1.0.0'
+  description: |
+    The Product API publishes events when ever changes occurs to catalogs, products or prices.
+  contact:
+    email: api@finetech.dk
+  license:
+    name: Apache 2.0
+    url: https://www.apache.org/licenses/LICENSE-2.0
+
+servers:
+  test-broker:
+    url: test-broker.finetech.dk:8092
+    protocol: kafka
+    protocolVersion: 2.6.0
+    description: Finetech Test Broker
+
+defaultContentType: application/json
+
+channels:
+  sales.product.catalog:
+    description: The channel on which ProductCatalogEvents are published.
+    subscribe:
+      operationId: ProductCatalogEvent
+      bindings:
+        kafka:
+          clientId:
+            type: string
+          groupId:
+            type: string
+      message:
+        $ref: '#/components/messages/ProductCatalogEvent'
+
+  sales.product.price:
+    description: The channel on which ProductPriceEvents events are published.
+    publish:
+      operationId: ProductPriceEvent
+      bindings:
+        kafka:
+          clientId:
+            type: string
+          groupId:
+            type: string
+      message:
+        $ref: '#/components/messages/ProductPriceEvent'
+
+components:
+  messages:
+    ProductCatalogEvent:
+      name: ProductCatalogEvent
+      contentType: application/json
+      payload:
+        $ref: "#/components/schemas/ProductCatalogData"
+    ProductPriceEvent:
+      name: ProductPriceEvent
+      contentType: application/json
+      payload:
+        $ref: "#/components/schemas/ProductPriceData"
+  schemas:
+    ProductCatalogData:
+      type: object
+      properties:
+        data: 
+          type: string
+    ProductPriceData:
+      type: object
+      properties:
+        data: 
+          type: string
