@@ -1,10 +1,10 @@
 asyncapi: '2.4.0'
-id: 'finetech:sales:catalog'
+id: 'finetech:sales:product'
 info:
-  title: FineTech Catalog API
+  title: Finetech Product API
   version: '1.0.0'
   description: |
-    The Catalog API publishes events when a catalog or product is created or updated.
+    The Product API publishes events when ever changes occurs to catalogs, products or prices.
   contact:
     email: api@finetech.dk
   license:
@@ -21,11 +21,10 @@ servers:
 defaultContentType: application/json
 
 channels:
-  finetech.sales.catalog:
-    description: The channel on which catalog events is published.
-    publish:
-      summary: Inform about created or updated catalogs.
-      operationId: CatalogEvent
+  sales.product.catalog:
+    description: The channel on which ProductCatalogEvents are published.
+    subscribe:
+      operationId: ProductCatalogEvent
       bindings:
         kafka:
           clientId:
@@ -33,13 +32,12 @@ channels:
           groupId:
             type: string
       message:
-        $ref: '#/components/messages/CatalogEvent'
+        $ref: '#/components/messages/ProductCatalogEvent'
 
-  finetech.sales.product:
-    description: The channel on which product events is published.
+  sales.product.price:
+    description: The channel on which ProductPriceEvents events are published.
     publish:
-      summary: Inform about created or updated catalogs.
-      operationId: ProductEvent
+      operationId: ProductPriceEvent
       bindings:
         kafka:
           clientId:
@@ -47,26 +45,31 @@ channels:
           groupId:
             type: string
       message:
-        $ref: '#/components/messages/ProductEvent'
+        $ref: '#/components/messages/ProductPriceEvent'
 
 components:
   messages:
-    CatalogEvent:
-      name: CatalogEvent
-      title: Catalog Event
-      summary: Informs about catalog events
+    ProductCatalogEvent:
+      name: ProductCatalogEvent
       contentType: application/json
       payload:
-        $ref: "#/components/schemas/Catalog"
-    ProductEvent:
-      name: ProductEvent
-      title: ProductEvent
-      summary: Informs about product events
+        $ref: "#/components/schemas/ProductCatalogEvent"
+    ProductPriceEvent:
+      name: ProductPriceEvent
       contentType: application/json
       payload:
-        $ref: "#/components/schemas/Product"
+        $ref: "#/components/schemas/ProductPriceEvent"
   schemas:
-    Catalog:
+    ProductCatalogEvent:      
+      type: object
+      allOf:
+        - $ref: 'https://raw.githubusercontent.com/cloudevents/spec/v1.0.1/spec.json'
+      properties:
+        data:
+          $ref: '#/components/schemas/ProductCatalog'
+    ProductPriceEvent:
+      type: object
+    ProductCatalog:
       type: object
       properties:
         name: 
