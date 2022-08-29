@@ -1,0 +1,183 @@
+asyncapi: '2.4.0'
+id: 'finetech:sales:order'
+info:
+  title: Finetech Sales Order AsyncAPI
+  version: '1.0.0'
+  description: |
+    The Order AsyncAPI subscibes on OrderPlacedEvent and publish OrderAsssessedEvent.
+  contact:
+    email: api@finetech.dk
+  license:
+    name: Apache 2.0
+    url: https://www.apache.org/licenses/LICENSE-2.0
+
+servers:
+  test-broker:
+    url: test-broker.finetech.dk:8092
+    protocol: kafka
+    protocolVersion: 2.6.0
+    description: Finetech Test Broker
+
+channels:
+  sales.order.placed:
+    subscribe:
+      message:
+        $ref: '#/components/messages/OrderPlacedMessage'
+  sales.order.assessed:
+    publish:
+      message:
+        $ref: '#/components/messages/OrderAssessedMessage'
+  sales.order.processed:
+    publish:
+      message:
+        $ref: '#/components/messages/OrderProcessedMessage'
+
+components:
+  messages:
+    OrderPlacedMessage:
+      payload:
+        $ref: '#/components/schemas/OrderPlacedEvent'
+      description: >-
+        The OrderPlacedMessage contains OrderPlacedEvent.  
+      schemaFormat: application/vnd.aai.asyncapi+json;version=2.0.0
+      contentType: application/json
+    OrderAssessedMessage:
+      payload:
+        $ref: '#/components/schemas/OrderAssessedEvent'
+      description: >-
+        The OrderAssessedMessage contains OrderAssessedEvent.  
+      schemaFormat: application/vnd.aai.asyncapi+json;version=2.0.0
+      contentType: application/json
+    OrderProcessedMessage:
+      payload:
+        $ref: '#/components/schemas/OrderProcessedEvent'
+      description: >-
+        The OrderProcessedMessage contains OrderProcessedEvent.  
+      schemaFormat: application/vnd.aai.asyncapi+json;version=2.0.0
+      contentType: application/json
+  schemas:
+    OrderPlacedEvent:
+      description: >-
+        The OrderPlacedEvent contains Quote and Customer information and is based on CloudEvents Specification JSON Schema.
+        https://raw.githubusercontent.com/cloudevents/spec/v1.0.1/spec.json
+      type: object
+      properties:
+        id:
+          type: string
+        source:
+          type: string
+        specversion:
+          type: string
+        type:
+          type: string
+        datacontenttype:
+          type: string
+        dataschema:
+          type: string
+        subject:
+          type: string
+        time:
+          type: string
+        data:
+          "$ref": "#/components/schemas/Order"
+        data_base64:
+          type: string
+      required:
+      - id
+      - source
+      - specversion
+      - type
+    Order:
+      type: object
+      properties:
+        number:
+          type: string
+        quote:
+          type: object
+          addtionalProperties:
+        person:
+          type: object
+          addtionalProperties:
+        organization:
+          type: object
+          addtionalProperties:
+    OrderAssessedEvent:
+      description: >-
+        The OrderAssessedEvent contains status for the assessment of the Quote and Customer information and is based on CloudEvents Specification JSON Schema.
+        https://raw.githubusercontent.com/cloudevents/spec/v1.0.1/spec.json
+      type: object
+      properties:
+        id:
+          type: string
+        source:
+          type: string
+        specversion:
+          type: string
+        type:
+          type: string
+        datacontenttype:
+          type: string
+        dataschema:
+          type: string
+        subject:
+          type: string
+        time:
+          type: string
+        data:
+          "$ref": "#/components/schemas/AssessedOrder"
+        data_base64:
+          type: string
+      required:
+      - id
+      - source
+      - specversion
+      - type
+    AssessedOrder:
+      type: object
+      properties:
+        status: 
+          type: string
+        order:
+          $ref: '#/components/schemas/Order'
+    OrderProcessedEvent:
+      description: >-
+        The OrderProcessedEvent contains status for the order processing and referened to signatures
+        It is based on CloudEvents Specification https://raw.githubusercontent.com/cloudevents/spec/v1.0.1/spec.json
+      type: object
+      properties:
+        id:
+          type: string
+        source:
+          type: string
+        specversion:
+          type: string
+        type:
+          type: string
+        datacontenttype:
+          type: string
+        dataschema:
+          type: string
+        subject:
+          type: string
+        time:
+          type: string
+        data:
+          "$ref": "#/components/schemas/AssessedOrder"
+        data_base64:
+          type: string
+      required:
+      - id
+      - source
+      - specversion
+      - type
+    ProcessedOrder:
+      type: object
+      properties:
+        status: 
+          type: string
+        order:
+          $ref: '#/components/schemas/Order'
+        signature_id:
+          type: string
+        signature_url:
+          type: string
