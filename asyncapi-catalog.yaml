@@ -64,11 +64,12 @@ components:
       type: object
       allOf:
         - $ref: 'https://raw.githubusercontent.com/cloudevents/spec/v1.0.1/spec.json'
-      properties:
-        data:
-          $ref: '#/components/schemas/ProductCatalog'
-    ProductPriceEvent:
+        - $ref: '#/components/schemas/ProductCatalogData'
+    ProductCatalogData:
       type: object
+      properties:
+        data: 
+          $ref: '#/components/schemas/ProductCatalog'
     ProductCatalog:
       type: object
       properties:
@@ -78,6 +79,7 @@ components:
           type: array
           items:
             $ref: '#/components/schemas/Product'
+
     Product:
       type: object
       properties:
@@ -135,3 +137,31 @@ components:
           type: string
         selected:
           type: boolean        
+    ProductPriceEvent:
+      type: object
+      allOf:
+        - $ref: 'https://raw.githubusercontent.com/cloudevents/spec/v1.0.1/spec.json'
+        - $ref: '#/components/schemas/ProductPriceData'
+    ProductPriceData:
+      type: object
+      properties:
+        data: 
+          $ref: '#/components/schemas/ProductPrice'
+    ProductPrice:
+      type: object
+      properties:
+        catalog:
+          type: object
+          properties: 
+            name:
+              type: string
+        product: 
+          properties: 
+            name:
+              type: string
+        price: 
+          properties: 
+            amount:
+              type: string
+            currency:
+              type: string
