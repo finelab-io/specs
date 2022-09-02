@@ -5,10 +5,10 @@
 
 ag \
 --force-write \
--o target/asyncapi-sales-product-client \
+-o target/sales-product-async-client \
 -p binder=kafka \
 -p actuator=true \
--p artifactId=asyncapi-sales-product-client \
+-p artifactId=sales-product-async-client \
 -p groupId=dk.finetech \
 -p springBootVersion=2.7.4-SNAPSHOT \
 -p springCloudStreamVersion=2021.0.3 \
@@ -18,16 +18,16 @@ ag \
 -p username=default \
 -p password=default \
 -p msgVpn=default \
-asyncapi-sales-product.yaml \
+sales/product-service-asyncapi.yaml \
 -p view=client \
 https://github.com/asyncapi/java-spring-cloud-stream-template.git
 
 ag \
 --force-write \
--o target/asyncapi-sales-product-lib \
+-o target/sales-product-async-lib \
 -p binder=kafka \
 -p actuator=true \
--p artifactId=asyncapi-sales-product-lib \
+-p artifactId=sales-product-async-client \
 -p artifactType=library \
 -p groupId=dk.finetech \
 -p springBootVersion=2.7.4-SNAPSHOT \
@@ -38,18 +38,18 @@ ag \
 -p username=default \
 -p password=default \
 -p msgVpn=default \
+sales/product-service-asyncapi.yaml \
 -p view=client \
-asyncapi-sales-product.yaml \
 https://github.com/asyncapi/java-spring-cloud-stream-template.git
 
-## asyncapi-sales-product
+## asyncapi-sales-catalog
 
 ag \
 --force-write \
--o target/asyncapi-sales-order-client \
+-o target/sales-order-async-client \
 -p binder=kafka \
 -p actuator=true \
--p artifactId=asyncapi-sales-order-client \
+-p artifactId=sales-order-async-client \
 -p groupId=dk.finetech \
 -p springBootVersion=2.7.4-SNAPSHOT \
 -p springCloudStreamVersion=2021.0.3 \
@@ -59,26 +59,26 @@ ag \
 -p username=default \
 -p password=default \
 -p msgVpn=default \
-asyncapi-sales-order.yaml \
+sales/order-service-asyncapi.yaml \
 -p view=client \
 https://github.com/asyncapi/java-spring-cloud-stream-template.git
 
 ag \
 --force-write \
--o target/asyncapi-sales-order-lib \
+-o target/sales-order-async-lib \
 -p binder=kafka \
 -p actuator=true \
--p artifactId=asyncapi-sales-order-lib \
+-p artifactId=sales-order-async-client \
 -p artifactType=library \
 -p groupId=dk.finetech \
 -p springBootVersion=2.7.4-SNAPSHOT \
 -p springCloudStreamVersion=2021.0.3 \
 -p springCloudVersion=2021.0.3 \
--p javaPackage=dk.finetech.sales.order \
+-p javaPackage=dk.finetech.sales.product \
 -p host=localhost:55555 \
 -p username=default \
 -p password=default \
 -p msgVpn=default \
+sales/order-service-asyncapi.yaml \
 -p view=client \
-asyncapi-sales-order.yaml \
 https://github.com/asyncapi/java-spring-cloud-stream-template.git

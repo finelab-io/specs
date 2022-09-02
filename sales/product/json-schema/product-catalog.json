@@ -1,0 +1,32 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "properties": {
+      "id": {
+        "type": "string"
+      },
+      "tenant": {
+        "type": "string"
+      },
+      "business_unit": {
+        "type": "string"
+      },
+      "name": {
+        "type": "string"
+      },
+      "display_name": {
+        "type": "string"
+      },
+      "content_language": {
+        "type": "string"
+      }
+    },
+    "required": [
+      "id",
+      "tenant",
+      "business_unit",
+      "name",
+      "display_name",
+      "content_language"
+    ]
+  }

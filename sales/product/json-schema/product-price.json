@@ -1,0 +1,57 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "product_id": {
+      "type": "string"
+    },
+    "match_criteria": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "value": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "name",
+            "value"
+          ]
+        }
+      ]
+    },
+    "price": {
+      "type": "object",
+      "properties": {
+        "amount": {
+          "type": "number"
+        },
+        "currency": {
+          "type": "string"
+        },
+        "charged": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "amount",
+        "currency",
+        "charged"
+      ]
+    }
+  },
+  "required": [
+    "id",
+    "product_id",
+    "match_criteria",
+    "price"
+  ]
+}

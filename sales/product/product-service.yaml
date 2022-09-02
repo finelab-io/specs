@@ -23,6 +23,10 @@ channels:
     publish:
       message:
         $ref: '#/components/messages/CatalogEventMessage'
+  sales.product.information:
+    publish:
+      message:
+        $ref: '#/components/messages/ProductInformationEventMessage'
   sales.product.price:
     publish:
       message:
@@ -34,7 +38,14 @@ components:
       payload:
         $ref: '#/components/schemas/CatalogEvent'
       description: >-
-        The CatalogEvent is based on CloudEvent spec and contains the changed Product and Catalog information.
+        The CatalogEvent is based on CloudEvent spec and contains the changed Catalog information.
+      schemaFormat: application/vnd.aai.asyncapi+json;version=2.0.0
+      contentType: application/json
+    ProductInformationEventMessage:
+      payload:
+        $ref: '#/components/schemas/ProductInformationEvent'
+      description: >-
+        The ProductInformation is based on CloudEvent spec and contains the changed Product information.
       schemaFormat: application/vnd.aai.asyncapi+json;version=2.0.0
       contentType: application/json
     PriceEventMessage:
@@ -79,12 +90,49 @@ components:
     Catalog:
       type: object
       properties:
+        id:
+          type: string
+        tenant:
+          type: string
+        business_unit
         name: 
           type: string
         products:
           type: array
           items:
             $ref: '#/components/schemas/Product'
+    ProductInformationEvent:
+      description: >-
+        The CatalogEvent contains Product and Catalog information and is based on CloudEvents Specification JSON Schema.
+        https://raw.githubusercontent.com/cloudevents/spec/v1.0.1/spec.json
+      type: object
+      properties:
+        id:
+          type: string
+        source:
+          type: string
+        specversion:
+          type: string
+        type:
+          type: string
+        datacontenttype:
+          type: string
+        dataschema:
+          type: string
+        subject:
+          type: string
+        time:
+          type: string
+        data:
+          "$ref": "#/components/schemas/Catalog"
+        data_base64:
+          type: string
+      required:
+      - id
+      - source
+      - specversion
+      - type
+
     Product:
       type: object
       properties:

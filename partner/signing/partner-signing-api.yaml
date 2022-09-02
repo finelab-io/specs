@@ -1,0 +1,105 @@
+openapi: 3.0.1
+info:
+  title: Partner Signing API
+  version: '1.0.0'
+  description: The Partner Signing API receives and unsigned dokument and returns a dokument signed by the customers digital signature  
+  license:
+    name: Apache 2.0
+    url: https://www.apache.org/licenses/LICENSE-2.0
+  contact:
+    name: API support
+    email: api@finetech.dk
+      
+externalDocs:
+  description: Partner Signing API
+  url: https://developer.finetech.dk/partner
+servers:
+  - description: local
+    url: http://localhost:8080
+  - description: test
+    url: https://test-api.finetech.dk
+tags:
+  - name: Partner    
+paths:
+  /partner/signing-requests:
+    post:
+      tags:
+        - Partner
+      description: create signing request
+      operationId: createSigningRequests
+      security: 
+        - oauth2:
+          - 'write:partner-signing-request'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/SigningRequest'
+        required: true
+      responses:
+        '200':
+          description: OK
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/SigningRequestCreated'
+        '400':
+          description: 'Bad Request '
+          content:
+            application/problem+json: {}
+        '401':
+          description: Unauthorized
+          content:
+            application/problem+json: {}
+        '403':
+          description: Forbidden
+          content:
+            application/problem+json: {}
+        '500':
+          description: Internal Server Error
+          content:
+            application/problem+json: {}
+components:
+  schemas:
+    SigningRequest:
+      type: object
+      properties:
+        order:
+          $ref: '#/components/schemas/Order'
+        content_type:
+          type: string
+        content:
+          type: string
+          format: byte
+    Order:
+      type: object
+      properties:
+        number:
+          type: string
+        quote:
+          type: object
+        person:
+          type: object
+        organization:
+          type: object
+    SigningRequestCreated:
+      type: object
+      properties:
+        id: 
+          type: string
+        url: 
+          type: string
+  securitySchemes:
+    openid-connect:
+        type: openIdConnect
+        openIdConnectUrl: https://finetech-test.eu.auth0.com/.well-known/openid-configuration
+    oauth2:
+      type: oauth2
+      flows:
+        clientCredentials:
+          tokenUrl: https://finetech-test.eu.auth0.com/oauth/token
+          scopes: 
+            'read:catalog': Allows to read catalog 
+security: 
+  - oauth2:
+    - 'read:catalog'
