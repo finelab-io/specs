@@ -1,0 +1,111 @@
+@startuml
+  !include <cloudinsight/kafka>
+
+|Customer UX|
+start
+  |Catalog API|
+  :Get Catalog;
+  |Product API|
+  :Get Products;
+  |Customer UX|
+  :Select Product;
+  |Product API|
+  :Get Product;
+  |Customer UX|
+  :Configure Quote Criteria;
+  |Quote API|
+  :Get Quote By Criteria;
+  |Customer UX|
+  repeat
+    :Check Quote;
+    :Enter Customer Info;
+    :Check Customer Info;
+    :Place Order;
+    |Order API|
+    :Validate Order;
+  repeat while (Validation) is (Constraint Violation) not (success)
+  |Order API|
+  :produce; 
+  |topic: order.placed|
+  :OrderPlacedEvent;
+  |Customer UX|
+  :Show Order Process Started;
+stop      
+@enduml
+/'
+
+ 
+
+  rectangle "External Services" as ExternalServices {
+
+
+
+    rectangle "Sector Service" as SectorServices {
+      card "Sector Customer API" as SectorCustomerAPI  
+      database "<$kafka*0.4> sector.customer" as SectorCustomerTopic 
+
+      SectorCustomerAPI -u-> SectorCustomerTopic
+    }
+
+
+    rectangle "Goverment Service" as GovermentServices{
+      card "Person Service" as PersonService
+      card "Organization Service" as OrganizationService
+      card "Car Service" as CarService
+      card "Address Service" as AddressService
+
+      database "<$kafka*0.4> goverment.person" as PersonTopic 
+      database "<$kafka*0.4> goverment.organization" as OrganizationTopic 
+      database "<$kafka*0.4> goverment.vehicle" as VehicleTopic 
+      database "<$kafka*0.4> goverment.address" as AddressTopic 
+
+       PersonService -u-> PersonTopic : produces\nperson info
+       OrganizationService -u-> OrganizationTopic : produces\nOrganizationEvent
+       CarService -u-> VehicleTopic : produces\nVehicleEvent
+       AddressService -u-> AddressTopic : produces\nAddressEvent
+
+    }
+
+  } 
+
+
+  rectangle "Business Services" as BackendServices {
+'/
+
+/'
+    rectangle "Communcation Service" {
+      card "Email Service" as EmailAPI 
+      database "<$kafka*0.4>communication.email" as CommunicationEmailTopic 
+      'card "Email Sender" as EmailSender 
+      EmailService -u-> CommunicationEmailTopic
+      'EmailAPI -d-> EmailSender : send order email
+    }
+      card "Customer Service" as CustomerService
+      card "Order Service" as OrderService
+      database "<$kafka*0.4> business.order.placed" as OrderTopic 
+      database "<$kafka*0.4> business.order.processed" as OrderApprovedTopic 
+
+      OrderService -u-> OrderTopic : (1) consume\n OrderPlacedEvent
+      OrderService -d-> CustomerService : (2) consume\n business customer\n information 
+      OrderService -d-> CustomerService : (3) consume\n business customer\n information 
+
+/'
+      CoreCustomerAPI -u-> CustomerTopic : (4) produce 
+      database "<$kafka*0.4> business.customer" as CustomerTopic 
+      OrderService -d-> SectorCustomerAPI : (3) screen\n sector customer\n information
+      database "<$kafka*0.4> business.agreement" as BusinessAgreementTopic 
+      card "Core Agreement API" as CoreAgreementAPI
+      AgreementService -u-> BusinessAgreementTopic
+      OrderService -d-> CommunicationEmailTopic : emit\nOrderRejectedEvent &\n OrderRejectedEmailEvent
+
+      CustomerService -d-> PersonTopic  : consumes\n PersonEvent
+      CustomerService -d-> OrganizationTopic : consumes\n OrgnizationEvent
+      AgreementService -d-> VehicleTopic : consumes\n VehicleEvent
+      AgreementService -d-> AddressTopic : consumes\n VehicleEvent
+      CustomerService -d-> AddressTopic : consumes\n VehicleEvent
+ }
+
+'/
+
+
+ 
