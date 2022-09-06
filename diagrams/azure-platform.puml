@@ -1,0 +1,90 @@
+@startuml
+
+!pragma revision 1
+
+!define AzurePuml https://raw.githubusercontent.com/plantuml-stdlib/Azure-PlantUML/master/dist
+!define Logos https://raw.githubusercontent.com/plantuml-stdlib/gilbarbara-plantuml-sprites/master/sprites
+
+!includeurl Logos/auth0-icon.puml
+!include <cloudinsight/kafka>
+!includeurl AzurePuml/AzureCommon.puml
+!includeurl AzurePuml/AzureSimplified.puml
+!includeurl AzurePuml/Web/AzureWebApp.puml
+!includeurl AzurePuml/Networking/all.puml
+!includeurl AzurePuml/Databases/all.puml
+!includeurl AzurePuml/Storage/all.puml
+!includeurl AzurePuml/Compute/all.puml
+!includeurl AzurePuml/Containers/all.puml
+!includeurl AzurePuml/Integration/all.puml
+!includeurl AzurePuml/Security/all.puml
+!includeurl AzurePuml/Web/all.puml
+
+
+  skinparam RectangleBorderColor transparent
+  skinparam componentStyle rectangle
+  rectangle "Azure Web App" as front #Application {
+
+       AzureWebApp(webapp, "customer ux", "Container www.finetech.dk")
+  }
+
+  rectangle "Identity Provider" as identity #Application {
+   
+    component auth0 as idp #White {
+
+       label "<$auth0-icon>" as auth0
+    }
+  } 
+
+
+  rectangle "Azure Api Managment" as apims  #Application{
+
+  AzureApplicationGateway( appgw, "appgw", "Application Gateway + Firewall")
+  AzureAPIManagement(apim, "apim", "API Management Services")
+  
+  }
+
+
+  rectangle "Azure Kubernetes Services" as apps #Application {
+    AzureKubernetesService(api,  "customer api", "Container App")
+    AzureKubernetesService(service,  "customer service", "Container App")
+  }
+
+
+
+  rectangle "Azure Data & Integration Services" as managed #Application {
+    rectangle "managed\nservices" as data #Application     
+
+
+    AzureKeyVault(kv,"key vault", "Key Vault")
+    AzureBlobStorage(cfg,"config","App Config")
+    AzureRedisCache(redis, "cache", "Redis Cache")
+    AzureEventGrid(kafka, "kafka","Service Bus")
+    AzureDatabaseForPostgreSQL(psql, "postgress", "PostgreSql on Azure")
+
+  }
+
+  webapp -r-> appgw
+  appgw -r-> apim
+  apim -r-> api 
+  api -r-> service 
+  api -d-> data
+  service -d-> data
+
+
+  webapp -u-> auth0 : openid\nconnect
+  apim -u-> auth0 : jwt 
+  api -u-> auth0 : jwt
+  service -u-> auth0 : jwt
+
+  data -d-> kv
+  data -d-> cfg
+  data -d-> redis
+  data -d-> kafka
+  data -d-> psql
+
+  
+  
+
+
+
+@enduml
