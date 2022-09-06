@@ -22,7 +22,7 @@
 
   skinparam RectangleBorderColor transparent
   skinparam componentStyle rectangle
-  rectangle "Azure Web App" as front #Application {
+  rectangle "Azure Web App\n" as front #Application {
 
        AzureWebApp(webapp, "customer ux", "Container www.finetech.dk")
   }
@@ -63,7 +63,7 @@
 
   }
 
-  webapp -r-> appgw
+  webapp -d-> appgw : ingress
   appgw -r-> apim
   apim -r-> api 
   api -r-> service 
@@ -71,7 +71,7 @@
   service -d-> data
 
 
-  webapp -u-> auth0 : openid\nconnect
+  webapp -r-> auth0 : openid\nconnect
   apim -u-> auth0 : jwt 
   api -u-> auth0 : jwt
   service -u-> auth0 : jwt
