@@ -1,0 +1,92 @@
+{
+    "uri": "urn:finetech:product:private_customers:private_insurance:da_DK:7000",
+    "catalog_uri": "urn:finetech:catalog:private_customers:private_insurance:da_DK",
+    "number": "7000",
+    "name": "car_insurance",
+    "display_name": "Bilforsikring",
+    "quote_criteria": [
+        {
+            "name": "car_registration_number",
+            "display_text": "Registreringnummer",
+            "type": "string"
+        },
+        {
+            "name": "car_make",
+            "display_text": "Bilmærke",
+            "type": "string"
+        },
+        {
+            "name": "car_model",
+            "display_text": "Model",
+            "type": "string"
+        },
+        {
+            "name": "car_variant",
+            "display_text": "Variant",
+            "type": "string"
+        },
+        {
+            "name": "youngst_driver_age",
+            "display_text": "Yngste registrerede bruger",
+            "type": "integer"
+        },
+        {
+            "name": "is_car_leased",
+            "display_text": "Er bilen leaset",
+            "type": "boolean"
+        },
+        {
+            "name": "years_with_own_car_in_dk",
+            "display_text": "Antal år med egenbil",
+            "type": "integer"
+        },
+        {
+            "name": "claims_last_3_years",
+            "display_text": "Antal belastende skader anmeldt de sidste 3 år",
+            "type": "integer"
+        },
+        {
+            "name": "driving_distance_in_km",
+            "display_text": "Kørselsbov i km",
+            "type": "integer"
+        },
+        {
+            "name": "liability",
+            "display_text": "Ansvarsforsikring",
+            "type": "boolean"
+        },
+        {
+            "name": "comprehensive",
+            "display_text": "Kasko",
+            "type": "boolean"
+        },
+        {
+            "name": "driver_coverage",
+            "display_text": "Førerforsikring",
+            "type": "boolean"
+        },
+        {
+            "name": "young_driver",
+            "display_text": "Førerforsikring",
+            "type": "boolean"
+        },
+        {
+            "name": "young_driver",
+            "display_text": "Førerforsikring",
+            "type": "boolean"
+        },
+        {
+            "name": "extra",
+            "display_text": "Samlet værdi af bilens ekstraudstyr (max)?",
+            "type": "number"
+        },
+        {
+            "name": "deductible",
+            "display_text": "Selvrisiko",
+            "type": "number"
+        }                
+    ],
+    "revision" : 1,
+    "published_at" : "2022-05-07",
+    "expired_at" : null 
+}

@@ -2,10 +2,10 @@
   "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "object",
   "properties": {
-    "id": {
+    "uri": {
       "type": "string"
     },
-    "catalog_id": {
+    "catalog_uri": {
       "type": "string"
     },
     "number": {
@@ -38,16 +38,46 @@
             "display_text",
             "type"
           ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "display_text": {
+              "type": "string"
+            },
+            "type": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "name",
+            "display_text",
+            "type"
+          ]
         }
       ]
+    },
+    "revision": {
+      "type": "integer"
+    },
+    "published_at": {
+      "type": "string"
+    },
+    "expired_at": {
+      "type": "null"
     }
   },
   "required": [
-    "id",
-    "catalog_id",
+    "uri",
+    "catalog_uri",
     "number",
     "name",
     "display_name",
-    "quote_criteria"
+    "quote_criteria",
+    "revision",
+    "published_at"
   ]
 }

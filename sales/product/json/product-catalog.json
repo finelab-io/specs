@@ -1,0 +1,13 @@
+{
+    "uri" : "urn:finetech:catalog:private_customers:private_insurance:da_DK",
+    "tenant_name":"finetech",
+    "business_unit_name": "private_customers",
+    "name":"private_insurance",
+    "content_language" : "da_DK",
+    "display_name":"Privatforsikring",
+    "revision" : 1,
+    "published_at" : "2022-05-07",  
+    "valid_from" : "2022-06-01",
+    "valid_to" : "2022-12-31",
+    "expired_at" : null
+}

@@ -1,0 +1,23 @@
+{
+    "uri": "urn:finetech:price:private_customers:private_insurance:da_DK:7000:1",
+    "product_uri": "urn:product:finetech:private_customers:private_insurance:da_DK:7000",
+    "match_criteria": [
+        {
+            "name": "liability",
+            "value": "true"
+        },
+        {
+            "name": "comprehensive",
+            "value": "false"
+        }
+    ],
+    "price": {
+        "amount": 100.00,
+        "currency": "DKK",
+        "charged": "per_month"
+    },
+    "revision" : 1,
+    "published_at" : "2022-05-07",
+    "expired_at" : null  
+
+}

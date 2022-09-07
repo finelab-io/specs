@@ -2,15 +2,30 @@
   "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "object",
   "properties": {
-    "id": {
+    "uri": {
       "type": "string"
     },
-    "product_id": {
+    "product_uri": {
       "type": "string"
     },
     "match_criteria": {
       "type": "array",
       "items": [
+        {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "value": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "name",
+            "value"
+          ]
+        },
         {
           "type": "object",
           "properties": {
@@ -46,12 +61,23 @@
         "currency",
         "charged"
       ]
+    },
+    "revision": {
+      "type": "integer"
+    },
+    "published_at": {
+      "type": "string"
+    },
+    "expired_at": {
+      "type": "null"
     }
   },
   "required": [
-    "id",
-    "product_id",
+    "uri",
+    "product_uri",
     "match_criteria",
-    "price"
+    "price",
+    "revision",
+    "published_at"
   ]
 }
