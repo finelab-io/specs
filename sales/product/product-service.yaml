@@ -17,7 +17,8 @@ servers:
     protocol: kafka
     protocolVersion: 2.6.0
     description: Finetech Test Broker
-
+    security:
+      - creds: []
 channels:
   sales.product.catalog:
     publish:
