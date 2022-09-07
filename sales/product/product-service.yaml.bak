@@ -1,0 +1,255 @@
+asyncapi: '2.4.0'
+id: 'finetech:sales:product'
+info:
+  title: Finetech Sales Product AsyncAPI
+  version: '1.0.0'
+  description: |
+    The Product AsyncAPI publishes events when ever changes occurs to catalogs, products or prices.
+  contact:
+    email: api@finetech.dk
+  license:
+    name: Apache 2.0
+    url: https://www.apache.org/licenses/LICENSE-2.0
+
+servers:
+  test-broker:
+    url: test-broker.finetech.dk:8092
+    protocol: kafka
+    protocolVersion: 2.6.0
+    description: Finetech Test Broker
+
+channels:
+  sales.product.catalog:
+    publish:
+      message:
+        $ref: '#/components/messages/CatalogEventMessage'
+  sales.product.information:
+    publish:
+      message:
+        $ref: '#/components/messages/ProductInformationEventMessage'
+  sales.product.price:
+    publish:
+      message:
+        $ref: '#/components/messages/PriceEventMessage'
+
+components:
+  messages:
+    CatalogEventMessage:
+      payload:
+        $ref: '#/components/schemas/CatalogEvent'
+      description: >-
+        The CatalogEvent is based on CloudEvent spec and contains the changed Catalog information.
+      schemaFormat: application/vnd.aai.asyncapi+json;version=2.0.0
+      contentType: application/json
+    ProductInformationEventMessage:
+      payload:
+        $ref: '#/components/schemas/ProductInformationEvent'
+      description: >-
+        The ProductInformation is based on CloudEvent spec and contains the changed Product information.
+      schemaFormat: application/vnd.aai.asyncapi+json;version=2.0.0
+      contentType: application/json
+    PriceEventMessage:
+      payload:
+        $ref: '#/components/schemas/PriceEvent'
+      description: >-
+        The PriceEvent is based on CloudEvent spec and contains the changed Price information.
+      schemaFormat: application/vnd.aai.asyncapi+json;version=2.0.0
+      contentType: application/json
+  schemas:
+    CatalogEvent:
+      description: >-
+        The CatalogEvent contains Product and Catalog information and is based on CloudEvents Specification JSON Schema.
+        https://raw.githubusercontent.com/cloudevents/spec/v1.0.1/spec.json
+      type: object
+      properties:
+        id:
+          type: string
+        source:
+          type: string
+        specversion:
+          type: string
+        type:
+          type: string
+        datacontenttype:
+          type: string
+        dataschema:
+          type: string
+        subject:
+          type: string
+        time:
+          type: string
+        data:
+          "$ref": "#/components/schemas/Catalog"
+        data_base64:
+          type: string
+      required:
+      - id
+      - source
+      - specversion
+      - type
+    Catalog:
+      type: object
+      properties:
+        id:
+          type: string
+        tenant:
+          type: string
+        business_unit
+        name: 
+          type: string
+        products:
+          type: array
+          items:
+            $ref: '#/components/schemas/Product'
+    ProductInformationEvent:
+      description: >-
+        The CatalogEvent contains Product and Catalog information and is based on CloudEvents Specification JSON Schema.
+        https://raw.githubusercontent.com/cloudevents/spec/v1.0.1/spec.json
+      type: object
+      properties:
+        id:
+          type: string
+        source:
+          type: string
+        specversion:
+          type: string
+        type:
+          type: string
+        datacontenttype:
+          type: string
+        dataschema:
+          type: string
+        subject:
+          type: string
+        time:
+          type: string
+        data:
+          "$ref": "#/components/schemas/Catalog"
+        data_base64:
+          type: string
+      required:
+      - id
+      - source
+      - specversion
+      - type
+
+    Product:
+      type: object
+      properties:
+        catalog_name:
+          type: string
+        number:
+          type: string
+        display_name:
+          type: string
+        quote_criteria:
+          type: array
+          items:
+            $ref: '#/components/schemas/Criterion'
+    Criterion:
+      type: object
+      properties:
+        name:
+          type: string
+        display_name:
+          type: string
+        value:
+          type: string
+        type:
+          type: string
+          enum:
+            - BOOLEAN
+            - INTEGER
+            - DECIMAL
+            - DATE
+            - STRING
+            - EMAIL
+        allow_values:
+          type: array
+          items:
+            $ref: '#/components/schemas/CriterionAllowValue'
+        allow_mulitiselect:
+          type: boolean
+        allow_limit:
+          type: object
+          properties:
+            min_value:
+              type: string
+            min_inclusive:
+              type: boolean
+            max_value:
+              type: string
+            max_inclusive:
+              type: string
+    CriterionAllowValue:
+      type: object
+      properties:
+        key:
+          type: string
+        display_value:
+          type: string
+        selected:
+          type: boolean        
+    PriceEvent:
+      description: >-
+        The PriceEvent contains Pricr information and is based on CloudEvents Specification JSON Schema.
+        https://raw.githubusercontent.com/cloudevents/spec/v1.0.1/spec.json
+      type: object
+      properties:
+        id:
+          type: string
+          minLength: 1
+        source:
+          type: string
+          format: uri-reference
+          minLength: 1
+        specversion:
+          type: string
+          minLength: 1
+        type:
+          type: string
+          minLength: 1
+        datacontenttype:
+          type: string
+        dataschema:
+          type: string
+        subject:
+          type: string
+        time:
+          type: string
+        data:
+          "$ref": "#/components/schemas/Price"
+        data_base64:
+           type: string
+           contentEncoding: base64    
+      required:
+      - id
+      - source
+      - specversion
+      - type
+    Price:
+      type: object
+      properties:
+        catalog:
+          $ref: '#/components/schemas/CatalogName'
+        product: 
+          $ref: '#/components/schemas/ProductName'
+        price: 
+          $ref: '#/components/schemas/PriceAmountCurrency'
+    CatalogName:
+      type: object
+      properties: 
+        name:
+          type: string
+    ProductName:
+      type: object
+      properties: 
+        name:
+          type: string
+    PriceAmountCurrency:
+      type: object
+      properties: 
+        amount:
+          type: number
+        currency:
+          type: string    
