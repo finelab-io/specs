@@ -1,0 +1,51 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+      "uri": {
+        "type": "string"
+      },
+      "tenant_name": {
+        "type": "string"
+      },
+      "business_unit_name": {
+        "type": "string"
+      },
+      "name": {
+        "type": "string"
+      },
+      "content_language": {
+        "type": "string"
+      },
+      "display_name": {
+        "type": "string"
+      },
+      "revision": {
+        "type": "integer"
+      },
+      "published_at": {
+        "type": "string"
+      },
+      "valid_from": {
+        "type": "string"
+      },
+      "valid_to": {
+        "type": "string"
+      },
+      "expired_at": {
+        "type": "null"
+      }
+    },
+  "required": [
+    "uri",
+    "tenant_name",
+    "business_unit_name",
+    "name",
+    "content_language",
+    "display_name",
+    "revision",
+    "published_at",
+    "valid_from",
+    "valid_to"
+  ]
+}

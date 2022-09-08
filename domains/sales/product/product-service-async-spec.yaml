@@ -1,0 +1,256 @@
+asyncapi: '2.4.0'
+id: 'finetech:sales:product'
+info:
+  title: Product AsyncAPI
+  version: '1.0.0'
+  description: |
+    The Product AsyncAPI publishes events whenever changes occurs to catalogs, products or prices.
+  contact:
+    email: api@finetech.dk
+  license:
+    name: Apache 2.0
+    url: https://www.apache.org/licenses/LICENSE-2.0
+
+servers:
+  staging-broker:
+    url: pkc-1wvvj.westeurope.azure.confluent.cloud:9092
+    protocol: kafka
+    protocolVersion: 2.6.0
+    description: Finetech Test Broker
+    security:
+      - creds: []
+channels:
+  sales.product.catalog:
+    publish:
+      message:
+        $ref: '#/components/messages/ProductCatalogEvent'
+  sales.product.information:
+    publish:
+      message:
+        $ref: '#/components/messages/ProductInformationEvent'
+  sales.product.price:
+    publish:
+      message:
+        $ref: '#/components/messages/ProductPriceEvent'
+
+components:
+  messages:
+    ProductCatalogEvent:
+      payload:
+        $ref: '#/components/schemas/ProductCatalog'
+      description: >-
+        The `ProductCatalogEvent` contains information about the published product catalog .
+      schemaFormat: application/vnd.aai.asyncapi+json;version=2.0.0
+      contentType: application/json
+    ProductInformationEvent:
+      payload:
+        $ref: '#/components/schemas/ProductInformation'
+      description: >-
+        The `ProductInformation` contains information about the published product.
+      schemaFormat: application/vnd.aai.asyncapi+json;version=2.0.0
+      contentType: application/json
+    ProductPriceEvent:
+      payload:
+        $ref: '#/components/schemas/ProductPrice'
+      description: >-
+        The `ProductPriceEvent` contains information about the published product price.
+      schemaFormat: application/vnd.aai.asyncapi+json;version=2.0.0
+      contentType: application/json
+  securitySchemes:
+    creds:
+      type: userPassword  
+  schemas:
+    ProductCatalog:
+      type: object    
+      properties: 
+        uri:
+          type: string
+          description: unique identifier for the catalog.
+          example: urn:finetech:catalog:private_customers:private_insurance:da_DK
+        tenant_name: 
+          type: string
+          description: tenant to which catalog belongs.
+          example: finetech
+        business_unit_name: 
+          type: string
+          description: business unit to which catalog belongs.
+          example: private_customers
+        content_language:
+          type: string
+          description: language in which displayed text is presented.
+          example: da_DK
+        currency:
+          type: string
+          description: currency in which price amount is presented.
+          example: DKK
+        name: 
+          type: string
+          description: unique name for the catalog.
+          example: private_insurance
+        display_name:
+          type: string
+          description: displayed name.
+          example: Privatforsikring
+        revision:
+          type: integer
+          description: revision of the catalog.
+          example: 1
+        published_at:
+          type: string
+          format: date-time
+          description: date and time at which the catalog is pusblished.
+          example: 2022-05-07
+        valid_from: 
+          type: string
+          format: date-time
+          description: date and time from which the catalog is valid.
+          example: 2022-05-07
+        valid_to:
+          type: string
+          format: date-time
+          description: date and time to which the catalog is valid.
+          example: 2022-05-07
+        expired_at:
+          type: string
+          format: date-time
+          description: date and time at which the catalog is expired and can be removed.
+          example: null
+    ProductInformation:
+      type: object    
+      properties: 
+        uri:
+          type: string
+          description: unique identifier for the product.
+          example: urn:finetech:product:private_customers:private_insurance:da_DK:7000
+        catalog_uri:
+          type: string
+          description: tenant to which catalog belongs.
+          example: urn:finetech:product:private_customers:private_insurance:da_DK
+        number: 
+          type: string
+          description: unique number in catalog for the product.
+          example: 7000
+        name: 
+          type: string
+          description: unique name in catalog for the product.
+          example: car_insurance
+        display_name:
+          type: string
+          description: displayed name.
+          example: Bilforsikring
+        quote_criteria:
+          type: array
+          items:
+            $ref: '#/components/schemas/Criterion'
+        revision:
+          type: integer
+          description: revision of the product.
+          example: 1
+        published_at":
+          type: string
+          format: date-time
+          description: date and time at which the product is pusblished.
+        expired_at:
+          type: string
+          format: date-time
+          description: date and time at which the product is expired and can be removed.
+    Criterion:
+      type: object
+      properties:
+        name:
+          type: string
+        display_name:
+          type: string
+        value:
+          type: string
+        type:
+          type: string
+          enum:
+            - BOOLEAN
+            - INTEGER
+            - DECIMAL
+            - DATE
+            - STRING
+            - EMAIL
+        allow_values:
+          type: array
+          items:
+            $ref: '#/components/schemas/CriterionAllowValue'
+        allow_mulitiselect:
+          type: boolean
+        allow_limit:
+          type: object
+          properties:
+            min_value:
+              type: string
+            min_inclusive:
+              type: boolean
+            max_value:
+              type: string
+            max_inclusive:
+              type: string
+    CriterionAllowValue:
+      type: object
+      properties:
+        key:
+          type: string
+        display_value:
+          type: string
+        selected:
+          type: boolean        
+    ProductPrice:
+      type: object
+      properties:
+        uri:
+          type: string
+          description: unique identifier for the price.
+          example: urn:finetech:price:private_customers:private_insurance:da_DK:7000:1
+        product_information_uri:
+          type: string
+          description: unique identifier for the product to which the price belongs.
+          example: urn:finetech:price:private_customers:private_insurance:da_DK:7000
+        amount:
+          type: number
+          description: unique identifier for the product to which the price belongs.
+          example: 100.00
+        charged:
+          type: string
+          description: how often is the amount charged eg per_month, per_year ...
+          example: per_month
+        match_criteria: 
+          type: array
+          items:
+            $ref: '#/components/schemas/MatchCriterion'
+          description: the criteria to be matched to get the price quote.
+        display_name:
+          type: string
+          description: displayed name.
+        revision:
+          type: integer
+          description: revision of the catalog.
+        published_at":
+          type: string
+          format: datetime
+          description: date and time at which the catalog is pusblished.
+        valid_from: 
+          type: string
+          format: datetime
+          description: date and time from which the catalog is valid.
+        valid_to:
+          type: string
+          format: datetime
+          description: date and time to which the catalog is valid.
+        expired_at:
+          type: string
+          format: datetime
+          description: date and time at which the catalog is expired and can be removed.
+    MatchCriterion:
+      type: object
+      properties:
+        name:
+          type: string
+          description: the parameter name (key) for the criterion
+        value:
+          type: string
+          description: the value to match for the criterion
+
