@@ -95,6 +95,12 @@ The `ProductCatalogEvent` contains information about the published product catal
 ```
 
 
+#### `kafka` Message specific information
+
+| Name | Type | Description | Value | Constraints | Notes |
+|---|---|---|---|---|---|
+| key | string | - | - | - | - |
+
 
 ### PUB `sales.product.information` Operation
 
@@ -180,6 +186,12 @@ The `ProductInformation` contains information about the published product.
 ```
 
 
+#### `kafka` Message specific information
+
+| Name | Type | Description | Value | Constraints | Notes |
+|---|---|---|---|---|---|
+| key | string | - | - | - | - |
+
 
 ### PUB `sales.product.price` Operation
 
@@ -240,5 +252,11 @@ The `ProductPriceEvent` contains information about the published product price.
 }
 ```
 
+
+#### `kafka` Message specific information
+
+| Name | Type | Description | Value | Constraints | Notes |
+|---|---|---|---|---|---|
+| key | string | - | - | - | - |
 
 
