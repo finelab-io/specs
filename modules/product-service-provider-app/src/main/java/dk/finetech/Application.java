@@ -18,7 +18,7 @@ public class Application {
 	}
 
 	@Bean
-	public Supplier<ProductCatalog> salesProductCatalogSupplier() {
+	public Supplier<ProductCatalog> publishSalesProductCatalog() {
 		return () -> {
 			// Add business logic here.
 			return new ProductCatalog();
@@ -26,7 +26,7 @@ public class Application {
 	}
 
 	@Bean
-	public Supplier<ProductInformation> salesProductInformationSupplier() {
+	public Supplier<ProductInformation> publishSalesProductInformation() {
 		return () -> {
 			// Add business logic here.
 			return new ProductInformation();
@@ -34,7 +34,7 @@ public class Application {
 	}
 
 	@Bean
-	public Supplier<ProductPrice> salesProductPriceSupplier() {
+	public Supplier<ProductPrice> publishSalesProductPrice() {
 		return () -> {
 			// Add business logic here.
 			return new ProductPrice();

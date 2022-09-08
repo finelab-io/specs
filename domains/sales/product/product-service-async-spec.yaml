@@ -22,14 +22,41 @@ servers:
 channels:
   sales.product.catalog:
     publish:
+      operationId: publishSalesProductCatalog
+      bindings:
+        kafka:
+          clientId:
+            type: string
+            pattern: '^[a-z]{22}$'
+          groupId:
+            type: string
+            pattern: '^[A-Z]{10}[1-5]$'
       message:
         $ref: '#/components/messages/ProductCatalogEvent'
   sales.product.information:
     publish:
+      operationId: publishSalesProductInformation
+      bindings:
+        kafka:
+          clientId:
+            type: string
+            pattern: '^[a-z]{22}$'
+          groupId:
+            type: string
+            pattern: '^[A-Z]{10}[1-5]$'
       message:
         $ref: '#/components/messages/ProductInformationEvent'
   sales.product.price:
     publish:
+      operationId: publishSalesProductPrice
+      bindings:
+        kafka:
+          clientId:
+            type: string
+            pattern: '^[a-z]{22}$'
+          groupId:
+            type: string
+            pattern: '^[A-Z]{10}[1-5]$'
       message:
         $ref: '#/components/messages/ProductPriceEvent'
 

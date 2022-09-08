@@ -1,14 +1,14 @@
 spring:
   cloud:
     function:
-      definition: salesProductCatalogSupplier;salesProductInformationSupplier;salesProductPriceSupplier
+      definition: publishSalesProductCatalog;publishSalesProductInformation;publishSalesProductPrice
     stream:
       bindings:
-        salesProductCatalogSupplier-out-0:
+        publishSalesProductCatalog-out-0:
           destination: sales.product.catalog
-        salesProductInformationSupplier-out-0:
+        publishSalesProductInformation-out-0:
           destination: sales.product.information
-        salesProductPriceSupplier-out-0:
+        publishSalesProductPrice-out-0:
           destination: sales.product.price
 logging:
   level:

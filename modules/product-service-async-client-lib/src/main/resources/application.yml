@@ -1,13 +1,13 @@
 spring:
   cloud:
     function:
-      definition: salesProductCatalogConsumer;salesProductInformationConsumer;salesProductPriceConsumer
+      definition: publishSalesProductCatalog;publishSalesProductInformation;publishSalesProductPrice
     stream:
       bindings:
-        salesProductCatalogConsumer-in-0:
+        publishSalesProductCatalog-in-0:
           destination: sales.product.catalog
-        salesProductInformationConsumer-in-0:
+        publishSalesProductInformation-in-0:
           destination: sales.product.information
-        salesProductPriceConsumer-in-0:
+        publishSalesProductPrice-in-0:
           destination: sales.product.price
 

@@ -42,6 +42,15 @@ Finetech Test Broker
 
 ### PUB `sales.product.catalog` Operation
 
+* Operation ID: `publishSalesProductCatalog`
+
+#### `kafka` Operation specific information
+
+| Name | Type | Description | Value | Constraints | Notes |
+|---|---|---|---|---|---|
+| clientId | string | - | - | pattern (`^[a-z]{22}$`) | - |
+| groupId | string | - | - | pattern (`^[A-Z]{10}[1-5]$`) | - |
+
 #### Message `ProductCatalogEvent`
 
 * Content type: [application/json](https://www.iana.org/assignments/media-types/application/json)
@@ -88,6 +97,15 @@ The `ProductCatalogEvent` contains information about the published product catal
 
 
 ### PUB `sales.product.information` Operation
+
+* Operation ID: `publishSalesProductInformation`
+
+#### `kafka` Operation specific information
+
+| Name | Type | Description | Value | Constraints | Notes |
+|---|---|---|---|---|---|
+| clientId | string | - | - | pattern (`^[a-z]{22}$`) | - |
+| groupId | string | - | - | pattern (`^[A-Z]{10}[1-5]$`) | - |
 
 #### Message `ProductInformationEvent`
 
@@ -164,6 +182,15 @@ The `ProductInformation` contains information about the published product.
 
 
 ### PUB `sales.product.price` Operation
+
+* Operation ID: `publishSalesProductPrice`
+
+#### `kafka` Operation specific information
+
+| Name | Type | Description | Value | Constraints | Notes |
+|---|---|---|---|---|---|
+| clientId | string | - | - | pattern (`^[a-z]{22}$`) | - |
+| groupId | string | - | - | pattern (`^[A-Z]{10}[1-5]$`) | - |
 
 #### Message `ProductPriceEvent`
 
