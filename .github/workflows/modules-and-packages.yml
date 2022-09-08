@@ -20,7 +20,7 @@ jobs:
       - name: install asyncapi/generator
         run: npm install -g @asyncapi/generator
       - name: generate modules & markdown from spec
-        run: ./update.sh
+        run: ./generate-modules.sh
       - name: list modules
         run: pwd &&  ls modules/** 
       - name: list markdown
