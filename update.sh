@@ -29,7 +29,7 @@ https://github.com/asyncapi/java-spring-cloud-stream-template.git \
 -p actuator=true \
 -p artifactId=product-service-provider-app \
 -p groupId=dk.finetech \
--p springBootVersion=2.7.4-SNAPSHOT \
+-p springBootVersion=2.7.3 \
 -p springCloudStreamVersion=3.2.4  \
 -p springCloudVersion=2021.0.3 \
 -p javaPackage=dk.finetech \
@@ -46,7 +46,7 @@ https://github.com/asyncapi/java-spring-cloud-stream-template.git \
 -p actuator=true \
 -p artifactId=product-service-provider-lib \
 -p groupId=dk.finetech \
--p springBootVersion=2.7.4-SNAPSHOT \
+-p springBootVersion=2.7.3 \
 -p springCloudStreamVersion=3.2.4  \
 -p springCloudVersion=2021.0.3 \
 -p javaPackage=dk.finetech \
@@ -64,7 +64,7 @@ https://github.com/asyncapi/java-spring-cloud-stream-template.git \
 -p actuator=true \
 -p artifactId=product-service-async-client-lib \
 -p groupId=dk.finetech \
--p springBootVersion=2.7.4-SNAPSHOT \
+-p springBootVersion=2.7.3 \
 -p springCloudStreamVersion=3.2.4  \
 -p springCloudVersion=2021.0.3 \
 -p javaPackage=dk.finetech \
