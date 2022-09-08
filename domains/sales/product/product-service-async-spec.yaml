@@ -63,6 +63,10 @@ channels:
 components:
   messages:
     ProductCatalogEvent:
+      bindings:
+        kafka:
+          key:
+            type: string      
       payload:
         $ref: '#/components/schemas/ProductCatalog'
       description: >-
@@ -70,6 +74,10 @@ components:
       schemaFormat: application/vnd.aai.asyncapi+json;version=2.0.0
       contentType: application/json
     ProductInformationEvent:
+      bindings:
+        kafka:
+          key:
+            type: string      
       payload:
         $ref: '#/components/schemas/ProductInformation'
       description: >-
@@ -77,6 +85,10 @@ components:
       schemaFormat: application/vnd.aai.asyncapi+json;version=2.0.0
       contentType: application/json
     ProductPriceEvent:
+      bindings:
+        kafka:
+          key:
+            type: string      
       payload:
         $ref: '#/components/schemas/ProductPrice'
       description: >-
