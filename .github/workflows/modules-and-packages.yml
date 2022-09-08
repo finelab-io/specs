@@ -1,0 +1,33 @@
+name: Generate Diagrams
+on:
+  push:
+    branches: [ "main" ]
+    paths:
+      - 'domains/**'
+      - '.github/workflows/modules-and-packages.yml'
+
+jobs:
+  generate_modules:
+    runs-on: ubuntu-latest
+    name: modules
+    steps:
+      - name: Install Dependencies
+        run: |
+          sudo npm install -g @asyncapi/generator
+          
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+      - name: Process Generate modules & markdown
+        run: ./update.sh
+      - name: Display Diagrams
+        run: pwd &&  ls modules/** 
+      - name: Commit Diagrams
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add .
+          git commit -m ":rocket: Adding Generated Modles" || exit 0
+      - name: Push modules & markdown
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
