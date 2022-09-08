@@ -1,0 +1,25 @@
+spring:
+  cloud:
+    function:
+      definition: salesProductCatalogSupplier;salesProductInformationSupplier;salesProductPriceSupplier
+    stream:
+      bindings:
+        salesProductCatalogSupplier-out-0:
+          destination: sales.product.catalog
+        salesProductInformationSupplier-out-0:
+          destination: sales.product.information
+        salesProductPriceSupplier-out-0:
+          destination: sales.product.price
+logging:
+  level:
+    root: info
+    org:
+      springframework: info
+server:
+  port: 8080
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+
