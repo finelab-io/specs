@@ -1,4 +1,4 @@
-name: Generate Diagrams
+name: Generate Modules & Deploy Packages
 on:
   push:
     branches: [ "main" ]
@@ -11,16 +11,22 @@ jobs:
     runs-on: ubuntu-latest
     name: modules
     steps:
-      - name: Install Dependencies
-        run: |
-          sudo npm install -g @asyncapi/generator
-          
       - name: Checkout Repository
         uses: actions/checkout@v2
-      - name: Process Generate modules & markdown
+      - name: Set node
+        uses: actions/setup-node@v1
+        with:
+          node-version: "12.x"
+      - name: install npm
+        run: npm install
+      - name: install asyncapi/generator
+        run: npm install -g @asyncapi/generator
+      - name: generate modules & markdown from spec
         run: ./update.sh
-      - name: Display Diagrams
+      - name: list modules
         run: pwd &&  ls modules/** 
+      - name: list markdown
+        run: pwd &&  ls markdown/** 
       - name: Commit Diagrams
         run: |
           git config --local user.email "action@github.com"
