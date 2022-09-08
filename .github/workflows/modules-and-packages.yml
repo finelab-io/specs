@@ -14,11 +14,9 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v2
       - name: Set node
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v3
         with:
-          node-version: "18.x"
-      - name: install npm
-        run: npm install
+          node-version: 18
       - name: install asyncapi/generator
         run: npm install -g @asyncapi/generator
       - name: generate modules & markdown from spec
