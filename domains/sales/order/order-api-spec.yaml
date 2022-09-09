@@ -62,7 +62,7 @@ paths:
     get:
       tags:
         - Sales
-      description: Get product catalog by name
+      description: Get product catalog by name.
       operationId: getProductCatalog
       parameters:
         - name: name
