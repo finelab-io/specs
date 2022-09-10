@@ -40,7 +40,7 @@
     <repository>
       <id>github</id>
       <name>GitHub finetech-dk Apache Maven Packages</name>
-      <url>https://maven.pkg.github.com/finetech-dk/spec</url>
+      <url>https://maven.pkg.github.com/finetech-dk/product-service-async-client-lib</url>
     </repository>
  </distributionManagement> 
 
