@@ -10,6 +10,9 @@ jobs:
   generate_modules:
     runs-on: ubuntu-latest
     name: modules
+    permissions: 
+      contents: read
+      packages: write 
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v2
@@ -25,12 +28,12 @@ jobs:
         run: pwd &&  ls modules/** 
       - name: list markdown
         run: pwd &&  ls markdown/** 
-      - name: Commit Diagrams
+      - name: Commit markdown
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add .
-          git commit -m ":rocket: Adding Generated Modles" || exit 0
+          git commit -m ":rocket: Adding Generated Modules" || exit 0
       - name: Push modules & markdown
         uses: ad-m/github-push-action@master
         with:
