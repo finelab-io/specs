@@ -25,7 +25,7 @@ paths:
     get:
       tags:
         - Sales
-      description: Get product catalogs
+      description: Get product catalogs.
       operationId: getProductCatalogs
       security: 
         - oauth2:
