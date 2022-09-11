@@ -42,7 +42,7 @@ Finetech Test Broker
 
 ### PUB `sales.product.catalog` Operation
 
-* Operation ID: `publishSalesProductCatalog`
+* Operation ID: `handleSalesProductCatalog`
 
 #### `kafka` Operation specific information
 
@@ -104,7 +104,7 @@ The `ProductCatalogEvent` contains information about the published product catal
 
 ### PUB `sales.product.information` Operation
 
-* Operation ID: `publishSalesProductInformation`
+* Operation ID: `handleSalesProductInformation`
 
 #### `kafka` Operation specific information
 
@@ -195,7 +195,7 @@ The `ProductInformation` contains information about the published product.
 
 ### PUB `sales.product.price` Operation
 
-* Operation ID: `publishSalesProductPrice`
+* Operation ID: `handleSalesProductPrice`
 
 #### `kafka` Operation specific information
 

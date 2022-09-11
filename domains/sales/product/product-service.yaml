@@ -22,7 +22,7 @@ servers:
 channels:
   sales.product.catalog:
     publish:
-      operationId: publishSalesProductCatalog
+      operationId: handleSalesProductCatalog
       bindings:
         kafka:
           clientId:
@@ -35,7 +35,7 @@ channels:
         $ref: '#/components/messages/ProductCatalogEvent'
   sales.product.information:
     publish:
-      operationId: publishSalesProductInformation
+      operationId: handleSalesProductInformation
       bindings:
         kafka:
           clientId:
@@ -48,7 +48,7 @@ channels:
         $ref: '#/components/messages/ProductInformationEvent'
   sales.product.price:
     publish:
-      operationId: publishSalesProductPrice
+      operationId: handleSalesProductPrice
       bindings:
         kafka:
           clientId:
@@ -185,7 +185,7 @@ components:
           type: integer
           description: revision of the product.
           example: 1
-        published_at":
+        published_at:
           type: string
           format: date-time
           description: date and time at which the product is pusblished.
@@ -267,7 +267,7 @@ components:
         revision:
           type: integer
           description: revision of the catalog.
-        published_at":
+        published_at:
           type: string
           format: datetime
           description: date and time at which the catalog is pusblished.

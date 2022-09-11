@@ -1,0 +1,50 @@
+@startuml
+!include https://raw.githubusercontent.com/johthor/DomainStory-PlantUML/main/domainStory.puml
+'!include ../domainStory.puml
+
+Person(Customer)
+
+Boundary(FinetechSales, "FineTech Sales Process") {
+    System(CatalogService, "Catalog Service", )
+    System(QuoteService, "Quote Service", )
+    System(ValidationService, "Validation Service", )
+
+    activity(1, Customer ,requests , Conversation: Product Catalog, from, CatalogService)
+    activity(2<, CatalogService ,returns , Document: Products, to, Customer)
+
+    activity(3, Customer ,requests , Conversation: quotes on products matching criteria, from, QuoteService)
+    activity(4<, QuoteService, calculates and returns, Document: matching quotes,to, Customer)
+
+    activity(5, Customer, sends, Document: accepted quote and customer info ,  to, ValidationService)
+    activity(6<, ValidationService, [failed validation] returns, Email:  Rejection ,  to, Customer)
+
+}
+
+Boundary(DigitalSignatureProvider, "Digital Signature Process") {
+    System(SignatureService, "Signature Service", )
+    activity(7, ValidationService, [successful validation]send, Document: Contract based on quote,  to, SignatureService)
+    activity(9<, SignatureService, sends, Email: Link to contract to be signed ,  to, Customer)
+    activity(10, Customer, starts, Conversation: Contract signing flow via link,  with , SignatureService)
+    activity(11<, SignatureService, presents , Document: Contract to be signed,  for , Customer)
+    activity(12, Customer, signs , Document: Contract with Digital Signature ,  via , SignatureService)
+
+}
+
+Boundary(finetechCustomer, "FineTech Customer Process") {
+    System(CustomerService, "Customer Service", )
+    System(DocumentService, "Document Service", )
+    System(AgreementService, "Agreement Service", )
+    activity(8<, ValidationService, [successful validation] sends , Document: Unsigned Contract and Customer Info ,  to , CustomerService)
+    activity(13<, SignatureService, sends , Document: Signed Contract ,  to , CustomerService)
+    activity(14, CustomerService, stores , Document: Signed Contract ,  in , DocumentService)
+    activity(15, CustomerService, creates , Document: Agreement ,  in , AgreementService)
+    activity(16, Customer, requests , Conversation: Agreements by criteria ,  in , AgreementService)
+    activity(17<, AgreementService, returns , Document: Agreements ,  to , Customer)
+    activity(18, Customer, requests , Conversation: Documents by criteria ,  in , DocumentService)
+    activity(19<, DocumentService, returns , Document: Documents ,  in , Customer)
+
+
+}
+
+
+@enduml

@@ -58,7 +58,7 @@ link data to psql--><g id="link_data_psql"><path d="M524.79,536.26 C564.06,551.6
   skinparam componentStyle rectangle
   rectangle "Azure Web App\n" as front #Application {
 
-       AzureWebApp(webapp, "customer ux", "Container www.finetech.dk")
+       AzureWebApp(webapp, "customer ux", "Container www.finelab.dk")
   }
 
   rectangle "Identity Provider" as identity #Application {

@@ -1,0 +1,159 @@
+@startuml
+!include https://raw.githubusercontent.com/johthor/DomainStory-PlantUML/main/domainStory.puml
+
+
+Boundary(Goverment) {
+  System(Cpr)
+  System(Cvr)
+  System(Dawa)
+
+}
+
+
+Boundary(Organizational) {
+   Boundary(Tenant)
+   Boundary(Unit)
+   Boundary(EmployeeRole)
+
+   Tenant -> Unit
+   Unit -> EmployeeRole
+
+}
+
+Boundary(LegalEntity) {
+   Boundary(Party) 
+
+   Boundary(Customer)
+   Boundary(Employee)
+   Boundary(Participant)
+   Boundary(Prospect)
+   Boundary(Principal)
+
+   Tenant -> Party
+   Unit -> Party
+   Customer --> Party
+   Employee --> Party
+   Participant --> Party
+   Prospect --> Party
+   Principal --> Party
+
+   Boundary(ContactPoint)
+   Boundary(Person)
+   Boundary(Organization)
+
+   Party --> ContactPoint
+   ContactPoint --> Dawa
+   Party --> Person
+   Person --> Cpr
+
+   Party --> Organization
+   Organization --> Cvr
+
+   EmployeeRole --> Employee
+
+
+}
+
+
+  Boundary(Archive) {
+    Boundary(Document)
+  }
+
+Boundary(Sector) {
+  Boundary(InsuranceCase) {
+    Boundary(Claim) 
+  }
+
+
+  Boundary(InsuranceAgreement) {
+    Boundary(Policy) 
+    Boundary(Part) 
+    Boundary(History) 
+    Boundary(Object) 
+    Boundary(Coverage) 
+    Boundary(Deductible)
+    Boundary(Limit)
+    Boundary(Risk)
+    Boundary(ParticipantRole) 
+    Boundary(Premium)
+    Boundary(PolicyDocumentRole)
+
+    Policy --> Part
+    Policy -->  PolicyDocumentRole  
+    PolicyDocumentRole -> Document
+    Policy --> Premium 
+    Part   --> Coverage
+    Policy --> History
+    History --> Policy
+
+    Coverage --> Object
+    Coverage --> Deductible
+    Coverage --> Limit
+    Coverage --> Premium 
+    Coverage --> ParticipantRole 
+    ParticipantRole --> Participant
+    Coverage --> Risk
+
+    Claim -> Policy
+
+  }
+}
+
+Boundary(FinancialAccount) {
+   Boundary(Invoice)
+   Boundary(Charge)
+   Boundary(Transaction)
+   Invoice --> Charge
+   Charge --> Premium
+   Transaction --> Invoice
+
+}
+
+
+Boundary(Communication) {
+    Boundary(Case)
+    Boundary(Message)
+    Case --> Message
+}
+
+Boundary(CustomerAccount) {
+    Boundary(Account)
+    Boundary(CustomerRole)
+    Boundary(AccountUnitRole)
+    Boundary(AgreementRole)
+    Boundary(DocumentRole)
+    Boundary(CaseRole)
+    Account <-- CustomerRole
+    Account --> Transaction
+    Account --> Invoice
+    CustomerRole --> Customer
+    Account --> AccountUnitRole
+    Account --> AgreementRole
+    Account --> DocumentRole
+    Account --> CaseRole
+    AccountUnitRole --> Unit
+    AgreementRole --> Policy
+    DocumentRole --> Document
+    CaseRole --> Case
+    CaseRole --> Claim
+
+   
+}
+
+
+Boundary(Marketing) {
+   Boundary(Lead) 
+   Boundary(ProspectRole)
+
+   Lead --> ProspectRole
+   ProspectRole --> Prospect
+}
+
+Boundary(Sales) {
+}
+
+
+
+
+
+@enduml

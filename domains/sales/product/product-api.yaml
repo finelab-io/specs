@@ -1,0 +1,660 @@
+openapi: 3.0.1
+info:
+  title: Product API
+  version: '1.0.0'
+  description: The Product API exposes catalog, products and prices information.
+  license:
+    name: Apache 2.0
+    url: https://www.apache.org/licenses/LICENSE-2.0
+  contact:
+    name: API support
+    email: api@finelab.id
+      
+externalDocs:
+  description: Product API
+  url: https://docs.finelab.io/sales/product-api
+servers:
+  - description: local
+    url: http://localhost:8080
+  - description: test
+    url: https://test-api.finelab.io
+tags:
+  - name: Sales    
+paths:
+  /catalogs:
+    get:
+      tags:
+        - Sales
+      description: Get product catalogs
+      operationId: getProductCatalogs
+      security: 
+        - oauth2:
+          - 'read:catalog'
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CatalogPage'
+        '401':
+          description: Unauthorized
+          content:
+            application/problem+json: 
+              schema:
+                $ref: '#/components/schemas/Problem'
+        '403':
+          description: Forbidden
+          content:
+            application/problem+json: 
+              schema:
+                $ref: '#/components/schemas/Problem'
+        '500':
+          description: Internal Server Error
+          content:
+            application/problem+json: 
+              schema:
+                $ref: '#/components/schemas/Problem'
+  /catalogs/{id}:
+    get:
+      tags:
+        - Sales
+      description: Get product catalog by id
+      operationId: getProductCatalog
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+      security: 
+        - oauth2:
+          - 'read:catalog'
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Catalog'
+        '401':
+          description: Unauthorized
+          content:
+            application/problem+json: 
+              schema:
+                $ref: '#/components/schemas/Problem'
+        '403':
+          description: Forbidden
+          content:
+            application/problem+json: 
+              schema:
+                $ref: '#/components/schemas/Problem'
+        '404':
+          description: Not found
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Problem'
+        '500':
+          description: Internal Server Error
+          content:
+            application/problem+json: 
+              schema:
+                $ref: '#/components/schemas/Problem'
+  /products:
+    get:
+      tags:
+        - Sales
+      description: Get products
+      operationId: getProducts
+      security: 
+        - oauth2:
+          - 'read:product'
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ProductPage'
+        '401':
+          description: Unauthorized
+          content:
+            application/problem+json: 
+              schema:
+                $ref: '#/components/schemas/Problem'
+        '403':
+          description: Forbidden
+          content:
+            application/problem+json: 
+              schema:
+                $ref: '#/components/schemas/Problem'
+        '500':
+          description: Internal Server Error
+          content:
+            application/problem+json: 
+              schema:
+                $ref: '#/components/schemas/Problem'
+  /products/{id}:
+    get:
+      tags:
+        - Sales
+      description: Get product by id
+      operationId: getProductById
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+      security: 
+        - oauth2:
+          - 'read:product'
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Product'
+        '401':
+          description: Unauthorized
+          content:
+            application/problem+json: 
+              schema:
+                $ref: '#/components/schemas/Problem'
+        '403':
+          description: Forbidden
+          content:
+            application/problem+json: 
+              schema:
+                $ref: '#/components/schemas/Problem'
+        '404':
+          description: Not found
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Problem'
+        '500':
+          description: Internal Server Error
+          content:
+            application/problem+json: 
+              schema:
+                $ref: '#/components/schemas/Problem'
+  /prices:
+    get:
+      tags:
+        - Sales
+      description: Get prices
+      operationId: getPrices
+      security: 
+        - oauth2:
+          - 'read:price'
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PricePage'
+        '401':
+          description: Unauthorized
+          content:
+            application/problem+json: 
+              schema:
+                $ref: '#/components/schemas/Problem'
+        '403':
+          description: Forbidden
+          content:
+            application/problem+json: 
+              schema:
+                $ref: '#/components/schemas/Problem'
+        '500':
+          description: Internal Server Error
+          content:
+            application/problem+json: 
+              schema:
+                $ref: '#/components/schemas/Problem'
+  /prices/{id}:
+    get:
+      tags:
+        - Sales
+      description: Get price by id
+      operationId: getPriceById
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+      security: 
+        - oauth2:
+          - 'read:price'
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Price'
+        '401':
+          description: Unauthorized
+          content:
+            application/problem+json: 
+              schema:
+                $ref: '#/components/schemas/Problem'
+        '403':
+          description: Forbidden
+          content:
+            application/problem+json: 
+              schema:
+                $ref: '#/components/schemas/Problem'
+        '404':
+          description: Not found
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Problem'
+        '500':
+          description: Internal Server Error
+          content:
+            application/problem+json: 
+              schema:
+                $ref: '#/components/schemas/Problem'
+components:
+  schemas:
+    CatalogPage:
+      type: object
+      properties:
+        items: 
+          type: array
+          items:
+            $ref: '#/components/schemas/CatalogPageItem'
+    CatalogPageItem:
+      type: object    
+      properties: 
+        id:
+          type: string
+          description: unique identifier for the catalog.
+        url:
+          type: string
+          description: unique identifier for the catalog.
+        tenant_name: 
+          type: string
+          description: tenant to which catalog belongs.
+          example: finelab
+        business_unit_name: 
+          type: string
+          description: business unit to which catalog belongs.
+          example: private_customers
+        content_language:
+          type: string
+          description: language in which displayed text is presented.
+          example: da_DK
+        currency:
+          type: string
+          description: currency in which price amount is presented.
+          example: DKK
+        name: 
+          type: string
+          description: unique name for the catalog.
+          example: private_insurance
+        display_name:
+          type: string
+          description: displayed name.
+          example: Privatforsikring
+        revision:
+          type: integer
+          description: revision of the catalog.
+          example: 1
+        published_at:
+          type: string
+          format: date-time
+          description: date and time at which the catalog is pusblished.
+          example: 2022-05-07T09:12:28Z
+        valid_from: 
+          type: string
+          format: date-time
+          description: date and time from which the catalog is valid.
+          example: 2022-05-07T09:12:28Z
+        valid_to:
+          type: string
+          format: date-time
+          description: date and time to which the catalog is valid.
+          example: 2022-05-07T09:12:28Z
+        expired_at:
+          type: string
+          format: date-time
+          description: date and time at which the catalog is expired and can be removed.
+    Catalog:
+      type: object    
+      properties: 
+        id:
+          type: string
+          description: unique identifier for the catalog.
+        url:
+          type: string
+          description: unique identifier for the catalog.
+        tenant_name: 
+          type: string
+          description: tenant to which catalog belongs.
+          example: finelab
+        business_unit_name: 
+          type: string
+          description: business unit to which catalog belongs.
+          example: private_customers
+        content_language:
+          type: string
+          description: language in which displayed text is presented.
+          example: da_DK
+        currency:
+          type: string
+          description: currency in which price amount is presented.
+          example: DKK
+        name: 
+          type: string
+          description: unique name for the catalog.
+          example: private_insurance
+        display_name:
+          type: string
+          description: displayed name.
+          example: Privatforsikring
+        products:
+          $ref: '#/components/schemas/ProductPage'
+        revision:
+          type: integer
+          description: revision of the catalog.
+          example: 1
+        published_at:
+          type: string
+          format: date-time
+          description: date and time at which the catalog is pusblished.
+          example: 2022-05-07T09:12:28Z
+        valid_from: 
+          type: string
+          format: date-time
+          description: date and time from which the catalog is valid.
+          example: 2022-05-07T09:12:28Z
+        valid_to:
+          type: string
+          format: date-time
+          description: date and time to which the catalog is valid.
+          example: 2022-05-07T09:12:28Z
+        expired_at:
+          type: string
+          format: date-time
+          description: date and time at which the catalog is expired and can be removed.
+    ProductPage:
+      type: object
+      properties:
+        items: 
+          type: array
+          items:
+            $ref: '#/components/schemas/ProductPageItem'
+    ProductPageItem:
+      type: object    
+      properties: 
+        id:
+          type: string
+        url:
+          type: string
+          description: unique identifier for the product.
+        catalog_url:
+          type: string
+          description: tenant to which catalog belongs.
+        number: 
+          type: string
+          description: unique number in catalog for the product.
+          example: '7000'
+        name: 
+          type: string
+          description: unique name in catalog for the product.
+          example: car_insurance
+        display_name:
+          type: string
+          description: displayed name.
+          example: Bilforsikring
+        revision:
+          type: integer
+          description: revision of the product.
+          example: 1
+        published_at:
+          type: string
+          format: date-time
+          description: date and time at which the product is pusblished.
+        expired_at:
+          type: string
+          format: date-time
+          description: date and time at which the product is expired and can be removed.
+    Product:
+      type: object    
+      properties: 
+        id:
+          type: string
+        url:
+          type: string
+          description: unique identifier for the product.
+        catalog_url:
+          type: string
+          description: tenant to which catalog belongs.
+        number: 
+          type: string
+          description: unique number in catalog for the product.
+          example: '7000'
+        name: 
+          type: string
+          description: unique name in catalog for the product.
+          example: car_insurance
+        display_name:
+          type: string
+          description: displayed name.
+          example: Bilforsikring
+        quote_criteria:
+          type: array
+          items:
+            $ref: '#/components/schemas/Criterion'
+        prices:
+          $ref: '#/components/schemas/PricePage'
+        revision:
+          type: integer
+          description: revision of the product.
+          example: 1
+        published_at:
+          type: string
+          format: date-time
+          description: date and time at which the product is pusblished.
+        expired_at:
+          type: string
+          format: date-time
+          description: date and time at which the product is expired and can be removed.
+    Criterion:
+      type: object
+      properties:
+        name:
+          type: string
+        display_name:
+          type: string
+        value:
+          type: string
+        type:
+          type: string
+          enum:
+            - BOOLEAN
+            - INTEGER
+            - DECIMAL
+            - DATE
+            - STRING
+            - EMAIL
+        allow_values:
+          type: array
+          items:
+            $ref: '#/components/schemas/CriterionAllowValue'
+        allow_mulitiselect:
+          type: boolean
+        allow_limit:
+          type: object
+          properties:
+            min_value:
+              type: string
+            min_inclusive:
+              type: boolean
+            max_value:
+              type: string
+            max_inclusive:
+              type: string
+    CriterionAllowValue:
+      type: object
+      properties:
+        key:
+          type: string
+        display_value:
+          type: string
+        selected:
+          type: boolean        
+    PricePage:
+      type: object
+      properties:
+        items: 
+          type: array
+          items:
+            $ref: '#/components/schemas/PricePageItem'
+    PricePageItem:
+      type: object
+      properties:
+        id:
+          type: string
+          description: unique identifier for the price.
+        url:
+          type: string
+          description: unique identifier for the price.
+        product_id:
+          type: string
+          description: unique identifier for the product to which the price belongs.
+          example: urn:finelab:price:private_customers:private_insurance:da_DK:7000
+        amount:
+          type: number
+          description: unique identifier for the product to which the price belongs.
+          example: 100.00
+        charged:
+          type: string
+          description: how often is the amount charged eg per_month, per_year ...
+          example: per_month
+        match_criteria: 
+          type: array
+          items:
+            $ref: '#/components/schemas/MatchCriterion'
+          description: the criteria to be matched to get the price quote.
+        display_name:
+          type: string
+          description: displayed name.
+        revision:
+          type: integer
+          description: revision of the catalog.
+        published_at:
+          type: string
+          format: datetime
+          description: date and time at which the catalog is pusblished.
+        valid_from: 
+          type: string
+          format: datetime
+          description: date and time from which the catalog is valid.
+        valid_to:
+          type: string
+          format: datetime
+          description: date and time to which the catalog is valid.
+        expired_at:
+          type: string
+          format: datetime
+          description: date and time at which the catalog is expired and can be removed.
+    Price:
+      type: object
+      properties:
+        id:
+          type: string
+          description: unique identifier for the price.
+        url:
+          type: string
+          description: unique identifier for the price.
+        product_url:
+          type: string
+          description: unique identifier for the product to which the price belongs.
+        amount:
+          type: number
+          description: unique identifier for the product to which the price belongs.
+          example: 100.00
+        charged:
+          type: string
+          description: how often is the amount charged eg per_month, per_year ...
+          example: per_month
+        match_criteria: 
+          type: array
+          items:
+            $ref: '#/components/schemas/MatchCriterion'
+          description: the criteria to be matched to get the price quote.
+        display_name:
+          type: string
+          description: displayed name.
+        revision:
+          type: integer
+          description: revision of the catalog.
+        published_at:
+          type: string
+          format: datetime
+          description: date and time at which the catalog is pusblished.
+        valid_from: 
+          type: string
+          format: datetime
+          description: date and time from which the catalog is valid.
+        valid_to:
+          type: string
+          format: datetime
+          description: date and time to which the catalog is valid.
+        expired_at:
+          type: string
+          format: datetime
+          description: date and time at which the catalog is expired and can be removed.
+    MatchCriterion:
+      type: object
+      properties:
+        name:
+          type: string
+          description: the parameter name (key) for the criterion
+        value:
+          type: string
+          description: the value to match for the criterion
+    Problem:
+      type: object
+      properties:
+        type:
+          type: string
+          description: URI that identifies the problem type.
+        title:
+          type: string
+          description: A short, summary of the problem type.
+        status:
+          type: integer
+          description: The HTTP status code 
+        detail:
+          type: string
+          description: An explanation specific to the problem.
+        instance:
+          type: string
+          description: An URI that identifies the occurrence of the problem.
+  securitySchemes:
+    openid-connect:
+        type: openIdConnect
+        openIdConnectUrl: https://finelab-test.eu.auth0.com/.well-known/openid-configuration
+    oauth2:
+      type: oauth2
+      flows:
+        clientCredentials:
+          tokenUrl: https://finelab-test.eu.auth0.com/oauth/token
+          scopes: 
+            'read:catalog': Allows to read catalog 
+            'read:product': Allows to read product 
+            'read:price': Allows to read price 
+security: 
+  - oauth2:
+    - 'read:catalog'
+    - 'read:product'
+    - 'read:price'    

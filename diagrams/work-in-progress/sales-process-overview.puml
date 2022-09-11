@@ -1,0 +1,178 @@
+@startuml
+  !include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Component.puml
+  !include <cloudinsight/kafka>
+  !include <cloudinsight/edit>
+  !include <cloudinsight/desktop>
+  !define SPRITESURL https://raw.githubusercontent.com/plantuml-stdlib/gilbarbara-plantuml-sprites/master/sprites
+  !includeurl SPRITESURL/spring-icon.puml
+  !includeurl https://raw.githubusercontent.com/plantuml-stdlib/EIP-PlantUML/main/dist/EIP-PlantUML.puml
+  !includeurl https://raw.githubusercontent.com/plantuml/plantuml-stdlib/master/tupadr3/font-awesome-5/sms.puml
+  !includeurl https://raw.githubusercontent.com/plantuml/plantuml-stdlib/master/material/email.puml
+
+
+  title Financial subscription product: Configure, Price, Quote, Order to Agreement
+  
+  !theme cerulean-outline
+
+
+  skinparam defaultTextAlignment center
+  skinparam ArrowColor #lightGray
+  skinparam BackgroundColor #white
+
+  actor "The Customer is searching for products, placing orders, signing contracts and activating subscriptions" as Customer
+
+  rectangle "Sales Product Service" as SalesProductService {
+
+    card "<$spring-icon*0.75,color=green>\nProduct Catalog Service" as ProductCatalogService 
+    card "<$spring-icon*0.75,color=green>\nProduct Price Service" as ProductPriceService
+
+    database "<$kafka*0.75>\nproduct.catalog"   as ProductCatalogTopic 
+    database "<$kafka*0.75>\nproduct.information"   as ProductCatalogTopic 
+    database "<$kafka*0.75>\nproduct.price"     as ProductPriceTopic 
+
+    ProductCatalogService -u->  ProductCatalogTopic  : (a) emit\nCatalogEvent
+    ProductPriceService   -u->  ProductPriceTopic    : (b) emit\nPriceEvent
+
+  } 
+
+  rectangle "Sales Order Service" as SalesOrderService {
+    card "<$spring-icon*0.75,color=green>\nOrder Service" as OrderService
+    card "<$spring-icon*0.75,color=green>\nPrint Service" as PrintService
+    card "<$spring-icon*0.75,color=green>\nSigning Service" as SigningService
+    database "<$kafka*0.75>\nsales.order.placed"   as SalesOrderPlacedTopic 
+    database "<$kafka*0.75>\nsales.order.assessed"   as SalesOrderAssessedTopic 
+    database "<$kafka*0.75>\nsales.order.printed"   as SalesOrderPrintedTopic 
+    database "<$kafka*0.75>\nsales.order.processed"   as SalesOrderProcessedTopic 
+
+  }  
+
+  rectangle "Customer Service" as CustomerService {
+    card "<$spring-icon*0.75,color=green>\nAgreement Service" as CustomerAgreementService
+    card "<$spring-icon*0.75,color=green>\nCase Service" as CustomerCaseService
+    card "<$spring-icon*0.75,color=green>\nDocument Service" as CustomerDocumentService
+    card "<$spring-icon*0.75,color=green>\nEmail Service" as CustomerEmailService
+    card "<$spring-icon*0.75,color=green>\nSms Service" as CustomerSmsService
+    card "<$sms*0.75,color=green>\nSms Gateway" as CustomerSmsGateway
+    card "<$ma_email*0.75,color=green>\nEmail Gateway" as CustomerEmailGateway
+    
+    database "<$kafka*0.75>\ncustomer.agreement"   as CustomerAgreementTopic 
+    database "<$kafka*0.75>\ncustomer.case"   as CustomerCaseTopic 
+    database "<$kafka*0.75>\ncustomer.document"   as CustomerDocumentTopic 
+    CustomerAgreementService -u-> CustomerAgreementTopic : emit\nCustomerAgreementEvent
+    CustomerAgreementService -.> SalesOrderProcessedTopic : consume\nSalesOrderProcessedEvent (Created)
+    CustomerCaseService -u-> CustomerCaseTopic : emit\nCustomerCaseEvent
+    CustomerDocumentService -u-> CustomerDocumentTopic : emit\nCustomerDocumentEvent
+    CustomerEmailService -u-> CustomerEmailGateway : send Email
+    CustomerSmsService -u-> CustomerSmsGateway : send Sms
+
+    database "<$kafka*0.75>\ncustomer.case.recipient"   as CustomerCaseRecipientTopic 
+    database "<$kafka*0.75>\ncustomer.document.recipient"   as CustomerDocumentRecipientTopic 
+    database "<$kafka*0.75>\ncustomer.email.recipient"   as CustomerEmailRecipientTopic 
+    database "<$kafka*0.75>\ncustomer.sms.recipient"   as CustomerSmsRecipientTopic 
+
+    CustomerCaseRecipientTopic -u-> CustomerCaseService : consume\nOrderPlacedEvent\nOrderAssessedEvent\nOrderPrintedEvent\nOrderProcessedEvent\nand others
+    CustomerDocumentRecipientTopic -u-> CustomerDocumentService : consume\nOrderPlacedEvent\nOrderAssessedEvent\nOrderPrintedEvent\nOrderProcessedEvent\nand other
+    CustomerEmailRecipientTopic -u-> CustomerEmailService : consume\nOrderPlacedEvent\nOrderAssessedEvent\nOrderPrintedEvent\nOrderProcessedEvent\nand other
+    CustomerSmsRecipientTopic -u-> CustomerSmsService : consume\nOrderPlacedEvent\nOrderAssessedEvent\nOrderPrintedEvent\nOrderProcessedEvent\nand other
+
+
+  }  
+
+  rectangle "Partner Signing Process" {
+    card "<$desktop*0.75>\nPartner Signing UX" as PartnerSigningUX 
+    card "<$edit*0.75>\nPartner Signing API" as PartnerSigningAPI 
+
+    PartnerSigningUX --> PartnerSigningAPI
+
+  }
+
+  rectangle "Sales Process" {
+
+    card "<$desktop*0.75>\nSales UX" as SalesUX 
+    card "<$spring-icon*0.75,color=green>\nCatalog API" as CatalogAPI 
+    card "<$spring-icon*0.75,color=green>\nQuote API" as QuoteAPI
+    card "<$spring-icon*0.75,color=green>\nOrder API" as OrderAPI 
+    card "<$spring-icon*0.75,color=green>\nSigning API" as SigningAPI 
+
+    SalesUX -l-> CatalogAPI : (s1) getCatalog\n(s2) getProduct 
+    CatalogAPI -d-> ProductCatalogTopic : (s3) consume\nProductCatalogEvent
+    
+    SalesUX --> QuoteAPI : (s4) getQuoteByCriteria
+    QuoteAPI -d-> ProductPriceTopic : (s5) consume\nProductPriceEvent
+
+    SalesUX --> OrderAPI : (s6) placeOrder\n(s10) getOrderStatus
+
+    OrderAPI -d-> SalesOrderPlacedTopic : (s7) emit\nOrderPlacedEvent
+    OrderService -u-> SalesOrderPlacedTopic : (s8) consume\nOrderPlacedEvent
+    OrderService -u-> SalesOrderAssessedTopic : (s9) emit\nOrderAssessedEvent\n(verified or failed)
+    OrderAPI -d-> SalesOrderAssessedTopic : (s11) consume\nOrderAsssesedEvent
+    PrintService -u-> SalesOrderAssessedTopic : (s12) consume\nOrderAsssesedEvent
+    PrintService -u-> SalesOrderPrintedTopic : (s13) emit\nOrderPrintedEvent
+    SigningService -u-> SalesOrderPrintedTopic : (s14) consume\nOrderAsssesedEvent
+    SigningService -u-> PartnerSigningAPI : (s15) create\nsigning request
+    PartnerSigningAPI -> SigningAPI : (s16) send \ncustomer\nsigned contract
+    SigningAPI -d-> SalesOrderProcessedTopic : (s17) emit\n OrderProcessedEvent\n(Created or Canceled)
+    SalesUX -> SigningAPI
+  }
+
+  rectangle "Customer Recipient Service" as CustomerRecipientService {
+
+    RecipientList(RecipientList ,"Recipient List")
+    SelectiveConsumer(SelectiveConsumer, "Selective Consumer")
+
+    database "<$kafka*0.75>\nselective.consumer.strategy"   as SelectiveConsumerStrategyTopic 
+    database "<$kafka*0.75>\nrecpient.list.strategy"   as RecpientListStrategyTopic 
+
+    SelectiveConsumer -d-> SelectiveConsumerStrategyTopic
+    RecipientList -d-> RecpientListStrategyTopic
+    
+    SalesOrderService -> CustomerRecipientService : consume all sales.order.* events and distibute via recipient list strategy
+
+    SelectiveConsumer -> RecipientList  
+    'SalesOrderPlacedTopic ->  SelectiveConsumer
+    'SalesOrderAssessedTopic ->  SelectiveConsumer
+    'SalesOrderPrintedTopic ->  SelectiveConsumer
+    'PartnerSigningAPI ->  SelectiveConsumer
+    'SalesOrderProcessedTopic ->  SelectiveConsumer
+    RecipientList -u->  CustomerCaseRecipientTopic
+    RecipientList -u->  CustomerDocumentRecipientTopic
+    RecipientList -u->  CustomerEmailRecipientTopic
+    RecipientList -u->  CustomerSmsRecipientTopic
+
+
+  }
+
+
+  rectangle "Customer Process" {
+
+    card "<$desktop*0.75>\nCustomer UX" as CustomerUX 
+    card "<$spring-icon*0.75,color=green>\nCustomer API" as CustomerAPI
+    card "<$spring-icon*0.75,color=green>\nAccount API" as AccountAPI
+    card "<$spring-icon*0.75,color=green>\nCase API" as CaseAPI
+    card "<$spring-icon*0.75,color=green>\nAgreement API" as AgreementAPI
+    card "<$spring-icon*0.75,color=green>\nPolicy API" as PolicyAPI
+    card "<$spring-icon*0.75,color=green>\nTransaction API" as TransactionAPI
+    card "<$spring-icon*0.75,color=green>\nInvoice API" as InvoiceAPI
+    card "<$spring-icon*0.75,color=green>\nDocument API" as DocumentAPI 
+
+    CustomerUX --> CustomerAPI : (c1) getDetails\n
+    CustomerUX --> AccountAPI : (c2) getAccounts\n
+    CustomerUX --> CaseAPI : (c6) getCases\n
+    CustomerUX --> AgreementAPI : (c3) getAggrements\n
+    CustomerUX --> PolicyAPI : (c4) getPolicies\n
+    CustomerUX --> TransactionAPI : (c5) getTransactions\n
+    CustomerUX --> InvoiceAPI : (c5) getInvoices\n
+    CaseAPI -d-> CustomerCaseTopic : (c7) consume\nCustomerCaseEvent
+    CustomerUX --> DocumentAPI : (c8) getDocuments\n
+    DocumentAPI -d-> CustomerDocumentTopic : (c9) consume\nCustomerDocumentEvent
+    AgreementAPI -d-> CustomerAgreementTopic : (c9) consume\nCustomerAgreementEvent
+
+
+  }
+
+
+  Customer --> SalesUX  
+  Customer --> CustomerUX  
+  Customer --> PartnerSigningUX : (14) signing contract
+@endmindmap
+

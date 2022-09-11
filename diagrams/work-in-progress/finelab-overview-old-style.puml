@@ -1,0 +1,62 @@
+@startuml
+
+  actor Customer as CustomerActor
+
+  rectangle "Customer UX" as UX {
+      rectangle SalesX 
+      rectangle CustomerX 
+  }
+
+  CustomerActor --> SalesX
+  CustomerActor --> CustomerX
+
+  rectangle "Catalog API" as Catalog {
+      rectangle Service as CatalogService
+      rectangle Consumer as CatalogConsumer
+  }
+
+  rectangle "Quote API" as Quote {
+      rectangle Service as QuoteService
+  }
+
+  rectangle "Validator API" as Validator {
+      rectangle Service as ValidatorService
+      rectangle Producer as ValidatorProducer
+  }
+
+  rectangle "sales.catalog" as catalogTopic 
+  rectangle "sales.quote" as quoteTopic 
+
+
+
+  SalesX --> CatalogService   : getCatalog\ngetProduct
+  SalesX --> QuoteService     : getQuote
+  SalesX --> ValidatorService : acceptQuote
+
+
+  CatalogConsumer <-- catalogTopic : CatalogCreated\nCatalogUpdated
+
+  
+  ValidatorProducer --> quoteTopic : CatalogEvent
+  ValidatorProducer --> quoteTopic : ProductEvent
+    
+  rectangle PIM {
+      rectangle Producer as PimProducer
+      rectangle Service as PimService
+  }
+
+  QuoteService --> PimService : getPrice  
+  ValidatorService --> PimService : validateQuoteAndCustomer  
+  catalogTopic <-- PimProducer   
+
+  rectangle Comunication {
+      rectangle Consumer as ComunicationConsumer
+      rectangle Producer as ComunicationProducer
+  }
+
+  rectangle "Signature Partner" as Signature {
+      rectangle Consumer as DigitalSignatureConsumer
+      rectangle Producer as DigitalSignatureProducer
+  }
+
+@enduml

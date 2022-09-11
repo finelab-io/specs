@@ -24,7 +24,7 @@
   skinparam componentStyle rectangle
   rectangle "Azure Web App\n" as front #Application {
 
-       AzureWebApp(webapp, "customer ux", "Container www.finetech.dk")
+       AzureWebApp(webapp, "customer ux", "Container www.finelab.dk")
   }
 
   rectangle "Identity Provider" as identity #Application {

@@ -1,0 +1,18 @@
+@startuml
+
+  rectangle docker {
+    rectangle "postgres:2181"
+    rectangle "zookeeper:2181"
+    rectangle "broker:9092,9101"
+    rectangle "schema-registry:8081"
+    rectangle "connect:8083"
+    rectangle "control-center:9021"
+    rectangle "ksqldb-server:8088"
+    rectangle "ksqldb-cli"
+    rectangle "ksql-datagen"
+    rectangle "rest-proxy"
+
+
+  }
+
+@enduml

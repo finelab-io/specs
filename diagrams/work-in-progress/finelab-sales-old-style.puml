@@ -1,0 +1,138 @@
+@startuml
+  !include <cloudinsight/kafka>
+
+  actor Customer
+
+  rectangle "External Services" as ExternalServices {
+
+    rectangle "Sector Service" as SectorServices {
+      card "Sector Customer API" as SectorCustomerAPI  
+      database "<$kafka*0.4> sector.customer" as SectorCustomerTopic 
+
+      SectorCustomerAPI -u-> SectorCustomerTopic
+    }
+
+    rectangle "Goverment Service" as GovermentServices{
+      card "Person API" as PersonAPI
+      card "Organization API" as OrganizationAPI
+      card "Car API" as CarAPI
+      card "Address API" as AddressAPI
+
+      database "<$kafka*0.4> goverment.person" as PersonTopic 
+      database "<$kafka*0.4> goverment.organization" as OrganizationTopic 
+      database "<$kafka*0.4> goverment.vehicle" as VehicleTopic 
+      database "<$kafka*0.4> goverment.address" as AddressTopic 
+
+       PersonAPI -u-> PersonTopic : produces\nperson info
+       OrganizationAPI -u-> OrganizationTopic : produces\nOrganizationEvent
+       CarAPI -u-> VehicleTopic : produces\nVehicleEvent
+       AddressAPI -u-> AddressTopic : produces\nAddressEvent
+
+    }
+  } 
+
+
+  rectangle "Back Office Services" as BackOfficeServices {
+
+    rectangle "Product Information Service" as Pim {
+
+      card "Product Catalog API" as ProductCatalogAPI 
+      card "Product Information API" as ProductInformationAPI 
+      card "Product Price API" as ProductPriceAPI
+
+      database "<$kafka*0.4>product.catalog" as ProductCatalogTopic 
+      database "<$kafka*0.4>product.information" as ProductInformationTopic 
+      database "<$kafka*0.4>product.price" as ProductPriceTopic 
+
+      ProductCatalogAPI -u->  ProductCatalogTopic  : (c) emit\nProductCatalogEvent
+      ProductInformationAPI -u->  ProductInformationTopic  : (a) emit\nProductInformationEvent
+      ProductPriceAPI -u->  ProductPriceTopic  : (a) emit\nProductPriceEvent
+
+    } 
+
+    rectangle "Communcation Service" {
+      card "Email API" as EmailAPI 
+      database "<$kafka*0.4>communication.email" as CommunicationEmailTopic 
+      'card "Email Sender" as EmailSender 
+      EmailAPI -u-> CommunicationEmailTopic
+      'EmailAPI -d-> EmailSender : send order email
+    }
+
+    rectangle "Business Service" as BusinessService{
+      card "Business Customer API" as BusinessCustomerAPI
+      card "Business Agreement API" as BusinessAgreementAPI
+      card "Business Order API" as BusinessOrderAPI
+      database "<$kafka*0.4> business.customer" as BusinessCustomerTopic 
+      database "<$kafka*0.4> business.agreement" as BusinessAgreementTopic 
+      database "<$kafka*0.4> business.order" as BusinessOrderTopic 
+
+      BusinessCustomerAPI -u-> BusinessCustomerTopic
+      BusinessAgreementAPI -u-> BusinessAgreementTopic
+      BusinessOrderAPI -u-> BusinessOrderTopic : consume\n OrderPlacedEvent
+      BusinessOrderAPI -> BusinessCustomerAPI : screen\n business customer\n information 
+      BusinessOrderAPI -u-> SectorCustomerAPI : screen\n sector customer\n information
+      BusinessOrderAPI -> BusinessOrderTopic : emit\nOrderCreatedEvent &\n OrderEmailEvent
+      BusinessOrderAPI -> CommunicationEmailTopic : emit\nOrderRejectedEvent &\n OrderRejectedEmailEvent
+
+      BusinessCustomerAPI -d-> PersonTopic  : consumes\n PersonEvent
+      BusinessCustomerAPI -d-> OrganizationTopic : consumes\n OrgnizationEvent
+      BusinessAgreementAPI -d-> VehicleTopic : consumes\n VehicleEvent
+      BusinessAgreementAPI -d-> AddressTopic : consumes\n VehicleEvent
+      BusinessCustomerAPI -d-> AddressTopic : consumes\n VehicleEvent
+
+    }
+
+  }
+
+  rectangle Processes {
+
+    rectangle "Sales Process" {
+
+      card "Sales UX" as SalesUX 
+      card "Catalog API" as CatalogAPI 
+      card "Quote API" as QuoteAPI
+      card "Order API" as OrderAPI 
+
+
+      SalesUX --> CatalogAPI : (1) getCatalog\ngetProduct 
+      SalesUX --> QuoteAPI : (2) getQuoteByCriteria
+      SalesUX --> OrderAPI : (3) placeOrder
+
+      QuoteAPI -d-> ProductPriceTopic : (d) consume\nProductPriceEvent
+
+      CatalogAPI -d-> ProductCatalogTopic : (b) consume\nProductCatalogEvent
+      CatalogAPI -d-> ProductInformationTopic : (b) consume\nProductCatalogEvent
+
+      OrderAPI -d-> BusinessOrderTopic : (5) emit OrderPlacedEvent
+
+    }
+
+    rectangle "Signig Process" {
+      card "Signing UX" as SigningUX 
+      card "Signing API" as SigningAPI 
+      SigningUX --> SigningAPI 
+      SigningAPI --> BusinessOrderTopic : (6) consume\n OrderCreatedEvent
+    }
+   
+    rectangle "Customer Process" {
+
+      card "Customer UX" as CustomerUX 
+      card "Customer API" as CustomerAPI 
+      card "Agreement API" as AgreementAPI 
+      card "Document API" as DocumentAPI 
+      card "Case API" as CaseAPI 
+
+      CustomerUX --> CustomerAPI 
+      CustomerUX --> AgreementAPI 
+      CustomerUX --> DocumentAPI 
+      CustomerUX --> CaseAPI 
+
+    }
+
+  }
+
+  Customer --> SalesUX : searching and\nbuying product
+  Customer --> SigningUX : signing comtacts
+  Customer --> CustomerUX : manage agreements and payments
+
+@endmindmap

@@ -1,0 +1,83 @@
+@startmindmap
+* Finetech
+** Customer UX
+*** Sales UX
+*** Customer UX
+** Sales
+*** Catalog API
+**** getCatalog
+***** Catalog
+**** getProduct
+***** Product
+***** QuoteCriteria
+**** consumes
+***** CatalogEvent
+***** ProductEvent
+*** Quote API
+**** getQuoteByCriteria
+***** Quote
+***** Price
+***** Condition
+**** consumes
+***** PriceEvent
+*** Order API
+**** createOrder
+***** Quote
+***** Person
+***** Organization
+**** produces
+***** OrderEvent
+****** OrderCreated
+****** OrderRejected
+****** UnsignedContractCreated
+** Signing
+*** Signing UX 
+*** Signing API
+**** startContractSigning
+**** signContractWithSignature
+**** consumes
+***** UnsignedContractCreated
+**** produces
+***** SigningEvent
+****** ContractSigningStarted 
+****** ContractSigningExpired 
+****** ContractSigned 
+** Customer
+***  Customer API
+**** getCustomer
+**** consumes
+***** OrderCreated
+*** Agreement API
+**** getAgreement
+**** consumes
+***** ContractSigned 
+*** Document API
+**** getDocument
+**** consumes
+***** ContractSigned
+*** Case API
+**** getCase
+**** consumes
+***** OrderEvent
+***** SigningEvent
+**** produces
+***** CaseEvent 
+** Communication
+*** Email API
+**** getEmail
+**** consumes
+*****  CaseEvent 
+** Product Management
+*** produces
+**** CatalogEvent
+***** CatalogCreated
+***** CatalogUpdated
+***** CatalogDeleted
+***** ProductCreated
+***** ProductUpdated
+***** ProductDeleted
+**** PriceEvent
+***** PriceCreated
+***** PriceUpdated
+***** PriceDeleted
+@endmindmap
