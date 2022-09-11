@@ -6,23 +6,21 @@
     <modelVersion>4.0.0</modelVersion>
 
 	<!-- parent pom -->
-    <groupId>dk.finetech</groupId>
-    <artifactId>finetech-modules</artifactId>
+    <groupId>dk.finelab</groupId>
+    <artifactId>models</artifactId>
     <packaging>pom</packaging>
 	<version>1.0</version>
 
 	<!-- sub modules -->
 	<modules>
-        <module>product-service-async-client-lib</module>
-        <module>product-service-provider-app</module>
-        <module>product-service-provider-lib</module>
+        <module>product-service-model</module>
     </modules>
 	
     <distributionManagement>
         <repository>
           <id>github</id>
-          <name>GitHub finetech-dk Apache Maven Packages</name>
-          <url>https://maven.pkg.github.com/finetech-dk/spec</url>
+          <name>GitHub finelab-io Apache Maven Packages</name>
+          <url>https://maven.pkg.github.com/finelab-io/specs</url>
         </repository>
      </distributionManagement>
 

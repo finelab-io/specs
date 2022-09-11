@@ -10,16 +10,4 @@ spring:
           destination: sales.product.information
         handleSalesProductPrice-out-0:
           destination: sales.product.price
-logging:
-  level:
-    root: info
-    org:
-      springframework: info
-server:
-  port: 8080
-management:
-  endpoints:
-    web:
-      exposure:
-        include: '*'
 
