@@ -1,0 +1,899 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="1952px" preserveAspectRatio="none" style="width:1946px;height:1952px;background:#FFFFFF;" version="1.1" viewBox="0 0 1946 1952" width="1946px" zoomAndPan="magnify"><defs><filter height="1" id="b1u50bgbbk4f5d0" width="1" x="0" y="0"><feFlood flood-color="#66FCF1" result="flood"/><feComposite in="SourceGraphic" in2="flood" operator="over"/></filter></defs><g><!--MD5=[8957ef4f8844c293485e93fa0e8209f4]
+cluster FinetechSales--><g id="cluster_FinetechSales"><rect height="665" rx="7.5" ry="7.5" style="stroke:#1F2833;stroke-width:1.0;fill:none;stroke-dasharray:7.0,7.0;" width="768" x="329.5" y="380"/><text fill="#0B0C10" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="209" x="609" y="401.8516">FineTech Sales Process</text></g><!--MD5=[7619058e7fc88c9be97349e5b3cf581c]
+cluster DigitalSignatureProvider--><g id="cluster_DigitalSignatureProvider"><rect height="559" rx="7.5" ry="7.5" style="stroke:#1F2833;stroke-width:1.0;fill:none;stroke-dasharray:7.0,7.0;" width="595" x="1345" y="7"/><text fill="#0B0C10" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="223" x="1531" y="28.8516">Digital Signature Process</text></g><!--MD5=[da2e10f853b3016dba56db8d6d3cecb1]
+cluster finetechCustomer--><g id="cluster_finetechCustomer"><rect height="877" rx="7.5" ry="7.5" style="stroke:#1F2833;stroke-width:1.0;fill:none;stroke-dasharray:7.0,7.0;" width="1096" x="7" y="1069"/><text fill="#0B0C10" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="250" x="430" y="1090.8516">FineTech Customer Process</text></g><!--MD5=[8770e429356369015f617b1b9a294f7b]
+entity CatalogService--><g id="elem_CatalogService"><rect fill="none" height="94.2969" rx="2.5" ry="2.5" style="stroke:none;stroke-width:0.5;" width="140" x="934.5" y="487"/><image height="48" width="48" x="980.5" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAIAAADYYG7QAAAAyklEQVR4Xu2XMQ4CMQwE8xNaKhoKat5BR3kVHf8FPnB84HBjyXa0cnVOkHa0VZTTjqJrtm2T0eLBaCiUQaEMCmVEoXX9Lo/n4XguyO2+vN6fIOCExOZ0ufZf7hepk1Lr4ITK3sZGSq2DE+pv18Q6QCF7vgeoi0IK6qKQgroopKAuCimoi0IK6qKQgroopKAuCimoi0IK6vofobLIErIOTmi6GSQ7sn4ohvHqhLbaKS1FYbYKrb83NhTKMp9Q+KeGQ6EMCmVQKGM6oR8itHISRmmBkwAAAABJRU5ErkJggg==" y="502"/><text fill="#0B0C10" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="106" x="953.5" y="562.9951">Catalog Service</text></g><!--MD5=[912d419da5394734b79c6594a9dddff6]
+entity QuoteService--><g id="elem_QuoteService"><rect fill="none" height="94.2969" rx="2.5" ry="2.5" style="stroke:none;stroke-width:0.5;" width="131" x="939" y="657"/><image height="48" width="48" x="980.5" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAIAAADYYG7QAAAAyklEQVR4Xu2XMQ4CMQwE8xNaKhoKat5BR3kVHf8FPnB84HBjyXa0cnVOkHa0VZTTjqJrtm2T0eLBaCiUQaEMCmVEoXX9Lo/n4XguyO2+vN6fIOCExOZ0ufZf7hepk1Lr4ITK3sZGSq2DE+pv18Q6QCF7vgeoi0IK6qKQgroopKAuCimoi0IK6qKQgroopKAuCimoi0IK6vofobLIErIOTmi6GSQ7sn4ohvHqhLbaKS1FYbYKrb83NhTKMp9Q+KeGQ6EMCmVQKGM6oR8itHISRmmBkwAAAABJRU5ErkJggg==" y="672"/><text fill="#0B0C10" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="97" x="958" y="732.9951">Quote Service</text></g><!--MD5=[f66738942976da58c8b8c238405d77fd]
+entity ValidationService--><g id="elem_ValidationService"><rect fill="none" height="94.2969" rx="2.5" ry="2.5" style="stroke:none;stroke-width:0.5;" width="154" x="927.5" y="905"/><image height="48" width="48" x="980.5" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAIAAADYYG7QAAAAyklEQVR4Xu2XMQ4CMQwE8xNaKhoKat5BR3kVHf8FPnB84HBjyXa0cnVOkHa0VZTTjqJrtm2T0eLBaCiUQaEMCmVEoXX9Lo/n4XguyO2+vN6fIOCExOZ0ufZf7hepk1Lr4ITK3sZGSq2DE+pv18Q6QCF7vgeoi0IK6qKQgroopKAuCimoi0IK6qKQgroopKAuCimoi0IK6vofobLIErIOTmi6GSQ7sn4ohvHqhLbaKS1FYbYKrb83NhTKMp9Q+KeGQ6EMCmVQKGM6oR8itHISRmmBkwAAAABJRU5ErkJggg==" y="920"/><text fill="#0B0C10" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="120" x="946.5" y="980.9951">Validation Service</text></g><!--MD5=[1bce2b114eb68d5d1f7f1f1638a7fcb2]
+entity Conversation1--><g id="elem_Conversation1"><rect fill="none" height="70.6969" rx="2.5" ry="2.5" style="stroke:none;stroke-width:0.5;" width="148" x="418" y="427.5"/><image height="38" width="38" x="472.8" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACYAAAAmCAIAAAAnX375AAABFklEQVR4XmP4T3fAgC5AezDQVj55+jwlq8ja2ZeKyNk7ZOWajb9//4bbgrASaJ+WsZ28hjHVkYquxdyFy37//oNuJdB/mKqphWxc/F6+eo1uJTAQINLlNc2r122mFoLb+vjJM5xWAtXBBSkHo1aOWkkBGLVy1EoKwKiVo1ZSAEatRLPy16/fx0+dWY3RsCAVkWDlitUb4CKUIwLNLaCVS1aspWIDE2ejEm5lZHyGtrGdopapkZWLtbMPhQhf0xktGEOiUy5evgqXpSLAbiXQozdu3kFSRk2AxUqgfQ8fP0VSQ2WAYiUw/kKik2/cuo2kgPoAxUraxR8yQFhZWtV44yZt/QcBCCs/ff6CJE5DgLCSbmAArAQA+h+IrtJgOR4AAAAASUVORK5CYII=" y="435.5"/><text fill="#0B0C10" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="110" x="441" y="486.8951">Product Catalog</text></g><!--MD5=[a1c7086df168c39a8b87d96f5d296ff4]
+entity Document2--><g id="elem_Document2"><rect fill="none" height="70.6969" rx="2.5" ry="2.5" style="stroke:none;stroke-width:0.5;" width="100" x="442" y="533.5"/><image height="38" width="38" x="472.8" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACYAAAAmCAIAAAAnX375AAABoklEQVR4XmP4T3fAgC5AezBorHz56lVmQbm1sy8xqLSq6dPnz+hG4AZYrHzy9KmZnbu8hjHxqKC09tPnL+gG4QBYrJwyc56aniWmuZhIRdfC3MELws4vrXn85Bm6WdgAFivLa5oVNE0wLcBEpnYeq9dvBoYtxPqCslpibMViZXFlA6bpWBHQsl+/fm/YvE3H1B5iK9CvBOOVUishWtYDbTUB2SpPRLxSx0og2LB5OySE5QnFK9WsBIbw+k3biIlXqlkJBL9+ExWv1LQSAoB+RY5XdGlaWPkfNV7R5Si0UsvIFqgYE+WV1NDKSmIQuumjVlIJoZuO38rM/DJgdiYDnT57gUwrgQx0OeIA0NahY6W9WwBmniMGAWOETCupgtBNH3RWkhSwmJaRY2UxKckH07IhYiVJRQGmZeRYSRWEbvoItrKyrpXI1jpBpG5ghW46Viv3HTyiZ+aIqZ9UpKxj1tk7Gd10rFb++PFzyYo1Hv4RmKYQjwwtnRtau1++eo1uOlYrgeDPnz+v37zFzAnEo2fPX3799h3dXDDAbiVNwQBYCQBaBsg0YipLZAAAAABJRU5ErkJggg==" y="541.5"/><text fill="#0B0C10" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="62" x="465" y="592.8951">Products</text></g><!--MD5=[b7408202d901ef56a8695b28619b5f56]
+entity Conversation3--><g id="elem_Conversation3"><rect fill="none" height="70.6969" rx="2.5" ry="2.5" style="stroke:none;stroke-width:0.5;" width="293" x="345.5" y="639.5"/><image height="38" width="38" x="472.8" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACYAAAAmCAIAAAAnX375AAABFklEQVR4XmP4T3fAgC5AezDQVj55+jwlq8ja2ZeKyNk7ZOWajb9//4bbgrASaJ+WsZ28hjHVkYquxdyFy37//oNuJdB/mKqphWxc/F6+eo1uJTAQINLlNc2r122mFoLb+vjJM5xWAtXBBSkHo1aOWkkBGLVy1EoKwKiVo1ZSAEatRLPy16/fx0+dWY3RsCAVkWDlitUb4CKUIwLNLaCVS1aspWIDE2ejEm5lZHyGtrGdopapkZWLtbMPhQhf0xktGEOiUy5evgqXpSLAbiXQozdu3kFSRk2AxUqgfQ8fP0VSQ2WAYiUw/kKik2/cuo2kgPoAxUraxR8yQFhZWtV44yZt/QcBCCs/ff6CJE5DgLCSbmAArAQA+h+IrtJgOR4AAAAASUVORK5CYII=" y="647.5"/><text fill="#0B0C10" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="255" x="368.5" y="698.8951">quotes on products matching criteria</text></g><!--MD5=[8378d0984bf11472a7f13f70ed6f6ebd]
+entity Document4--><g id="elem_Document4"><rect fill="none" height="70.6969" rx="2.5" ry="2.5" style="stroke:none;stroke-width:0.5;" width="155" x="414.5" y="745.5"/><image height="38" width="38" x="472.8" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACYAAAAmCAIAAAAnX375AAABoklEQVR4XmP4T3fAgC5AezBorHz56lVmQbm1sy8xqLSq6dPnz+hG4AZYrHzy9KmZnbu8hjHxqKC09tPnL+gG4QBYrJwyc56aniWmuZhIRdfC3MELws4vrXn85Bm6WdgAFivLa5oVNE0wLcBEpnYeq9dvBoYtxPqCslpibMViZXFlA6bpWBHQsl+/fm/YvE3H1B5iK9CvBOOVUishWtYDbTUB2SpPRLxSx0og2LB5OySE5QnFK9WsBIbw+k3biIlXqlkJBL9+ExWv1LQSAoB+RY5XdGlaWPkfNV7R5Si0UsvIFqgYE+WV1NDKSmIQuumjVlIJoZuO38rM/DJgdiYDnT57gUwrgQx0OeIA0NahY6W9WwBmniMGAWOETCupgtBNH3RWkhSwmJaRY2UxKckH07IhYiVJRQGmZeRYSRWEbvoItrKyrpXI1jpBpG5ghW46Viv3HTyiZ+aIqZ9UpKxj1tk7Gd10rFb++PFzyYo1Hv4RmKYQjwwtnRtau1++eo1uOlYrgeDPnz+v37zFzAnEo2fPX3799h3dXDDAbiVNwQBYCQBaBsg0YipLZAAAAABJRU5ErkJggg==" y="753.5"/><text fill="#0B0C10" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="117" x="437.5" y="804.8951">matching quotes</text></g><!--MD5=[0a5226e59fe157c8a9b0b6f24734ce39]
+entity Document5--><g id="elem_Document5"><rect fill="none" height="70.6969" rx="2.5" ry="2.5" style="stroke:none;stroke-width:0.5;" width="277" x="353.5" y="851.5"/><image height="38" width="38" x="472.8" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACYAAAAmCAIAAAAnX375AAABoklEQVR4XmP4T3fAgC5AezBorHz56lVmQbm1sy8xqLSq6dPnz+hG4AZYrHzy9KmZnbu8hjHxqKC09tPnL+gG4QBYrJwyc56aniWmuZhIRdfC3MELws4vrXn85Bm6WdgAFivLa5oVNE0wLcBEpnYeq9dvBoYtxPqCslpibMViZXFlA6bpWBHQsl+/fm/YvE3H1B5iK9CvBOOVUishWtYDbTUB2SpPRLxSx0og2LB5OySE5QnFK9WsBIbw+k3biIlXqlkJBL9+ExWv1LQSAoB+RY5XdGlaWPkfNV7R5Si0UsvIFqgYE+WV1NDKSmIQuumjVlIJoZuO38rM/DJgdiYDnT57gUwrgQx0OeIA0NahY6W9WwBmniMGAWOETCupgtBNH3RWkhSwmJaRY2UxKckH07IhYiVJRQGmZeRYSRWEbvoItrKyrpXI1jpBpG5ghW46Viv3HTyiZ+aIqZ9UpKxj1tk7Gd10rFb++PFzyYo1Hv4RmKYQjwwtnRtau1++eo1uOlYrgeDPnz+v37zFzAnEo2fPX3799h3dXDDAbiVNwQBYCQBaBsg0YipLZAAAAABJRU5ErkJggg==" y="859.5"/><text fill="#0B0C10" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="239" x="376.5" y="910.8951">accepted quote and customer info</text></g><!--MD5=[5b6a330194f8647980bdee4e0a5f3b0b]
+entity Email6--><g id="elem_Email6"><rect fill="none" height="70.6969" rx="2.5" ry="2.5" style="stroke:none;stroke-width:0.5;" width="107" x="438.5" y="957.5"/><image height="38" width="38" x="472.8" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACYAAAAmCAIAAAAnX375AAAFS0lEQVR4Xs1W+1OUZRT2P8HSSgTRYF2Q+8VwQ6hYqkGUcEHkIrAri3GzIkeZTCiLZICB5SYgUDRqyUSiiasxIxLKhGPGJa5L5S432V259cCRd7/9vl3IwS7PvPzAc853nn3f95zznnUL/zrW8Yl/Hv9vyZGR0fqGC2nvHX8jVOYtkbr5Be0O2ZeQnH6mqPRuZxff2zpWkZyfnx8bn2i73RF+IGHjFhebTU7WlthToiqvHhrWzMzM8KOYYyXJR4+mr/yglsXKhQLWlm9AiKq8BufBj8WBVcnpaf3n+cUu3q+utxVRuBccdgSHyj48caqs8lx9w0Ws2i/Pf5pXEJ2gdHD2YaobtzhHxR2+0/kzP+IyrEoq0z54aZsbRXneTrw/Rt7W3vFQq9Pr9XNzc8zNaHw8PjExPKI5U6ja6uJL/s9t3h4gDWvvuMuJZ4IFSewPevQxtujk7v998zW+kyV09/RFHEzCLulbyet7evr6+U5CSdwfzpP2t8HeOUwW13XvF57PCtBqdVnZp2wdPUh1T0Ss8F7NJJGfyBcX7wDaH/Tww0FyfVYFfjQyyM7Jk1RT0rNw+FwHM0nUgyxGQfni5PZK1737Qj2kjCxWQXUZ9NY7H+Xm9Q8M8nz0ekPO6XySdBD7fNt4mWs1k7x1u4P8NtiLefdnNBqvXlO7+QWSA3fhFvIKSiYmp7j+OJ6QsMj1tosOcfJ3sXVmMpNEvVMUWYycy0OvvKpW5O4v1GNLfuTowOAw96uK6vpNL7vD5Oq7+2brLcabJHHPlGyov7b2O4wHrrbcYHovbt2RkJxRfrYOdXky9wvUPvHoTRlZ2Vqdjn2FVPLaFWyzVDPFZVWzs7PEmyTRP+ljaagM9cd4gJ3nZifPFnUrzpBK02A0PujujYxVICisdiLPxqZm7ofHsnOenEHK0cnlkzdJpr5/nMzoL6h3xiNf2P6uq1sZz4Dj8ZYs7gYrSZnJQgPqG63E4wH486GWSJMk3gcyo59x+wvyk/jE5AxuOC7O1X1NPq6+gZrRPxiv040RL/LwH9E8KVCTJPuluCRGcvmys7Xcn8IFqot8kOqDQ2ZJJORNkqgzi5LWeB7IB4uXt0LeJBkg3Uu22q/OMxIIejOc+JO5eQaDkWti+KmjUxiaIORNkgfik8n2SV6B8bGpRaG/EI96+LW7l/EMKPN4RSoLff9BNzPhuSbS8sFiniDzwQQl3iPG9w8MsVcsMk7Ba9PQKyypsF0qeVqFxeXM2qL+kUiUtYX0wfxCZry3eP8YD6CfkQn15yORIj/Hxxd/E87zkCLN1tGkZ7NUu5XV9cht6HnsfI3IfVGHdGPjFM2s4Ym9JOSBHXP5iclJ9LOVZx/77V7U3oQLBY0+w14IM8mSihpy2ubi193bxzXh8tHP0F+EEXFPwaH7L33XnF9U6ui6U6h34uPT3EZoJonzZD0zIjpRa9728G9j05VEZSbqHaMJfOxFXm+HRxepKvFuwAGHefFSU2zSEfxiWPFkSsMi6xou8OKYSc7MzqoqqukAN9o7432fnjY9OgTE1Yz+jvQbwN+IBuG4UyR6BVIPmUJW9Gph9zCTBOAdFX+Y2jTyUFVRozcYeD5rBF8SwDzI2gIOJ+ezfN69rhEWJAHMg5jPWAqEhEXhveWmwFpgWRLo6f0N8xlJYhrCIaO/H8vOvX6zVTc2xvd+GliVXFi6V2V6loPYm2337yxejxViJcmFpWH8m8bLcUmpmF8op1Zda5UkoJFiXiourZKnZAaG7BW576K6tLiejSQB89Lk1BTmieW6tLzYWGUNTyH5rPAfSP4FGgLS6+Wts7UAAAAASUVORK5CYII=" y="965.5"/><text fill="#0B0C10" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="65" x="465.5" y="1016.8951">Rejection</text></g><!--MD5=[f5627df114d71776b19afcff1c9ba378]
+entity SignatureService--><g id="elem_SignatureService"><rect fill="none" height="94.2969" rx="2.5" ry="2.5" style="stroke:none;stroke-width:0.5;" width="154" x="1770" y="308"/><image height="48" width="48" x="1823" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAIAAADYYG7QAAAAyklEQVR4Xu2XMQ4CMQwE8xNaKhoKat5BR3kVHf8FPnB84HBjyXa0cnVOkHa0VZTTjqJrtm2T0eLBaCiUQaEMCmVEoXX9Lo/n4XguyO2+vN6fIOCExOZ0ufZf7hepk1Lr4ITK3sZGSq2DE+pv18Q6QCF7vgeoi0IK6qKQgroopKAuCimoi0IK6qKQgroopKAuCimoi0IK6vofobLIErIOTmi6GSQ7sn4ohvHqhLbaKS1FYbYKrb83NhTKMp9Q+KeGQ6EMCmVQKGM6oR8itHISRmmBkwAAAABJRU5ErkJggg==" y="323"/><text fill="#0B0C10" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="120" x="1789" y="383.9951">Signature Service</text></g><!--MD5=[72f5274c8934c6f836c8288db948286c]
+entity Document7--><g id="elem_Document7"><rect fill="none" height="70.6969" rx="2.5" ry="2.5" style="stroke:none;stroke-width:0.5;" width="211" x="1378" y="478.5"/><image height="38" width="38" x="1464.3" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACYAAAAmCAIAAAAnX375AAABoklEQVR4XmP4T3fAgC5AezBorHz56lVmQbm1sy8xqLSq6dPnz+hG4AZYrHzy9KmZnbu8hjHxqKC09tPnL+gG4QBYrJwyc56aniWmuZhIRdfC3MELws4vrXn85Bm6WdgAFivLa5oVNE0wLcBEpnYeq9dvBoYtxPqCslpibMViZXFlA6bpWBHQsl+/fm/YvE3H1B5iK9CvBOOVUishWtYDbTUB2SpPRLxSx0og2LB5OySE5QnFK9WsBIbw+k3biIlXqlkJBL9+ExWv1LQSAoB+RY5XdGlaWPkfNV7R5Si0UsvIFqgYE+WV1NDKSmIQuumjVlIJoZuO38rM/DJgdiYDnT57gUwrgQx0OeIA0NahY6W9WwBmniMGAWOETCupgtBNH3RWkhSwmJaRY2UxKckH07IhYiVJRQGmZeRYSRWEbvoItrKyrpXI1jpBpG5ghW46Viv3HTyiZ+aIqZ9UpKxj1tk7Gd10rFb++PFzyYo1Hv4RmKYQjwwtnRtau1++eo1uOlYrgeDPnz+v37zFzAnEo2fPX3799h3dXDDAbiVNwQBYCQBaBsg0YipLZAAAAABJRU5ErkJggg==" y="486.5"/><text fill="#0B0C10" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="173" x="1401" y="537.8951">Contract based on quote</text></g><!--MD5=[19c3fb4b2ca6f7e442336a454e149849]
+entity Email8--><g id="elem_Email8"><rect fill="none" height="70.6969" rx="2.5" ry="2.5" style="stroke:none;stroke-width:0.5;" width="235" x="1366" y="372.5"/><image height="38" width="38" x="1464.3" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACYAAAAmCAIAAAAnX375AAAFS0lEQVR4Xs1W+1OUZRT2P8HSSgTRYF2Q+8VwQ6hYqkGUcEHkIrAri3GzIkeZTCiLZICB5SYgUDRqyUSiiasxIxLKhGPGJa5L5S432V259cCRd7/9vl3IwS7PvPzAc853nn3f95zznnUL/zrW8Yl/Hv9vyZGR0fqGC2nvHX8jVOYtkbr5Be0O2ZeQnH6mqPRuZxff2zpWkZyfnx8bn2i73RF+IGHjFhebTU7WlthToiqvHhrWzMzM8KOYYyXJR4+mr/yglsXKhQLWlm9AiKq8BufBj8WBVcnpaf3n+cUu3q+utxVRuBccdgSHyj48caqs8lx9w0Ws2i/Pf5pXEJ2gdHD2YaobtzhHxR2+0/kzP+IyrEoq0z54aZsbRXneTrw/Rt7W3vFQq9Pr9XNzc8zNaHw8PjExPKI5U6ja6uJL/s9t3h4gDWvvuMuJZ4IFSewPevQxtujk7v998zW+kyV09/RFHEzCLulbyet7evr6+U5CSdwfzpP2t8HeOUwW13XvF57PCtBqdVnZp2wdPUh1T0Ss8F7NJJGfyBcX7wDaH/Tww0FyfVYFfjQyyM7Jk1RT0rNw+FwHM0nUgyxGQfni5PZK1737Qj2kjCxWQXUZ9NY7H+Xm9Q8M8nz0ekPO6XySdBD7fNt4mWs1k7x1u4P8NtiLefdnNBqvXlO7+QWSA3fhFvIKSiYmp7j+OJ6QsMj1tosOcfJ3sXVmMpNEvVMUWYycy0OvvKpW5O4v1GNLfuTowOAw96uK6vpNL7vD5Oq7+2brLcabJHHPlGyov7b2O4wHrrbcYHovbt2RkJxRfrYOdXky9wvUPvHoTRlZ2Vqdjn2FVPLaFWyzVDPFZVWzs7PEmyTRP+ljaagM9cd4gJ3nZifPFnUrzpBK02A0PujujYxVICisdiLPxqZm7ofHsnOenEHK0cnlkzdJpr5/nMzoL6h3xiNf2P6uq1sZz4Dj8ZYs7gYrSZnJQgPqG63E4wH486GWSJMk3gcyo59x+wvyk/jE5AxuOC7O1X1NPq6+gZrRPxiv040RL/LwH9E8KVCTJPuluCRGcvmys7Xcn8IFqot8kOqDQ2ZJJORNkqgzi5LWeB7IB4uXt0LeJBkg3Uu22q/OMxIIejOc+JO5eQaDkWti+KmjUxiaIORNkgfik8n2SV6B8bGpRaG/EI96+LW7l/EMKPN4RSoLff9BNzPhuSbS8sFiniDzwQQl3iPG9w8MsVcsMk7Ba9PQKyypsF0qeVqFxeXM2qL+kUiUtYX0wfxCZry3eP8YD6CfkQn15yORIj/Hxxd/E87zkCLN1tGkZ7NUu5XV9cht6HnsfI3IfVGHdGPjFM2s4Ym9JOSBHXP5iclJ9LOVZx/77V7U3oQLBY0+w14IM8mSihpy2ubi193bxzXh8tHP0F+EEXFPwaH7L33XnF9U6ui6U6h34uPT3EZoJonzZD0zIjpRa9728G9j05VEZSbqHaMJfOxFXm+HRxepKvFuwAGHefFSU2zSEfxiWPFkSsMi6xou8OKYSc7MzqoqqukAN9o7432fnjY9OgTE1Yz+jvQbwN+IBuG4UyR6BVIPmUJW9Gph9zCTBOAdFX+Y2jTyUFVRozcYeD5rBF8SwDzI2gIOJ+ezfN69rhEWJAHMg5jPWAqEhEXhveWmwFpgWRLo6f0N8xlJYhrCIaO/H8vOvX6zVTc2xvd+GliVXFi6V2V6loPYm2337yxejxViJcmFpWH8m8bLcUmpmF8op1Zda5UkoJFiXiourZKnZAaG7BW576K6tLiejSQB89Lk1BTmieW6tLzYWGUNTyH5rPAfSP4FGgLS6+Wts7UAAAAASUVORK5CYII=" y="380.5"/><text fill="#0B0C10" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="197" x="1389" y="431.8951">Link to contract to be signed</text></g><!--MD5=[74da67e33745cc13fc58c02eaa0e7459]
+entity Conversation9--><g id="elem_Conversation9"><rect fill="none" height="70.6969" rx="2.5" ry="2.5" style="stroke:none;stroke-width:0.5;" width="231" x="1368" y="54.5"/><image height="38" width="38" x="1464.3" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACYAAAAmCAIAAAAnX375AAABFklEQVR4XmP4T3fAgC5AezDQVj55+jwlq8ja2ZeKyNk7ZOWajb9//4bbgrASaJ+WsZ28hjHVkYquxdyFy37//oNuJdB/mKqphWxc/F6+eo1uJTAQINLlNc2r122mFoLb+vjJM5xWAtXBBSkHo1aOWkkBGLVy1EoKwKiVo1ZSAEatRLPy16/fx0+dWY3RsCAVkWDlitUb4CKUIwLNLaCVS1aspWIDE2ejEm5lZHyGtrGdopapkZWLtbMPhQhf0xktGEOiUy5evgqXpSLAbiXQozdu3kFSRk2AxUqgfQ8fP0VSQ2WAYiUw/kKik2/cuo2kgPoAxUraxR8yQFhZWtV44yZt/QcBCCs/ff6CJE5DgLCSbmAArAQA+h+IrtJgOR4AAAAASUVORK5CYII=" y="62.5"/><text fill="#0B0C10" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="193" x="1391" y="113.8951">Contract signing flow via link</text></g><!--MD5=[fa6267650965bb776cd2bb7e9640c1c9]
+entity Document10--><g id="elem_Document10"><rect fill="none" height="70.6969" rx="2.5" ry="2.5" style="stroke:none;stroke-width:0.5;" width="188" x="1389.5" y="160.5"/><image height="38" width="38" x="1464.3" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACYAAAAmCAIAAAAnX375AAABoklEQVR4XmP4T3fAgC5AezBorHz56lVmQbm1sy8xqLSq6dPnz+hG4AZYrHzy9KmZnbu8hjHxqKC09tPnL+gG4QBYrJwyc56aniWmuZhIRdfC3MELws4vrXn85Bm6WdgAFivLa5oVNE0wLcBEpnYeq9dvBoYtxPqCslpibMViZXFlA6bpWBHQsl+/fm/YvE3H1B5iK9CvBOOVUishWtYDbTUB2SpPRLxSx0og2LB5OySE5QnFK9WsBIbw+k3biIlXqlkJBL9+ExWv1LQSAoB+RY5XdGlaWPkfNV7R5Si0UsvIFqgYE+WV1NDKSmIQuumjVlIJoZuO38rM/DJgdiYDnT57gUwrgQx0OeIA0NahY6W9WwBmniMGAWOETCupgtBNH3RWkhSwmJaRY2UxKckH07IhYiVJRQGmZeRYSRWEbvoItrKyrpXI1jpBpG5ghW46Viv3HTyiZ+aIqZ9UpKxj1tk7Gd10rFb++PFzyYo1Hv4RmKYQjwwtnRtau1++eo1uOlYrgeDPnz+v37zFzAnEo2fPX3799h3dXDDAbiVNwQBYCQBaBsg0YipLZAAAAABJRU5ErkJggg==" y="168.5"/><text fill="#0B0C10" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="150" x="1412.5" y="219.8951">Contract to be signed</text></g><!--MD5=[68e59e254c9cecee4703e4b4b517d3b2]
+entity Document11--><g id="elem_Document11"><rect fill="none" height="70.6969" rx="2.5" ry="2.5" style="stroke:none;stroke-width:0.5;" width="245" x="1361" y="266.5"/><image height="38" width="38" x="1464.3" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACYAAAAmCAIAAAAnX375AAABoklEQVR4XmP4T3fAgC5AezBorHz56lVmQbm1sy8xqLSq6dPnz+hG4AZYrHzy9KmZnbu8hjHxqKC09tPnL+gG4QBYrJwyc56aniWmuZhIRdfC3MELws4vrXn85Bm6WdgAFivLa5oVNE0wLcBEpnYeq9dvBoYtxPqCslpibMViZXFlA6bpWBHQsl+/fm/YvE3H1B5iK9CvBOOVUishWtYDbTUB2SpPRLxSx0og2LB5OySE5QnFK9WsBIbw+k3biIlXqlkJBL9+ExWv1LQSAoB+RY5XdGlaWPkfNV7R5Si0UsvIFqgYE+WV1NDKSmIQuumjVlIJoZuO38rM/DJgdiYDnT57gUwrgQx0OeIA0NahY6W9WwBmniMGAWOETCupgtBNH3RWkhSwmJaRY2UxKckH07IhYiVJRQGmZeRYSRWEbvoItrKyrpXI1jpBpG5ghW46Viv3HTyiZ+aIqZ9UpKxj1tk7Gd10rFb++PFzyYo1Hv4RmKYQjwwtnRtau1++eo1uOlYrgeDPnz+v37zFzAnEo2fPX3799h3dXDDAbiVNwQBYCQBaBsg0YipLZAAAAABJRU5ErkJggg==" y="274.5"/><text fill="#0B0C10" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="207" x="1384" y="325.8951">Contract with Digital Signature</text></g><!--MD5=[76d0c25527896f67cb6aa4ccab7e7ab8]
+entity CustomerService--><g id="elem_CustomerService"><rect fill="none" height="94.2969" rx="2.5" ry="2.5" style="stroke:none;stroke-width:0.5;" width="156" x="23" y="1705"/><image height="48" width="48" x="77" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAIAAADYYG7QAAAAyklEQVR4Xu2XMQ4CMQwE8xNaKhoKat5BR3kVHf8FPnB84HBjyXa0cnVOkHa0VZTTjqJrtm2T0eLBaCiUQaEMCmVEoXX9Lo/n4XguyO2+vN6fIOCExOZ0ufZf7hepk1Lr4ITK3sZGSq2DE+pv18Q6QCF7vgeoi0IK6qKQgroopKAuCimoi0IK6qKQgroopKAuCimoi0IK6vofobLIErIOTmi6GSQ7sn4ohvHqhLbaKS1FYbYKrb83NhTKMp9Q+KeGQ6EMCmVQKGM6oR8itHISRmmBkwAAAABJRU5ErkJggg==" y="1720"/><text fill="#0B0C10" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="122" x="42" y="1780.9951">Customer Service</text></g><!--MD5=[937e9e9b479a7841c5cf57b207155d2f]
+entity DocumentService--><g id="elem_DocumentService"><rect fill="none" height="94.2969" rx="2.5" ry="2.5" style="stroke:none;stroke-width:0.5;" width="161" x="924" y="1317"/><image height="48" width="48" x="980.5" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAIAAADYYG7QAAAAyklEQVR4Xu2XMQ4CMQwE8xNaKhoKat5BR3kVHf8FPnB84HBjyXa0cnVOkHa0VZTTjqJrtm2T0eLBaCiUQaEMCmVEoXX9Lo/n4XguyO2+vN6fIOCExOZ0ufZf7hepk1Lr4ITK3sZGSq2DE+pv18Q6QCF7vgeoi0IK6qKQgroopKAuCimoi0IK6qKQgroopKAuCimoi0IK6vofobLIErIOTmi6GSQ7sn4ohvHqhLbaKS1FYbYKrb83NhTKMp9Q+KeGQ6EMCmVQKGM6oR8itHISRmmBkwAAAABJRU5ErkJggg==" y="1332"/><text fill="#0B0C10" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="127" x="943" y="1392.9951">Document Service</text></g><!--MD5=[6d450c7499ad1610fa6bbc88efa00176]
+entity AgreementService--><g id="elem_AgreementService"><rect fill="none" height="94.2969" rx="2.5" ry="2.5" style="stroke:none;stroke-width:0.5;" width="165" x="922" y="1529"/><image height="48" width="48" x="980.5" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAIAAADYYG7QAAAAyklEQVR4Xu2XMQ4CMQwE8xNaKhoKat5BR3kVHf8FPnB84HBjyXa0cnVOkHa0VZTTjqJrtm2T0eLBaCiUQaEMCmVEoXX9Lo/n4XguyO2+vN6fIOCExOZ0ufZf7hepk1Lr4ITK3sZGSq2DE+pv18Q6QCF7vgeoi0IK6qKQgroopKAuCimoi0IK6qKQgroopKAuCimoi0IK6vofobLIErIOTmi6GSQ7sn4ohvHqhLbaKS1FYbYKrb83NhTKMp9Q+KeGQ6EMCmVQKGM6oR8itHISRmmBkwAAAABJRU5ErkJggg==" y="1544"/><text fill="#0B0C10" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="131" x="941" y="1604.9951">Agreement Service</text></g><!--MD5=[467231f785af0f03d2029931c61e66be]
+entity Document12--><g id="elem_Document12"><rect fill="none" height="70.6969" rx="2.5" ry="2.5" style="stroke:none;stroke-width:0.5;" width="298" x="343" y="1116.5"/><image height="38" width="38" x="472.8" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACYAAAAmCAIAAAAnX375AAABoklEQVR4XmP4T3fAgC5AezBorHz56lVmQbm1sy8xqLSq6dPnz+hG4AZYrHzy9KmZnbu8hjHxqKC09tPnL+gG4QBYrJwyc56aniWmuZhIRdfC3MELws4vrXn85Bm6WdgAFivLa5oVNE0wLcBEpnYeq9dvBoYtxPqCslpibMViZXFlA6bpWBHQsl+/fm/YvE3H1B5iK9CvBOOVUishWtYDbTUB2SpPRLxSx0og2LB5OySE5QnFK9WsBIbw+k3biIlXqlkJBL9+ExWv1LQSAoB+RY5XdGlaWPkfNV7R5Si0UsvIFqgYE+WV1NDKSmIQuumjVlIJoZuO38rM/DJgdiYDnT57gUwrgQx0OeIA0NahY6W9WwBmniMGAWOETCupgtBNH3RWkhSwmJaRY2UxKckH07IhYiVJRQGmZeRYSRWEbvoItrKyrpXI1jpBpG5ghW46Viv3HTyiZ+aIqZ9UpKxj1tk7Gd10rFb++PFzyYo1Hv4RmKYQjwwtnRtau1++eo1uOlYrgeDPnz+v37zFzAnEo2fPX3799h3dXDDAbiVNwQBYCQBaBsg0YipLZAAAAABJRU5ErkJggg==" y="1124.5"/><text fill="#0B0C10" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="260" x="366" y="1175.8951">Unsigned Contract and Customer Info</text></g><!--MD5=[7f2a6229e3d37fbe2920f441ae79904b]
+entity Document13--><g id="elem_Document13"><rect fill="none" height="70.6969" rx="2.5" ry="2.5" style="stroke:none;stroke-width:0.5;" width="149" x="417.5" y="1858.5"/><image height="38" width="38" x="472.8" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACYAAAAmCAIAAAAnX375AAABoklEQVR4XmP4T3fAgC5AezBorHz56lVmQbm1sy8xqLSq6dPnz+hG4AZYrHzy9KmZnbu8hjHxqKC09tPnL+gG4QBYrJwyc56aniWmuZhIRdfC3MELws4vrXn85Bm6WdgAFivLa5oVNE0wLcBEpnYeq9dvBoYtxPqCslpibMViZXFlA6bpWBHQsl+/fm/YvE3H1B5iK9CvBOOVUishWtYDbTUB2SpPRLxSx0og2LB5OySE5QnFK9WsBIbw+k3biIlXqlkJBL9+ExWv1LQSAoB+RY5XdGlaWPkfNV7R5Si0UsvIFqgYE+WV1NDKSmIQuumjVlIJoZuO38rM/DJgdiYDnT57gUwrgQx0OeIA0NahY6W9WwBmniMGAWOETCupgtBNH3RWkhSwmJaRY2UxKckH07IhYiVJRQGmZeRYSRWEbvoItrKyrpXI1jpBpG5ghW46Viv3HTyiZ+aIqZ9UpKxj1tk7Gd10rFb++PFzyYo1Hv4RmKYQjwwtnRtau1++eo1uOlYrgeDPnz+v37zFzAnEo2fPX3799h3dXDDAbiVNwQBYCQBaBsg0YipLZAAAAABJRU5ErkJggg==" y="1866.5"/><text fill="#0B0C10" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="111" x="440.5" y="1917.8951">Signed Contract</text></g><!--MD5=[ee63c58bf3bafe66409ccceba8156d17]
+entity Document14--><g id="elem_Document14"><rect fill="none" height="70.6969" rx="2.5" ry="2.5" style="stroke:none;stroke-width:0.5;" width="149" x="417.5" y="1646.5"/><image height="38" width="38" x="472.8" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACYAAAAmCAIAAAAnX375AAABoklEQVR4XmP4T3fAgC5AezBorHz56lVmQbm1sy8xqLSq6dPnz+hG4AZYrHzy9KmZnbu8hjHxqKC09tPnL+gG4QBYrJwyc56aniWmuZhIRdfC3MELws4vrXn85Bm6WdgAFivLa5oVNE0wLcBEpnYeq9dvBoYtxPqCslpibMViZXFlA6bpWBHQsl+/fm/YvE3H1B5iK9CvBOOVUishWtYDbTUB2SpPRLxSx0og2LB5OySE5QnFK9WsBIbw+k3biIlXqlkJBL9+ExWv1LQSAoB+RY5XdGlaWPkfNV7R5Si0UsvIFqgYE+WV1NDKSmIQuumjVlIJoZuO38rM/DJgdiYDnT57gUwrgQx0OeIA0NahY6W9WwBmniMGAWOETCupgtBNH3RWkhSwmJaRY2UxKckH07IhYiVJRQGmZeRYSRWEbvoItrKyrpXI1jpBpG5ghW46Viv3HTyiZ+aIqZ9UpKxj1tk7Gd10rFb++PFzyYo1Hv4RmKYQjwwtnRtau1++eo1uOlYrgeDPnz+v37zFzAnEo2fPX3799h3dXDDAbiVNwQBYCQBaBsg0YipLZAAAAABJRU5ErkJggg==" y="1654.5"/><text fill="#0B0C10" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="111" x="440.5" y="1705.8951">Signed Contract</text></g><!--MD5=[32cf19b89fa8c3bfc3a6f0876223cf8d]
+entity Document15--><g id="elem_Document15"><rect fill="none" height="70.6969" rx="2.5" ry="2.5" style="stroke:none;stroke-width:0.5;" width="115" x="434.5" y="1752.5"/><image height="38" width="38" x="472.8" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACYAAAAmCAIAAAAnX375AAABoklEQVR4XmP4T3fAgC5AezBorHz56lVmQbm1sy8xqLSq6dPnz+hG4AZYrHzy9KmZnbu8hjHxqKC09tPnL+gG4QBYrJwyc56aniWmuZhIRdfC3MELws4vrXn85Bm6WdgAFivLa5oVNE0wLcBEpnYeq9dvBoYtxPqCslpibMViZXFlA6bpWBHQsl+/fm/YvE3H1B5iK9CvBOOVUishWtYDbTUB2SpPRLxSx0og2LB5OySE5QnFK9WsBIbw+k3biIlXqlkJBL9+ExWv1LQSAoB+RY5XdGlaWPkfNV7R5Si0UsvIFqgYE+WV1NDKSmIQuumjVlIJoZuO38rM/DJgdiYDnT57gUwrgQx0OeIA0NahY6W9WwBmniMGAWOETCupgtBNH3RWkhSwmJaRY2UxKckH07IhYiVJRQGmZeRYSRWEbvoItrKyrpXI1jpBpG5ghW46Viv3HTyiZ+aIqZ9UpKxj1tk7Gd10rFb++PFzyYo1Hv4RmKYQjwwtnRtau1++eo1uOlYrgeDPnz+v37zFzAnEo2fPX3799h3dXDDAbiVNwQBYCQBaBsg0YipLZAAAAABJRU5ErkJggg==" y="1760.5"/><text fill="#0B0C10" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="77" x="457.5" y="1811.8951">Agreement</text></g><!--MD5=[543637d22a247c95c595b612e743415b]
+entity Conversation16--><g id="elem_Conversation16"><rect fill="none" height="70.6969" rx="2.5" ry="2.5" style="stroke:none;stroke-width:0.5;" width="193" x="395.5" y="1434.5"/><image height="38" width="38" x="472.8" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACYAAAAmCAIAAAAnX375AAABFklEQVR4XmP4T3fAgC5AezDQVj55+jwlq8ja2ZeKyNk7ZOWajb9//4bbgrASaJ+WsZ28hjHVkYquxdyFy37//oNuJdB/mKqphWxc/F6+eo1uJTAQINLlNc2r122mFoLb+vjJM5xWAtXBBSkHo1aOWkkBGLVy1EoKwKiVo1ZSAEatRLPy16/fx0+dWY3RsCAVkWDlitUb4CKUIwLNLaCVS1aspWIDE2ejEm5lZHyGtrGdopapkZWLtbMPhQhf0xktGEOiUy5evgqXpSLAbiXQozdu3kFSRk2AxUqgfQ8fP0VSQ2WAYiUw/kKik2/cuo2kgPoAxUraxR8yQFhZWtV44yZt/QcBCCs/ff6CJE5DgLCSbmAArAQA+h+IrtJgOR4AAAAASUVORK5CYII=" y="1442.5"/><text fill="#0B0C10" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="155" x="418.5" y="1493.8951">Agreements by criteria</text></g><!--MD5=[3a01e04cb372947d27042c2ced77f497]
+entity Document17--><g id="elem_Document17"><rect fill="none" height="70.6969" rx="2.5" ry="2.5" style="stroke:none;stroke-width:0.5;" width="123" x="430.5" y="1540.5"/><image height="38" width="38" x="472.8" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACYAAAAmCAIAAAAnX375AAABoklEQVR4XmP4T3fAgC5AezBorHz56lVmQbm1sy8xqLSq6dPnz+hG4AZYrHzy9KmZnbu8hjHxqKC09tPnL+gG4QBYrJwyc56aniWmuZhIRdfC3MELws4vrXn85Bm6WdgAFivLa5oVNE0wLcBEpnYeq9dvBoYtxPqCslpibMViZXFlA6bpWBHQsl+/fm/YvE3H1B5iK9CvBOOVUishWtYDbTUB2SpPRLxSx0og2LB5OySE5QnFK9WsBIbw+k3biIlXqlkJBL9+ExWv1LQSAoB+RY5XdGlaWPkfNV7R5Si0UsvIFqgYE+WV1NDKSmIQuumjVlIJoZuO38rM/DJgdiYDnT57gUwrgQx0OeIA0NahY6W9WwBmniMGAWOETCupgtBNH3RWkhSwmJaRY2UxKckH07IhYiVJRQGmZeRYSRWEbvoItrKyrpXI1jpBpG5ghW46Viv3HTyiZ+aIqZ9UpKxj1tk7Gd10rFb++PFzyYo1Hv4RmKYQjwwtnRtau1++eo1uOlYrgeDPnz+v37zFzAnEo2fPX3799h3dXDDAbiVNwQBYCQBaBsg0YipLZAAAAABJRU5ErkJggg==" y="1548.5"/><text fill="#0B0C10" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="85" x="453.5" y="1599.8951">Agreements</text></g><!--MD5=[2e34ee069fe5da842eb75cc30e12b543]
+entity Conversation18--><g id="elem_Conversation18"><rect fill="none" height="70.6969" rx="2.5" ry="2.5" style="stroke:none;stroke-width:0.5;" width="189" x="397.5" y="1328.5"/><image height="38" width="38" x="472.8" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACYAAAAmCAIAAAAnX375AAABFklEQVR4XmP4T3fAgC5AezDQVj55+jwlq8ja2ZeKyNk7ZOWajb9//4bbgrASaJ+WsZ28hjHVkYquxdyFy37//oNuJdB/mKqphWxc/F6+eo1uJTAQINLlNc2r122mFoLb+vjJM5xWAtXBBSkHo1aOWkkBGLVy1EoKwKiVo1ZSAEatRLPy16/fx0+dWY3RsCAVkWDlitUb4CKUIwLNLaCVS1aspWIDE2ejEm5lZHyGtrGdopapkZWLtbMPhQhf0xktGEOiUy5evgqXpSLAbiXQozdu3kFSRk2AxUqgfQ8fP0VSQ2WAYiUw/kKik2/cuo2kgPoAxUraxR8yQFhZWtV44yZt/QcBCCs/ff6CJE5DgLCSbmAArAQA+h+IrtJgOR4AAAAASUVORK5CYII=" y="1336.5"/><text fill="#0B0C10" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="151" x="420.5" y="1387.8951">Documents by criteria</text></g><!--MD5=[3eec87fee06f575ca651c8c577efaba8]
+entity Document19--><g id="elem_Document19"><rect fill="none" height="70.6969" rx="2.5" ry="2.5" style="stroke:none;stroke-width:0.5;" width="119" x="432.5" y="1222.5"/><image height="38" width="38" x="472.8" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACYAAAAmCAIAAAAnX375AAABoklEQVR4XmP4T3fAgC5AezBorHz56lVmQbm1sy8xqLSq6dPnz+hG4AZYrHzy9KmZnbu8hjHxqKC09tPnL+gG4QBYrJwyc56aniWmuZhIRdfC3MELws4vrXn85Bm6WdgAFivLa5oVNE0wLcBEpnYeq9dvBoYtxPqCslpibMViZXFlA6bpWBHQsl+/fm/YvE3H1B5iK9CvBOOVUishWtYDbTUB2SpPRLxSx0og2LB5OySE5QnFK9WsBIbw+k3biIlXqlkJBL9+ExWv1LQSAoB+RY5XdGlaWPkfNV7R5Si0UsvIFqgYE+WV1NDKSmIQuumjVlIJoZuO38rM/DJgdiYDnT57gUwrgQx0OeIA0NahY6W9WwBmniMGAWOETCupgtBNH3RWkhSwmJaRY2UxKckH07IhYiVJRQGmZeRYSRWEbvoItrKyrpXI1jpBpG5ghW46Viv3HTyiZ+aIqZ9UpKxj1tk7Gd10rFb++PFzyYo1Hv4RmKYQjwwtnRtau1++eo1uOlYrgeDPnz+v37zFzAnEo2fPX3799h3dXDDAbiVNwQBYCQBaBsg0YipLZAAAAABJRU5ErkJggg==" y="1230.5"/><text fill="#0B0C10" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="81" x="455.5" y="1281.8951">Documents</text></g><!--MD5=[ae78ca0dd1f49bdd788e5556d70823ac]
+entity Customer--><g id="elem_Customer"><rect fill="none" height="94.2969" rx="2.5" ry="2.5" style="stroke:none;stroke-width:0.5;" width="102" x="50" y="681"/><image height="48" width="48" x="77" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAIAAADYYG7QAAABvUlEQVR4Xu2Wr04EQQzG702wKAwChUDgSBBIUMhTOILBkWBQCAQGRYLBkVyCJSRoSPDACxwvMHyhmUnTmdnO9LjcHJkvFbvTbvvbaffPyDWmkVxYtDqQpg6kqQNpmgno4/Pr5PRsc3t3ZXUdhgOcYlHG1cgOhNrEERtcMrpYRqD9w3HMwQ0B8poyWYDivUGzQuOC2fapGggjwquOj46n029y4QCn3GuYp2ogvj0oL93Ocabzi0vp1lQNxFsT9oYLiyEAwdKtqRqopBiHlj5Nyw/UXMswp6FeE0Pd3GPvWnsxktr6dJDifQpm2xuSHcj9zhPGlv9+4NQwN1wzAc1D/wIIj/fD5BHdweSiTWsbW9QyHOAUi3AhIPnaVFUBJCamxAxTVQT0+vauPufDtrN38PT8IvOmpABh25ErLsCNOsV7lzOkUvs4BIR7StZAXjQC3mQvsAgXApJ3goTDW5UFEt8synV1fZOEyAnBuCS+q4EkWSDxmby9u5cRNQIWz5b8TSBlgQpvqFxiy6XbSwfCKEifVXyqpM9rCYGI6U+M55T1vIqA5mGynlcH8ibreWWBFqUOpKkDaepAmpoD+gEXw+ovDY1fPgAAAABJRU5ErkJggg==" y="696"/><text fill="#0B0C10" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="68" x="69" y="756.9951">Customer</text></g><!--MD5=[5765dcfd8bf40b7b2814f40b7fbdf9dc]
+link Customer to Conversation1--><g id="link_Customer_Conversation1"><path d="M131.85,680.85 C151.55,651.98 179.17,615.44 209,588 C252.69,547.81 267.69,541.08 321.5,516 C350.29,502.58 383.37,491.37 412.61,482.78 " fill="none" id="Customer-to-Conversation1" style="stroke:#C5C6C7;stroke-width:1.0;"/><polygon fill="#C5C6C7" points="417.65,481.31,407.89,479.99,412.85,482.71,410.13,487.67,417.65,481.31" style="stroke:#C5C6C7;stroke-width:1.0;"/><text fill="#0B0C10" filter="url(#b1u50bgbbk4f5d0)" font-family="sans-serif" font-size="16" lengthAdjust="spacing" textLength="22" x="220" y="511.8516">(1)</text><text fill="#0B0C10" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="56" x="246" y="512.5591">requests</text></g><!--MD5=[83a418d5b9d1ef8169ad738e3386bed6]
+link Conversation1 to CatalogService--><g id="link_Conversation1_CatalogService"><path d="M566.07,469.94 C646.27,477.98 778.72,492.54 892,511 C904.14,512.98 916.97,515.36 929.43,517.82 " fill="none" id="Conversation1-to-CatalogService" style="stroke:#C5C6C7;stroke-width:1.0;"/><polygon fill="#C5C6C7" points="934.37,518.8,926.3197,513.1262,929.4655,517.8277,924.764,520.9734,934.37,518.8" style="stroke:#C5C6C7;stroke-width:1.0;"/><text fill="#0B0C10" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="30" x="766.5" y="473.0669">from</text></g><!--MD5=[0bec86f4d011ddd8d12d7b9dc155e9da]
+reverse link Document2 to CatalogService--><g id="link_Document2_CatalogService"><path d="M547.6,566.38 C624.49,562.54 769.05,554.76 892,545 C905.67,543.91 920.27,542.59 934.24,541.25 " fill="none" id="Document2-backto-CatalogService" style="stroke:#C5C6C7;stroke-width:1.0;"/><polygon fill="#C5C6C7" points="542.18,566.65,551.3635,570.2087,547.1741,566.4074,550.9753,562.2181,542.18,566.65" style="stroke:#C5C6C7;stroke-width:1.0;"/><text fill="#0B0C10" filter="url(#b1u50bgbbk4f5d0)" font-family="sans-serif" font-size="16" lengthAdjust="spacing" textLength="22" x="745.5" y="535.8516">(2)</text><text fill="#0B0C10" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="46" x="771.5" y="536.5591">returns</text></g><!--MD5=[d5d39d0cb9b5bae33b0d4f515fbf431e]
+reverse link Customer to Document2--><g id="link_Customer_Document2"><path d="M156.77,691.15 C173.17,680.96 191.46,670.41 209,662 C287.21,624.49 384.42,596.12 441.88,581.07 " fill="none" id="Customer-backto-Document2" style="stroke:#C5C6C7;stroke-width:1.0;"/><polygon fill="#C5C6C7" points="152.19,694.01,161.9407,692.6232,156.4276,691.3562,157.6946,685.843,152.19,694.01" style="stroke:#C5C6C7;stroke-width:1.0;"/><text fill="#0B0C10" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="13" x="254.5" y="614.0669">to</text></g><!--MD5=[55f3798d2bdcc485e48a247ebd1ecc88]
+link Customer to Conversation3--><g id="link_Customer_Conversation3"><path d="M152.06,721.18 C199.56,714.71 273.38,704.65 340.02,695.57 " fill="none" id="Customer-to-Conversation3" style="stroke:#C5C6C7;stroke-width:1.0;"/><polygon fill="#C5C6C7" points="345.22,694.86,335.7646,692.1042,340.2652,695.5311,336.8383,700.0318,345.22,694.86" style="stroke:#C5C6C7;stroke-width:1.0;"/><text fill="#0B0C10" filter="url(#b1u50bgbbk4f5d0)" font-family="sans-serif" font-size="16" lengthAdjust="spacing" textLength="22" x="220" y="690.8516">(3)</text><text fill="#0B0C10" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="56" x="246" y="691.5591">requests</text></g><!--MD5=[4719862322ae9e1976611775d545602f]
+link Conversation3 to QuoteService--><g id="link_Conversation3_QuoteService"><path d="M638.61,683.27 C735.31,688.76 857.93,695.73 933.53,700.03 " fill="none" id="Conversation3-to-QuoteService" style="stroke:#C5C6C7;stroke-width:1.0;"/><polygon fill="#C5C6C7" points="938.89,700.33,930.1336,695.8216,933.8982,700.0439,929.6759,703.8085,938.89,700.33" style="stroke:#C5C6C7;stroke-width:1.0;"/><text fill="#0B0C10" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="30" x="766.5" y="677.0669">from</text></g><!--MD5=[76cd3ef9ce8f6b17aed4d573209062eb]
+reverse link Document4 to QuoteService--><g id="link_Document4_QuoteService"><path d="M574.94,775.32 C656,768.82 783.35,756.23 892,735 C907.28,732.01 923.53,727.99 938.76,723.84 " fill="none" id="Document4-backto-QuoteService" style="stroke:#C5C6C7;stroke-width:1.0;"/><polygon fill="#C5C6C7" points="569.66,775.74,578.9511,779.0074,574.644,775.3401,578.3113,771.0331,569.66,775.74" style="stroke:#C5C6C7;stroke-width:1.0;"/><text fill="#0B0C10" filter="url(#b1u50bgbbk4f5d0)" font-family="sans-serif" font-size="16" lengthAdjust="spacing" textLength="22" x="697.5" y="725.8516">(4)</text><text fill="#0B0C10" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="142" x="723.5" y="726.5591">calculates and returns</text></g><!--MD5=[3fb36c7b02f16b9e98f2afc5edc3e2dd]
+reverse link Customer to Document4--><g id="link_Customer_Document4"><path d="M157.32,739.08 C173.9,742.21 192.15,745.44 209,748 C278.2,758.5 357.4,767.51 414.21,773.45 " fill="none" id="Customer-backto-Document4" style="stroke:#C5C6C7;stroke-width:1.0;"/><polygon fill="#C5C6C7" points="152.23,738.12,160.3308,743.7215,157.1431,739.0483,161.8162,735.8606,152.23,738.12" style="stroke:#C5C6C7;stroke-width:1.0;"/><text fill="#0B0C10" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="13" x="254.5" y="739.0669">to</text></g><!--MD5=[6a3e28438f6c12327bb4dc19dfdfa726]
+link Customer to Document5--><g id="link_Customer_Document5"><path d="M152.15,766.17 C169.5,778.16 189.5,790.68 209,800 C252.82,820.94 302.86,838.3 348.5,851.86 " fill="none" id="Customer-to-Document5" style="stroke:#C5C6C7;stroke-width:1.0;"/><polygon fill="#C5C6C7" points="353.47,853.33,345.9726,846.9433,348.675,851.913,343.7054,854.6153,353.47,853.33" style="stroke:#C5C6C7;stroke-width:1.0;"/><text fill="#0B0C10" filter="url(#b1u50bgbbk4f5d0)" font-family="sans-serif" font-size="16" lengthAdjust="spacing" textLength="22" x="229" y="790.8516">(5)</text><text fill="#0B0C10" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="38" x="255" y="791.5591">sends</text></g><!--MD5=[130b11f053113bbc1c31ff1e85cf2376]
+link Document5 to ValidationService--><g id="link_Document5_ValidationService"><path d="M630.81,904.55 C724,916.41 843.9,931.68 922.17,941.65 " fill="none" id="Document5-to-ValidationService" style="stroke:#C5C6C7;stroke-width:1.0;"/><polygon fill="#C5C6C7" points="927.27,942.29,918.8447,937.1896,922.3097,941.661,917.8383,945.1261,927.27,942.29" style="stroke:#C5C6C7;stroke-width:1.0;"/><text fill="#0B0C10" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="13" x="775" y="901.0669">to</text></g><!--MD5=[f929fadf4481fca0e023252d27ce43b8]
+reverse link Email6 to ValidationService--><g id="link_Email6_ValidationService"><path d="M550.59,994.28 C628.42,995.22 771.32,994.19 892,978 C903.52,976.45 915.6,974.26 927.38,971.79 " fill="none" id="Email6-backto-ValidationService" style="stroke:#C5C6C7;stroke-width:1.0;"/><polygon fill="#C5C6C7" points="545.56,994.21,554.5019,998.3382,550.5595,994.2814,554.6162,990.339,545.56,994.21" style="stroke:#C5C6C7;stroke-width:1.0;"/><text fill="#0B0C10" filter="url(#b1u50bgbbk4f5d0)" font-family="sans-serif" font-size="16" lengthAdjust="spacing" textLength="22" x="689" y="968.8516">(6)</text><text fill="#0B0C10" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="159" x="715" y="969.5591">[failed validation] returns</text></g><!--MD5=[a2511f60a83ebc3e96302718fc72ab4b]
+reverse link Customer to Email6--><g id="link_Customer_Email6"><path d="M132.38,779.65 C151.72,809.61 178.77,846.7 209,874 C275.55,934.1 376.9,966.67 438.25,981.9 " fill="none" id="Customer-backto-Email6" style="stroke:#C5C6C7;stroke-width:1.0;"/><polygon fill="#C5C6C7" points="129.58,775.28,131.0671,785.0159,132.2773,779.4901,137.8032,780.7003,129.58,775.28" style="stroke:#C5C6C7;stroke-width:1.0;"/><text fill="#0B0C10" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="13" x="254.5" y="865.0669">to</text></g><!--MD5=[0bacfa9a9774029d898c7d294c336140]
+link ValidationService to Document7--><g id="link_ValidationService_Document7"><path d="M1057,904.71 C1151.83,817.63 1352.36,633.5 1440,553.02 " fill="none" id="ValidationService-to-Document7" style="stroke:#C5C6C7;stroke-width:1.0;"/><polygon fill="#C5C6C7" points="1443.84,549.5,1434.506,552.6427,1440.1578,552.8825,1439.918,558.5343,1443.84,549.5" style="stroke:#C5C6C7;stroke-width:1.0;"/><text fill="#0B0C10" filter="url(#b1u50bgbbk4f5d0)" font-family="sans-serif" font-size="16" lengthAdjust="spacing" textLength="22" x="1125" y="646.8516">(7)</text><text fill="#0B0C10" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="172" x="1151" y="647.5591">[successful validation]send</text></g><!--MD5=[296daf189e8583f7ebcf1f988492166c]
+link Document7 to SignatureService--><g id="link_Document7_SignatureService"><path d="M1589.17,489.18 C1636.64,475.83 1692.62,457.11 1740,433 C1755.22,425.25 1770.6,415.38 1784.73,405.28 " fill="none" id="Document7-to-SignatureService" style="stroke:#C5C6C7;stroke-width:1.0;"/><polygon fill="#C5C6C7" points="1789.08,402.14,1779.4414,404.1642,1785.0259,405.0664,1784.1237,410.6509,1789.08,402.14" style="stroke:#C5C6C7;stroke-width:1.0;"/><text fill="#0B0C10" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="13" x="1681.5" y="424.0669">to</text></g><!--MD5=[02a63860b932f19eb14d447b88af1a46]
+reverse link Email8 to SignatureService--><g id="link_Email8_SignatureService"><path d="M1606.3,400.89 C1648.82,397.26 1696.72,391.89 1740,384 C1749.76,382.22 1759.93,379.97 1769.94,377.51 " fill="none" id="Email8-backto-SignatureService" style="stroke:#C5C6C7;stroke-width:1.0;"/><polygon fill="#C5C6C7" points="1601.14,401.32,1610.4403,404.561,1606.1228,400.906,1609.7779,396.5885,1601.14,401.32" style="stroke:#C5C6C7;stroke-width:1.0;"/><text fill="#0B0C10" filter="url(#b1u50bgbbk4f5d0)" font-family="sans-serif" font-size="16" lengthAdjust="spacing" textLength="22" x="1656" y="374.8516">(9)</text><text fill="#0B0C10" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="38" x="1682" y="375.5591">sends</text></g><!--MD5=[6840ee3357368ad8409e99fd0eb0f95c]
+reverse link Customer to Email8--><g id="link_Customer_Email8"><path d="M115.14,675.6 C130.56,622.39 160.39,539.94 209,483 C247.54,437.85 264.55,427.74 321.5,411 C689.89,302.69 1152.91,353.92 1365.73,387.22 " fill="none" id="Customer-backto-Email8" style="stroke:#C5C6C7;stroke-width:1.0;"/><polygon fill="#C5C6C7" points="113.69,680.65,120.0086,673.0952,115.0636,675.8424,112.3164,670.8974,113.69,680.65" style="stroke:#C5C6C7;stroke-width:1.0;"/><text fill="#0B0C10" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="13" x="775" y="337.0669">to</text></g><!--MD5=[7d2af809e012038c3577d3e02ae031a3]
+link Customer to Conversation9--><g id="link_Customer_Conversation9"><path d="M103.52,680.69 C108.32,597.89 128.08,424.34 209,307 C243.69,256.7 265.68,252.84 321.5,228 C674.79,70.82 1145.18,71.15 1362.76,81.61 " fill="none" id="Customer-to-Conversation9" style="stroke:#C5C6C7;stroke-width:1.0;"/><polygon fill="#C5C6C7" points="1367.86,81.86,1359.0653,77.4269,1362.8659,81.6167,1358.676,85.4174,1367.86,81.86" style="stroke:#C5C6C7;stroke-width:1.0;"/><text fill="#0B0C10" filter="url(#b1u50bgbbk4f5d0)" font-family="sans-serif" font-size="16" lengthAdjust="spacing" textLength="32" x="745" y="83.8516">(10)</text><text fill="#0B0C10" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="37" x="781" y="84.5591">starts</text></g><!--MD5=[9d83baa3f4a95d57e0137ae5d35ceff6]
+link Conversation9 to SignatureService--><g id="link_Conversation9_SignatureService"><path d="M1591.52,125.62 C1640.29,145.35 1696.67,173.39 1740,210 C1770.99,236.19 1797.86,273.21 1816.79,303.28 " fill="none" id="Conversation9-to-SignatureService" style="stroke:#C5C6C7;stroke-width:1.0;"/><polygon fill="#C5C6C7" points="1819.52,307.67,1818.1568,297.9159,1816.8764,303.426,1811.3664,302.1457,1819.52,307.67" style="stroke:#C5C6C7;stroke-width:1.0;"/><text fill="#0B0C10" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="25" x="1675.5" y="140.0669">with</text></g><!--MD5=[af89de91c5481bd701a9a402758557e4]
+reverse link Document10 to SignatureService--><g id="link_Document10_SignatureService"><path d="M1582.52,227.61 C1630.83,244.4 1689.42,266.59 1740,291 C1750.55,296.09 1761.41,301.92 1771.98,307.93 " fill="none" id="Document10-backto-SignatureService" style="stroke:#C5C6C7;stroke-width:1.0;"/><polygon fill="#C5C6C7" points="1577.58,225.9,1584.7688,232.6321,1582.3031,227.5409,1587.3943,225.0752,1577.58,225.9" style="stroke:#C5C6C7;stroke-width:1.0;"/><text fill="#0B0C10" filter="url(#b1u50bgbbk4f5d0)" font-family="sans-serif" font-size="16" lengthAdjust="spacing" textLength="32" x="1642" y="238.8516">(11)</text><text fill="#0B0C10" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="56" x="1678" y="239.5591">presents</text></g><!--MD5=[d5ad999656e45e45ab6099d4c973a9b0]
+reverse link Customer to Document10--><g id="link_Customer_Document10"><path d="M105.84,675.65 C113.75,600.2 137.66,459.69 209,366 C244.68,319.15 266.66,317.46 321.5,296 C695.23,149.75 1186.9,170.11 1389.31,186.69 " fill="none" id="Customer-backto-Document10" style="stroke:#C5C6C7;stroke-width:1.0;"/><polygon fill="#C5C6C7" points="105.29,680.97,110.1706,672.4155,105.7903,675.9951,102.2107,671.6149,105.29,680.97" style="stroke:#C5C6C7;stroke-width:1.0;"/><text fill="#0B0C10" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="17" x="773" y="174.0669">for</text></g><!--MD5=[23f717316a3950534df1730a28e037f4]
+link Customer to Document11--><g id="link_Customer_Document11"><path d="M108.2,680.97 C118.81,616.46 145.78,499.79 209,423 C245.85,378.25 266.67,375.82 321.5,357 C680.11,233.88 1137.74,261.86 1355.85,285.47 " fill="none" id="Customer-to-Document11" style="stroke:#C5C6C7;stroke-width:1.0;"/><polygon fill="#C5C6C7" points="1360.96,286.02,1352.4474,281.0667,1355.9895,285.4772,1351.579,289.0194,1360.96,286.02" style="stroke:#C5C6C7;stroke-width:1.0;"/><text fill="#0B0C10" filter="url(#b1u50bgbbk4f5d0)" font-family="sans-serif" font-size="16" lengthAdjust="spacing" textLength="32" x="747" y="257.8516">(12)</text><text fill="#0B0C10" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="33" x="783" y="258.5591">signs</text></g><!--MD5=[ab989fb8b0b1239897aa76bcf134b5fd]
+link Document11 to SignatureService--><g id="link_Document11_SignatureService"><path d="M1606.13,319.83 C1658.36,327.49 1717.99,336.23 1764.73,343.08 " fill="none" id="Document11-to-SignatureService" style="stroke:#C5C6C7;stroke-width:1.0;"/><polygon fill="#C5C6C7" points="1769.79,343.83,1761.4546,338.5839,1764.8414,343.1149,1760.3104,346.5017,1769.79,343.83" style="stroke:#C5C6C7;stroke-width:1.0;"/><text fill="#0B0C10" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="18" x="1679" y="317.0669">via</text></g><!--MD5=[ad7871b8bc7de32deb798deb13b61969]
+reverse link Document12 to ValidationService--><g id="link_Document12_ValidationService"><path d="M646.42,1118.52 C722.53,1098.79 814.52,1070.12 892,1032 C910.38,1022.95 929,1010.96 945.62,999.01 " fill="none" id="Document12-backto-ValidationService" style="stroke:#C5C6C7;stroke-width:1.0;"/><polygon fill="#C5C6C7" points="641.43,1119.81,651.143,1121.4403,646.2722,1118.5636,649.1488,1113.6928,641.43,1119.81" style="stroke:#C5C6C7;stroke-width:1.0;"/><text fill="#0B0C10" filter="url(#b1u50bgbbk4f5d0)" font-family="sans-serif" font-size="16" lengthAdjust="spacing" textLength="22" x="677" y="1022.8516">(8)</text><text fill="#0B0C10" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="183" x="703" y="1023.5591">[successful validation] sends</text></g><!--MD5=[494d4bbd097ffa4b5b60b692b848456f]
+reverse link CustomerService to Document12--><g id="link_CustomerService_Document12"><path d="M168.46,1701.83 C181.6,1692.76 195.51,1683.74 209,1676 C252.99,1650.75 285.07,1671.34 313,1629 C325.97,1609.33 307.36,1223.84 321.5,1205 C327.52,1196.99 334.74,1190.15 342.76,1184.33 " fill="none" id="CustomerService-backto-Document12" style="stroke:#C5C6C7;stroke-width:1.0;"/><polygon fill="#C5C6C7" points="164.03,1704.9,173.7039,1703.0519,168.1368,1702.048,169.1407,1696.481,164.03,1704.9" style="stroke:#C5C6C7;stroke-width:1.0;"/><text fill="#0B0C10" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="13" x="254.5" y="1620.0669">to</text></g><!--MD5=[22c8f15a96d14bae0db9d4af2bff4c3a]
+reverse link Document13 to SignatureService--><g id="link_Document13_SignatureService"><path d="M571.88,1879.39 C698.87,1852.33 950.58,1783.68 1111,1641 C1533.49,1265.23 1772.44,586.28 1831.46,402.15 " fill="none" id="Document13-backto-SignatureService" style="stroke:#C5C6C7;stroke-width:1.0;"/><polygon fill="#C5C6C7" points="566.67,1880.49,576.3067,1882.5231,571.5598,1879.4463,574.6367,1874.6994,566.67,1880.49" style="stroke:#C5C6C7;stroke-width:1.0;"/><text fill="#0B0C10" filter="url(#b1u50bgbbk4f5d0)" font-family="sans-serif" font-size="16" lengthAdjust="spacing" textLength="32" x="1187" y="1405.8516">(13)</text><text fill="#0B0C10" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="38" x="1223" y="1406.5591">sends</text></g><!--MD5=[f15a27fdcb01518749fcad3b070e1a8a]
+reverse link CustomerService to Document13--><g id="link_CustomerService_Document13"><path d="M179.36,1801.54 C189.14,1806.82 199.16,1811.79 209,1816 C277.18,1845.18 359.31,1866.45 417.31,1879.34 " fill="none" id="CustomerService-backto-Document13" style="stroke:#C5C6C7;stroke-width:1.0;"/><polygon fill="#C5C6C7" points="174.89,1799.09,180.8649,1806.9194,179.2762,1801.4903,184.7054,1799.9015,174.89,1799.09" style="stroke:#C5C6C7;stroke-width:1.0;"/><text fill="#0B0C10" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="13" x="254.5" y="1807.0669">to</text></g><!--MD5=[b16ee73e6649405ce3677dd30ad45789]
+link CustomerService to Document14--><g id="link_CustomerService_Document14"><path d="M179.32,1738.09 C246.8,1725.94 344.29,1708.4 412.2,1696.18 " fill="none" id="CustomerService-to-Document14" style="stroke:#C5C6C7;stroke-width:1.0;"/><polygon fill="#C5C6C7" points="417.45,1695.24,407.8832,1692.8998,412.5293,1696.1269,409.3022,1700.7729,417.45,1695.24" style="stroke:#C5C6C7;stroke-width:1.0;"/><text fill="#0B0C10" filter="url(#b1u50bgbbk4f5d0)" font-family="sans-serif" font-size="16" lengthAdjust="spacing" textLength="32" x="223" y="1704.8516">(14)</text><text fill="#0B0C10" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="40" x="259" y="1705.5591">stores</text></g><!--MD5=[1d7272d0d93411111478e4693b713289]
+link Document14 to DocumentService--><g id="link_Document14_DocumentService"><path d="M566.52,1671.37 C593.58,1663.84 622.19,1650.98 641,1629 C687.19,1575.03 624.01,1525.28 671,1472 C673.15,1469.57 820.97,1422.14 918.77,1390.95 " fill="none" id="Document14-to-DocumentService" style="stroke:#C5C6C7;stroke-width:1.0;"/><polygon fill="#C5C6C7" points="923.68,1389.38,913.8917,1388.2899,918.9142,1390.8925,916.3116,1395.9151,923.68,1389.38" style="stroke:#C5C6C7;stroke-width:1.0;"/><text fill="#0B0C10" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="11" x="776" y="1392.0669">in</text></g><!--MD5=[0a02ce873e61521f07eea994bc469f8d]
+link CustomerService to Document15--><g id="link_CustomerService_Document15"><path d="M179.26,1767.65 C189.23,1769.32 199.34,1770.83 209,1772 C284.49,1781.16 372,1785.09 429.26,1786.77 " fill="none" id="CustomerService-to-Document15" style="stroke:#C5C6C7;stroke-width:1.0;"/><polygon fill="#C5C6C7" points="434.36,1786.92,425.4779,1782.6646,429.362,1786.7772,425.2494,1790.6613,434.36,1786.92" style="stroke:#C5C6C7;stroke-width:1.0;"/><text fill="#0B0C10" filter="url(#b1u50bgbbk4f5d0)" font-family="sans-serif" font-size="16" lengthAdjust="spacing" textLength="32" x="219" y="1762.8516">(15)</text><text fill="#0B0C10" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="48" x="255" y="1763.5591">creates</text></g><!--MD5=[7a936ec798f5e43e51a10577fcf25bbf]
+link Document15 to AgreementService--><g id="link_Document15_AgreementService"><path d="M549.57,1768.78 C577.29,1759.09 611.08,1746.9 641,1735 C736.44,1697.03 844.01,1649.2 917.01,1615.96 " fill="none" id="Document15-to-AgreementService" style="stroke:#C5C6C7;stroke-width:1.0;"/><polygon fill="#C5C6C7" points="921.76,1613.79,911.9115,1613.8728,917.2082,1615.859,915.2219,1621.1557,921.76,1613.79" style="stroke:#C5C6C7;stroke-width:1.0;"/><text fill="#0B0C10" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="11" x="776" y="1618.0669">in</text></g><!--MD5=[a8cad33c3bae4f8c72e8b4e83668c3eb]
+link Customer to Conversation16--><g id="link_Customer_Conversation16"><path d="M113.11,775.03 C129.41,845.37 159.94,982.33 179,1100 C188.12,1156.32 177.16,1307.66 209,1355 C249.26,1414.86 326.72,1443.58 390.28,1457.35 " fill="none" id="Customer-to-Conversation16" style="stroke:#C5C6C7;stroke-width:1.0;"/><polygon fill="#C5C6C7" points="395.22,1458.4,387.2533,1452.6094,390.3302,1457.3563,385.5833,1460.4331,395.22,1458.4" style="stroke:#C5C6C7;stroke-width:1.0;"/><text fill="#0B0C10" filter="url(#b1u50bgbbk4f5d0)" font-family="sans-serif" font-size="16" lengthAdjust="spacing" textLength="32" x="215" y="1345.8516">(16)</text><text fill="#0B0C10" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="56" x="251" y="1346.5591">requests</text></g><!--MD5=[6f7fcbc1e48f04bfb8c3dd44d018a911]
+link Conversation16 to AgreementService--><g id="link_Conversation16_AgreementService"><path d="M588.6,1487.8 C615.27,1492.75 644.26,1498.1 671,1503 C769.18,1520.99 794.89,1519.91 892,1543 C900.05,1544.91 908.38,1547.06 916.7,1549.32 " fill="none" id="Conversation16-to-AgreementService" style="stroke:#C5C6C7;stroke-width:1.0;"/><polygon fill="#C5C6C7" points="921.87,1550.74,914.2412,1544.511,917.0465,1549.4232,912.1343,1552.2286,921.87,1550.74" style="stroke:#C5C6C7;stroke-width:1.0;"/><text fill="#0B0C10" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="11" x="776" y="1494.0669">in</text></g><!--MD5=[23581cfb6370d09f78163e24a3fc320f]
+reverse link Document17 to AgreementService--><g id="link_Document17_AgreementService"><path d="M558.87,1576.46 C592.43,1576.67 633.89,1576.9 671,1577 C769.22,1577.28 793.78,1577.44 892,1577 C901.68,1576.96 911.83,1576.89 921.9,1576.82 " fill="none" id="Document17-backto-AgreementService" style="stroke:#C5C6C7;stroke-width:1.0;"/><polygon fill="#C5C6C7" points="553.55,1576.42,562.527,1580.4714,558.5499,1576.4486,562.5727,1572.4715,553.55,1576.42" style="stroke:#C5C6C7;stroke-width:1.0;"/><text fill="#0B0C10" filter="url(#b1u50bgbbk4f5d0)" font-family="sans-serif" font-size="16" lengthAdjust="spacing" textLength="32" x="740.5" y="1567.8516">(17)</text><text fill="#0B0C10" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="46" x="776.5" y="1568.5591">returns</text></g><!--MD5=[5673448a8c43a2472493ca1b62fe7af9]
+reverse link Customer to Document17--><g id="link_Customer_Document17"><path d="M114.94,780.29 C132.19,851.96 162.46,984.93 179,1100 C190.67,1181.21 162.76,1400.22 209,1468 C258.34,1540.32 363.31,1564.25 430.34,1572.14 " fill="none" id="Customer-backto-Document17" style="stroke:#C5C6C7;stroke-width:1.0;"/><polygon fill="#C5C6C7" points="113.72,775.24,111.9416,784.927,114.8923,780.1006,119.7186,783.0513,113.72,775.24" style="stroke:#C5C6C7;stroke-width:1.0;"/><text fill="#0B0C10" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="13" x="254.5" y="1459.0669">to</text></g><!--MD5=[248bd66ce086f9a9230a87bc198836ca]
+link Customer to Conversation18--><g id="link_Customer_Conversation18"><path d="M111.72,775.08 C137.48,899.73 205.76,1229.16 209,1234 C250.26,1295.69 328.69,1328.62 392.39,1345.89 " fill="none" id="Customer-to-Conversation18" style="stroke:#C5C6C7;stroke-width:1.0;"/><polygon fill="#C5C6C7" points="397.33,1347.21,389.6623,1341.0289,392.4984,1345.9235,387.6038,1348.7596,397.33,1347.21" style="stroke:#C5C6C7;stroke-width:1.0;"/><text fill="#0B0C10" filter="url(#b1u50bgbbk4f5d0)" font-family="sans-serif" font-size="16" lengthAdjust="spacing" textLength="32" x="215" y="1224.8516">(18)</text><text fill="#0B0C10" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="56" x="251" y="1225.5591">requests</text></g><!--MD5=[acdbe817a77a4769c16d082fa2b4c4bf]
+link Conversation18 to DocumentService--><g id="link_Conversation18_DocumentService"><path d="M586.63,1364 C681.56,1364 827.13,1364 918.74,1364 " fill="none" id="Conversation18-to-DocumentService" style="stroke:#C5C6C7;stroke-width:1.0;"/><polygon fill="#C5C6C7" points="923.87,1364,914.87,1360,918.87,1364,914.87,1368,923.87,1364" style="stroke:#C5C6C7;stroke-width:1.0;"/><text fill="#0B0C10" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="11" x="776" y="1355.0669">in</text></g><!--MD5=[a3a4ff891e46e297b964553ac7613146]
+reverse link Document19 to DocumentService--><g id="link_Document19_DocumentService"><path d="M556.77,1266.77 C635.98,1278.26 774.97,1300.35 892,1329 C902.35,1331.53 913.14,1334.5 923.76,1337.61 " fill="none" id="Document19-backto-DocumentService" style="stroke:#C5C6C7;stroke-width:1.0;"/><polygon fill="#C5C6C7" points="551.64,1266.03,559.9775,1271.2727,556.5889,1266.7431,561.1185,1263.3545,551.64,1266.03" style="stroke:#C5C6C7;stroke-width:1.0;"/><text fill="#0B0C10" filter="url(#b1u50bgbbk4f5d0)" font-family="sans-serif" font-size="16" lengthAdjust="spacing" textLength="32" x="740.5" y="1276.8516">(19)</text><text fill="#0B0C10" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="46" x="776.5" y="1277.5591">returns</text></g><!--MD5=[235cb0e83523e14b412a4ff726593539]
+reverse link Customer to Document19--><g id="link_Customer_Document19"><path d="M111.28,780.24 C131.45,878.29 188.61,1090.31 321.5,1205 C352.43,1231.69 396.75,1244.95 432.31,1251.53 " fill="none" id="Customer-backto-Document19" style="stroke:#C5C6C7;stroke-width:1.0;"/><polygon fill="#C5C6C7" points="110.23,775.09,108.1104,784.7081,111.2298,779.989,115.9489,783.1084,110.23,775.09" style="stroke:#C5C6C7;stroke-width:1.0;"/><text fill="#0B0C10" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="11" x="255.5" y="1051.0669">in</text></g><!--MD5=[ce665414e2094aa0ea218a9da1acb44d]
+@startuml
+!include https://raw.githubusercontent.com/johthor/DomainStory-PlantUML/main/domainStory.puml
+'!include ../domainStory.puml
+
+Person(Customer)
+
+Boundary(FinetechSales, "FineTech Sales Process") {
+    System(CatalogService, "Catalog Service", )
+    System(QuoteService, "Quote Service", )
+    System(ValidationService, "Validation Service", )
+
+    activity(1, Customer ,requests , Conversation: Product Catalog, from, CatalogService)
+    activity(2<, CatalogService ,returns , Document: Products, to, Customer)
+
+    activity(3, Customer ,requests , Conversation: quotes on products matching criteria, from, QuoteService)
+    activity(4<, QuoteService, calculates and returns, Document: matching quotes,to, Customer)
+
+    activity(5, Customer, sends, Document: accepted quote and customer info ,  to, ValidationService)
+    activity(6<, ValidationService, [failed validation] returns, Email:  Rejection ,  to, Customer)
+
+}
+
+Boundary(DigitalSignatureProvider, "Digital Signature Process") {
+    System(SignatureService, "Signature Service", )
+    activity(7, ValidationService, [successful validation]send, Document: Contract based on quote,  to, SignatureService)
+    activity(9<, SignatureService, sends, Email: Link to contract to be signed ,  to, Customer)
+    activity(10, Customer, starts, Conversation: Contract signing flow via link,  with , SignatureService)
+    activity(11<, SignatureService, presents , Document: Contract to be signed,  for , Customer)
+    activity(12, Customer, signs , Document: Contract with Digital Signature ,  via , SignatureService)
+
+}
+
+Boundary(finetechCustomer, "FineTech Customer Process") {
+    System(CustomerService, "Customer Service", )
+    System(DocumentService, "Document Service", )
+    System(AgreementService, "Agreement Service", )
+    activity(8<, ValidationService, [successful validation] sends , Document: Unsigned Contract and Customer Info ,  to , CustomerService)
+    activity(13<, SignatureService, sends , Document: Signed Contract ,  to , CustomerService)
+    activity(14, CustomerService, stores , Document: Signed Contract ,  in , DocumentService)
+    activity(15, CustomerService, creates , Document: Agreement ,  in , AgreementService)
+    activity(16, Customer, requests , Conversation: Agreements by criteria ,  in , AgreementService)
+    activity(17<, AgreementService, returns , Document: Agreements ,  to , Customer)
+    activity(18, Customer, requests , Conversation: Documents by criteria ,  in , DocumentService)
+    activity(19<, DocumentService, returns , Document: Documents ,  in , Customer)
+
+
+}
+
+
+@enduml
+
+@startuml
+
+
+
+
+
+
+
+
+hide stereotypes
+skinparam Shadowing false
+skinparam DefaultTextAlignment center
+skinparam Padding 5
+
+skinparam agent {
+    FontColor #0b0c10
+    BackgroundColor none
+    BorderColor none
+}
+
+skinparam card {
+    FontColor #0b0c10
+    BackgroundColor none
+    BorderColor none
+}
+
+skinparam rectangle<<boundary>> {
+    FontColor #0b0c10
+    BackgroundColor none
+    BorderColor #1f2833
+    BorderStyle dashed
+    RoundCorner 15
+}
+
+skinparam Arrow {
+    FontColor #0b0c10
+    Color #c5c6c7
+}
+
+skinparam note {
+    FontColor #0b0c10
+    BackgroundColor #c5c6c7
+    BorderColor #1f2833
+}
+
+
+left to right direction
+
+
+
+sprite $ma_account_outline [48x48/16] {
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+0000000000000000000029DFFD9200000000000000000000
+00000000000000000009FFFFFFFF90000000000000000000
+000000000000000000BFFFFFFFFFFB000000000000000000
+000000000000000009FFFFFDDFFFFF900000000000000000
+00000000000000002FFFFA1001AFFFF20000000000000000
+00000000000000009FFFA000000AFFF80000000000000000
+0000000000000000DFFF10000001FFFD0000000000000000
+0000000000000000FFFD00000000DFFF0000000000000000
+0000000000000000FFFD00000000DFFF0000000000000000
+0000000000000000DFFF10000001FFFD0000000000000000
+00000000000000008FFFA000000AFFF80000000000000000
+00000000000000002FFFFA1001AFFFF20000000000000000
+000000000000000009FFFFFDDFFFFF900000000000000000
+000000000000000000BFFFFFFFFFFB000000000000000000
+00000000000000000009FFFFFFFF90000000000000000000
+0000000000000000000028DFFD8200000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+00000000000000000158BDEFFEDB85100000000000000000
+0000000000000028DFFFFFFFFFFFFFFD8200000000000000
+0000000000003BFFFFFFFFFFFFFFFFFFFFC4000000000000
+00000000001CFFFFFFFFFFEDDEFFFFFFFFFFC10000000000
+0000000004EFFFFFFC842000000248CFFFFFFE4000000000
+000000002FFFFFE720000000000000027EFFFFF200000000
+00000000AFFFF6000000000000000000007FFFFA00000000
+00000000FFFF200000000000000000000002FFFF00000000
+00000000FFFC000000000000000000000000CFFF00000000
+00000000FFFC000000000000000000000000CFFF00000000
+00000000FFFFCCCCCCCCCCCCCCCCCCCCCCCCFFFF00000000
+00000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF00000000
+00000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF00000000
+00000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF00000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+}
+
+skinparam folderBackgroundColor<<MA ACCOUNT_OUTLINE>> White
+
+
+sprite $ma_account_multiple_outline [48x48/16] {
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+0000000000018CFFC81000000000018CFFC8100000000000
+00000000005FFFFFFFF5000000005FFFFFFFF50000000000
+0000000005FFFFFFFFFF50000005FFFFFFFFFF5000000000
+000000001FFFE5005DFFF100001FFFE5005DFFF100000000
+000000008FFE100001EFF800008FFE100001EFF800000000
+00000000DFF50000005FFC0000DFF50000005FFC00000000
+00000000FFF00000000FFF0000FFF00000000FFF00000000
+00000000FFF00000000FFF0000FFF00000000FFF00000000
+00000000CFF50000005FFC0000CFF50000005FFC00000000
+000000008FFD100001DFF800008FFD100001DFF800000000
+000000001FFFE5005DFFF100001FFFE5005DFFF100000000
+0000000005FFFFFFFFFF50000005FFFFFFFFFF5000000000
+00000000005FFFFFFFF5000000005FFFFFFFF50000000000
+0000000000018CFFC81000000000018CFFC8100000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+00000000037ACEFFECA7300000037ACEFFECA73000000000
+00000039EFFFFFFFFFFFFE9339EFFFFFFFFFFFFE93000000
+00002BFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB20000
+0006FFFFFEA63100136AEFFFFFFEA63100136AEFFFFF5000
+004FFFFA30000000000004AFFFF4000000000004AFFFF400
+00DFFC200000000000000003CFFC00000000000003CFFC00
+00FFF10000000000000000001FFF000000000000001FFF00
+00FFF00000000000000000000FFF000000000000000FFF00
+00FFF00000000000000000000FFF000000000000000FFF00
+00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF00
+00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF00
+00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF00
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+}
+
+skinparam folderBackgroundColor<<MA ACCOUNT_MULTIPLE_OUTLINE>> White
+
+
+sprite $ma_laptop [48x48/16] {
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000001AFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB200000
+00001EFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFE10000
+0000AFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFA0000
+0000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF0000
+0000FFFF00000000000000000000000000000000FFFF0000
+0000FFFF00000000000000000000000000000000FFFF0000
+0000FFFF00000000000000000000000000000000FFFF0000
+0000FFFF00000000000000000000000000000000FFFF0000
+0000FFFF00000000000000000000000000000000FFFF0000
+0000FFFF00000000000000000000000000000000FFFF0000
+0000FFFF00000000000000000000000000000000FFFF0000
+0000FFFF00000000000000000000000000000000FFFF0000
+0000FFFF00000000000000000000000000000000FFFF0000
+0000FFFF00000000000000000000000000000000FFFF0000
+0000FFFF00000000000000000000000000000000FFFF0000
+0000FFFF00000000000000000000000000000000FFFF0000
+0000FFFF00000000000000000000000000000000FFFF0000
+0000FFFF00000000000000000000000000000000FFFF0000
+0000FFFF00000000000000000000000000000000FFFF0000
+0000FFFF00000000000000000000000000000000FFFF0000
+0000FFFF00000000000000000000000000000000FFFF0000
+0000FFFF00000000000000000000000000000000FFFF0000
+0000FFFF00000000000000000000000000000000FFFF0000
+0000FFFF00000000000000000000000000000000FFFF0000
+0000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFE0000
+0000AFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFA0000
+00002EFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFE20000
+000001AFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFA100000
+FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+}
+
+skinparam folderBackgroundColor<<MA LAPTOP>> White
+
+
+sprite $ma_file_document [48x48/16] {
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+0000000002BFFFFFFFFFFFFFFFFF80000000000000000000
+000000002FFFFFFFFFFFFFFFFFFFF8000000000000000000
+00000000AFFFFFFFFFFFFFFFFFFFFF800000000000000000
+00000000EFFFFFFFFFFFFFFFFF8FFFF80000000000000000
+00000000FFFFFFFFFFFFFFFFFF07FFFF8000000000000000
+00000000FFFFFFFFFFFFFFFFFF007FFFF800000000000000
+00000000FFFFFFFFFFFFFFFFFF0007FFFF80000000000000
+00000000FFFFFFFFFFFFFFFFFF00007FFFF8000000000000
+00000000FFFFFFFFFFFFFFFFFF000007FFFF800000000000
+00000000FFFFFFFFFFFFFFFFFF0000007FFFF80000000000
+00000000FFFFFFFFFFFFFFFFFF00000007FFFF8000000000
+00000000FFFFFFFFFFFFFFFFFF000000007FFFF800000000
+00000000FFFFFFFFFFFFFFFFFF0000000007FFFF00000000
+00000000FFFFFFFFFFFFFFFFFF00000000007FFF00000000
+00000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF00000000
+00000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF00000000
+00000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF00000000
+00000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF00000000
+00000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF00000000
+00000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF00000000
+00000000FFFF000000000000000000000000FFFF00000000
+00000000FFFF000000000000000000000000FFFF00000000
+00000000FFFF000000000000000000000000FFFF00000000
+00000000FFFF000000000000000000000000FFFF00000000
+00000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF00000000
+00000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF00000000
+00000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF00000000
+00000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF00000000
+00000000FFFF000000000000000000FFFFFFFFFF00000000
+00000000FFFF000000000000000000FFFFFFFFFF00000000
+00000000FFFF000000000000000000FFFFFFFFFF00000000
+00000000FFFF000000000000000000FFFFFFFFFF00000000
+00000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF00000000
+00000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF00000000
+00000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF00000000
+00000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF00000000
+00000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF00000000
+00000000AFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFA00000000
+000000002FFFFFFFFFFFFFFFFFFFFFFFFFFFFFE200000000
+0000000002AFFFFFFFFFFFFFFFFFFFFFFFFFFA2000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+}
+
+skinparam folderBackgroundColor<<MA FILE_DOCUMENT>> White
+
+
+sprite $ma_folder_outline [48x48/16] {
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000002BFFFFFFFFFFFFF8000000000000000000000000000
+00002FFFFFFFFFFFFFFFF800000000000000000000000000
+0000AFFFFFFFFFFFFFFFFF80000000000000000000000000
+0000EFFFFFFFFFFFFFFFFFF8000000000000000000000000
+0000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB200000
+0000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFE10000
+0000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFA0000
+0000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF0000
+0000FFFF00000000000000000000000000000000FFFF0000
+0000FFFF00000000000000000000000000000000FFFF0000
+0000FFFF00000000000000000000000000000000FFFF0000
+0000FFFF00000000000000000000000000000000FFFF0000
+0000FFFF00000000000000000000000000000000FFFF0000
+0000FFFF00000000000000000000000000000000FFFF0000
+0000FFFF00000000000000000000000000000000FFFF0000
+0000FFFF00000000000000000000000000000000FFFF0000
+0000FFFF00000000000000000000000000000000FFFF0000
+0000FFFF00000000000000000000000000000000FFFF0000
+0000FFFF00000000000000000000000000000000FFFF0000
+0000FFFF00000000000000000000000000000000FFFF0000
+0000FFFF00000000000000000000000000000000FFFF0000
+0000FFFF00000000000000000000000000000000FFFF0000
+0000FFFF00000000000000000000000000000000FFFF0000
+0000FFFF00000000000000000000000000000000FFFF0000
+0000FFFF00000000000000000000000000000000FFFF0000
+0000FFFF00000000000000000000000000000000FFFF0000
+0000FFFF00000000000000000000000000000000FFFF0000
+0000FFFF00000000000000000000000000000000FFFF0000
+0000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF0000
+0000AFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFA0000
+00002EFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFE20000
+000001AFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFA200000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+}
+
+skinparam folderBackgroundColor<<MA FOLDER_OUTLINE>> White
+
+
+sprite $ma_phone [48x48/16] {
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+0000004EFFFFFFFE40000000000000000000000000000000
+000000EFFFFFFFFFE0000000000000000000000000000000
+000000FFFFFFFFFFF0000000000000000000000000000000
+000000EFFFFFFFFFF1000000000000000000000000000000
+000000EFFFFFFFFFF3000000000000000000000000000000
+000000DFFFFFFFFFF4000000000000000000000000000000
+000000AFFFFFFFFFF7000000000000000000000000000000
+0000008FFFFFFFFFFB000000000000000000000000000000
+0000005FFFFFFFFFFF000000000000000000000000000000
+0000002FFFFFFFFFFF200000000000000000000000000000
+0000000EFFFFFFFFFF100000000000000000000000000000
+0000000AFFFFFFFFF5000000000000000000000000000000
+00000005FFFFFFFF50000000000000000000000000000000
+00000000FFFFFFF500000000000000000000000000000000
+000000009FFFFF5000000000000000000000000000000000
+000000003FFFF70000000000000000000000000000000000
+000000000BFFFC0000000000000000000000000000000000
+0000000003FFFF5000000000000000000000000000000000
+0000000000BFFFE100000000000000000000000000000000
+00000000002FFFFA00000000000000000000000000000000
+000000000008FFFF60000000000000000000000000000000
+000000000000CFFFF3000000000000000000000000000000
+0000000000002FFFFF300000000000000000000000000000
+00000000000005FFFFE30000000000012000000000000000
+000000000000007FFFFF30000000005FFFB8421000000000
+0000000000000008FFFFF600000005FFFFFFFFFFE4000000
+00000000000000008FFFFFA100005FFFFFFFFFFFFE000000
+000000000000000007FFFFFE5005FFFFFFFFFFFFFF000000
+0000000000000000005FFFFFFC7FFFFFFFFFFFFFFF000000
+00000000000000000001CFFFFFFFFFFFFFFFFFFFFF000000
+0000000000000000000007FFFFFFFFFFFFFFFFFFFF000000
+00000000000000000000002BFFFFFFFFFFFFFFFFFF000000
+0000000000000000000000003BFFFFFFFFFFFFFFFF000000
+0000000000000000000000000039EFFFFFFFFFFFFF000000
+0000000000000000000000000000059EFFFFFFFFFE000000
+00000000000000000000000000000000258ACDEFE4000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+}
+
+skinparam folderBackgroundColor<<MA PHONE>> White
+
+sprite $ma_at [48x48/16] {
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+00000000000000000037ADEFFECA73000000000000000000
+00000000000000018EFFFFFFFFFFFFE81000000000000000
+000000000000019FFFFFFFFFFFFFFFFFF910000000000000
+0000000000005EFFFFFFFFFFFFFFFFFFFFE5000000000000
+000000000008FFFFFFE9520000259EFFFFFF800000000000
+0000000000AFFFFFD50000000000005DFFFFFA0000000000
+000000000AFFFFF600000000000000007FFFFFA000000000
+000000008FFFFE30000000000000000003EFFFF800000000
+00000005FFFFD1000000000000000000002DFFFF50000000
+0000001EFFFE100000000000000000000001DFFFE1000000
+0000009FFFF3000000006BEFFEB6000000002FFFF9000000
+000001FFFF600000005EFFFFFFFFE500000007FFFF100000
+000008FFFD00000009FFFFFFFFFFFF80000000DFFF800000
+00000EFFF50000009FFFFFFFFFFFFFF80000005FFFE00000
+00003FFFE0000005FFFFF930039FFFFF5000000EFFF30000
+00007FFF9000000EFFFE30000003EFFFE0000009FFF70000
+0000AFFF5000006FFFF3000000003FFFF6000005FFFA0000
+0000DFFF200000BFFF900000000009FFFB000002FFFC0000
+0000EFFF000000EFFF300000000003FFFE000000FFFE0000
+0000FFFF000000FFFF000000000000FFFF000000FFFF0000
+0000FFFF000000FFFF000000000000FFFF000000FFFF0000
+0000EFFF000000EFFF300000000003FFFF000000FFFF0000
+0000DFFF200000BFFF900000000009FFFF000000FFFF0000
+0000AFFF5000006FFFF3000000003FFFFF200001FFFE0000
+00007FFF9000000EFFFE30000003EFFFFF800007FFFC0000
+00003FFFE0000005FFFFF930039FFFFFFFF8117FFFF80000
+00000EFFF50000008FFFFFFFFFFFFFFFFFFFFFFFFFF10000
+000008FFFD00000008FFFFFFFFFFFF87FFFFFFFFFF500000
+000001FFFF700000005EFFFFFFFFE5006FFFFFFFF5000000
+0000009FFFF3000000006BEFFEB60000028DFFD910000000
+0000001EFFFE200000000000000000000000000000000000
+00000005FFFFD10000000000000000000000000000000000
+000000008FFFFD2000000000000000000000000000000000
+000000000AFFFFF700000000000000000000000000000000
+0000000000AFFFFFD5000000000000000000000000000000
+000000000008FFFFFFE95200000000000000000000000000
+0000000000005EFFFFFFFFFFFFFFFFFFFF00000000000000
+000000000000019FFFFFFFFFFFFFFFFFFF00000000000000
+00000000000000018EFFFFFFFFFFFFFFFF00000000000000
+00000000000000000037ACEFFFFFFFFFFF00000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+}
+
+skinparam folderBackgroundColor<<MA AT>> White
+
+
+sprite $ma_message_outline [48x48/16] {
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000001AFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFA100000
+00001EFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFE10000
+0000AFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFA0000
+0000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF0000
+0000FFFF00000000000000000000000000000000FFFF0000
+0000FFFF00000000000000000000000000000000FFFF0000
+0000FFFF00000000000000000000000000000000FFFF0000
+0000FFFF00000000000000000000000000000000FFFF0000
+0000FFFF00000000000000000000000000000000FFFF0000
+0000FFFF00000000000000000000000000000000FFFF0000
+0000FFFF00000000000000000000000000000000FFFF0000
+0000FFFF00000000000000000000000000000000FFFF0000
+0000FFFF00000000000000000000000000000000FFFF0000
+0000FFFF00000000000000000000000000000000FFFF0000
+0000FFFF00000000000000000000000000000000FFFF0000
+0000FFFF00000000000000000000000000000000FFFF0000
+0000FFFF00000000000000000000000000000000FFFF0000
+0000FFFF00000000000000000000000000000000FFFF0000
+0000FFFF00000000000000000000000000000000FFFF0000
+0000FFFF00000000000000000000000000000000FFFF0000
+0000FFFF00000000000000000000000000000000FFFF0000
+0000FFFF00000000000000000000000000000000FFFF0000
+0000FFFF00000000000000000000000000000000FFFF0000
+0000FFFF00000000000000000000000000000000FFFF0000
+0000FFFF00000000000000000000000000000000FFFF0000
+0000FFFF00000000000000000000000000000000FFFF0000
+0000FFFF00000000000000000000000000000000FFFF0000
+0000FFFF00000000000000000000000000000000FFFF0000
+0000FFFF0007FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF0000
+0000FFFF008FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFA0000
+0000FFFF08FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFE10000
+0000FFFF8FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFA100000
+0000FFFFFFF8000000000000000000000000000000000000
+0000FFFFFF80000000000000000000000000000000000000
+0000FFFFF800000000000000000000000000000000000000
+0000FFFF8000000000000000000000000000000000000000
+0000FFF80000000000000000000000000000000000000000
+0000FF800000000000000000000000000000000000000000
+0000F8000000000000000000000000000000000000000000
+000080000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+}
+
+skinparam folderBackgroundColor<<MA MESSAGE_OUTLINE>> White
+
+
+sprite $ma_information_outline [48x48/16] {
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+00000000000000000037ADEFFEDA73000000000000000000
+00000000000000018EFFFFFFFFFFFFE81000000000000000
+000000000000019FFFFFFFFFFFFFFFFFF910000000000000
+0000000000005EFFFFFFFFFFFFFFFFFFFFE5000000000000
+000000000009FFFFFFFA63100136AFFFFFFF900000000000
+0000000000BFFFFFE60000000000006DFFFFFB0000000000
+000000000BFFFFF700000000000000007FFFFFB000000000
+000000009FFFFE30000000000000000003EFFFF900000000
+00000005FFFFD1000000000000000000001DFFFF50000000
+0000001EFFFD100000000000000000000001EFFFE1000000
+0000009FFFF20000000000FFFF00000000003FFFF9000000
+000001FFFF700000000000FFFF000000000007FFFF100000
+000008FFFE000000000000FFFF000000000000DFFF800000
+00000EFFF6000000000000FFFF0000000000006FFFE00000
+00003FFFF000000000000000000000000000000FFFF30000
+00007FFFA000000000000000000000000000000AFFF70000
+0000AFFF60000000000000000000000000000006FFFA0000
+0000DFFF30000000000000000000000000000003FFFD0000
+0000EFFF10000000000000FFFF00000000000001FFFE0000
+0000FFFF00000000000000FFFF00000000000000FFFF0000
+0000FFFF00000000000000FFFF00000000000000FFFF0000
+0000EFFF10000000000000FFFF00000000000001FFFE0000
+0000DFFF30000000000000FFFF00000000000003FFFD0000
+0000AFFF60000000000000FFFF00000000000006FFFA0000
+00007FFFA0000000000000FFFF0000000000000AFFF70000
+00003FFFF0000000000000FFFF0000000000000FFFF30000
+00000EFFF6000000000000FFFF0000000000006FFFE00000
+000008FFFD000000000000FFFF000000000000DFFF800000
+000001FFFF700000000000FFFF000000000007FFFF100000
+0000009FFFF30000000000FFFF00000000003FFFF9000000
+0000001EFFFE100000000000000000000001EFFFE1000000
+00000005FFFFD1000000000000000000001DFFFF50000000
+000000009FFFFE30000000000000000003EFFFF900000000
+000000000BFFFFF700000000000000007FFFFFB000000000
+0000000000BFFFFFD60000000000006EFFFFFB0000000000
+000000000009FFFFFFFA63100136AFFFFFFF900000000000
+0000000000005EFFFFFFFFFFFFFFFFFFFFE5000000000000
+000000000000019FFFFFFFFFFFFFFFFFF910000000000000
+00000000000000018EFFFFFFFFFFFFE81000000000000000
+00000000000000000037ADEFFEDA73000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+}
+
+skinparam folderBackgroundColor<<MA INFORMATION_OUTLINE>> White
+
+
+
+
+
+
+
+
+
+
+
+
+        agent "<color:#1f2833><$ma_account_outline{scale=1}></color>\r Customer" as Customer <<Person>>
+
+    
+    rectangle "==FineTech Sales Process" <<Boundary>> as FinetechSales {
+        agent "<color:#1f2833><$ma_laptop{scale=1}></color>\r Catalog Service" as CatalogService <<System>>
+
+        agent "<color:#1f2833><$ma_laptop{scale=1}></color>\r Quote Service" as QuoteService <<System>>
+
+        agent "<color:#1f2833><$ma_laptop{scale=1}></color>\r Validation Service" as ValidationService <<System>>
+
+    
+        card "<color:#1f2833><$ma_message_outline{scale=.8}></color>\r  Product Catalog" as Conversation1 <<Conversation>>
+
+    
+
+
+
+    Customer - -> Conversation1 : <size:16><color:#0b0c10><back:#66fcf1>(1)</back></color></size> requests
+
+            Conversation1 - -> CatalogService : from
+
+        card "<color:#1f2833><$ma_file_document{scale=.8}></color>\r  Products" as Document2 <<Document>>
+
+    
+
+
+
+    Document2 <- - CatalogService : <size:16><color:#0b0c10><back:#66fcf1>(2)</back></color></size> returns
+
+            Customer <- - Document2 : to
+
+    
+        card "<color:#1f2833><$ma_message_outline{scale=.8}></color>\r  quotes on products matching criteria" as Conversation3 <<Conversation>>
+
+    
+
+
+
+    Customer - -> Conversation3 : <size:16><color:#0b0c10><back:#66fcf1>(3)</back></color></size> requests
+
+            Conversation3 - -> QuoteService : from
+
+        card "<color:#1f2833><$ma_file_document{scale=.8}></color>\r  matching quotes" as Document4 <<Document>>
+
+    
+
+
+
+    Document4 <- - QuoteService : <size:16><color:#0b0c10><back:#66fcf1>(4)</back></color></size> calculates and returns
+
+            Customer <- - Document4 : to
+
+    
+        card "<color:#1f2833><$ma_file_document{scale=.8}></color>\r  accepted quote and customer info" as Document5 <<Document>>
+
+    
+
+
+
+    Customer - -> Document5 : <size:16><color:#0b0c10><back:#66fcf1>(5)</back></color></size> sends
+
+            Document5 - -> ValidationService : to
+
+        card "<color:#1f2833><$ma_at{scale=.8}></color>\r   Rejection" as Email6 <<Email>>
+
+    
+
+
+
+    Email6 <- - ValidationService : <size:16><color:#0b0c10><back:#66fcf1>(6)</back></color></size> [failed validation] returns
+
+            Customer <- - Email6 : to
+
+    
+}
+
+    rectangle "==Digital Signature Process" <<Boundary>> as DigitalSignatureProvider {
+        agent "<color:#1f2833><$ma_laptop{scale=1}></color>\r Signature Service" as SignatureService <<System>>
+
+        card "<color:#1f2833><$ma_file_document{scale=.8}></color>\r  Contract based on quote" as Document7 <<Document>>
+
+    
+
+
+
+    ValidationService - -> Document7 : <size:16><color:#0b0c10><back:#66fcf1>(7)</back></color></size> [successful validation]send
+
+            Document7 - -> SignatureService : to
+
+        card "<color:#1f2833><$ma_at{scale=.8}></color>\r  Link to contract to be signed" as Email8 <<Email>>
+
+    
+
+
+
+    Email8 <- - SignatureService : <size:16><color:#0b0c10><back:#66fcf1>(9)</back></color></size> sends
+
+            Customer <- - Email8 : to
+
+        card "<color:#1f2833><$ma_message_outline{scale=.8}></color>\r  Contract signing flow via link" as Conversation9 <<Conversation>>
+
+    
+
+
+
+    Customer - -> Conversation9 : <size:16><color:#0b0c10><back:#66fcf1>(10)</back></color></size> starts
+
+            Conversation9 - -> SignatureService : with
+
+        card "<color:#1f2833><$ma_file_document{scale=.8}></color>\r  Contract to be signed" as Document10 <<Document>>
+
+    
+
+
+
+    Document10 <- - SignatureService : <size:16><color:#0b0c10><back:#66fcf1>(11)</back></color></size> presents
+
+            Customer <- - Document10 : for
+
+        card "<color:#1f2833><$ma_file_document{scale=.8}></color>\r  Contract with Digital Signature" as Document11 <<Document>>
+
+    
+
+
+
+    Customer - -> Document11 : <size:16><color:#0b0c10><back:#66fcf1>(12)</back></color></size> signs
+
+            Document11 - -> SignatureService : via
+
+    
+}
+
+    rectangle "==FineTech Customer Process" <<Boundary>> as finetechCustomer {
+        agent "<color:#1f2833><$ma_laptop{scale=1}></color>\r Customer Service" as CustomerService <<System>>
+
+        agent "<color:#1f2833><$ma_laptop{scale=1}></color>\r Document Service" as DocumentService <<System>>
+
+        agent "<color:#1f2833><$ma_laptop{scale=1}></color>\r Agreement Service" as AgreementService <<System>>
+
+        card "<color:#1f2833><$ma_file_document{scale=.8}></color>\r  Unsigned Contract and Customer Info" as Document12 <<Document>>
+
+    
+
+
+
+    Document12 <- - ValidationService : <size:16><color:#0b0c10><back:#66fcf1>(8)</back></color></size> [successful validation] sends
+
+            CustomerService <- - Document12 : to
+
+        card "<color:#1f2833><$ma_file_document{scale=.8}></color>\r  Signed Contract" as Document13 <<Document>>
+
+    
+
+
+
+    Document13 <- - SignatureService : <size:16><color:#0b0c10><back:#66fcf1>(13)</back></color></size> sends
+
+            CustomerService <- - Document13 : to
+
+        card "<color:#1f2833><$ma_file_document{scale=.8}></color>\r  Signed Contract" as Document14 <<Document>>
+
+    
+
+
+
+    CustomerService - -> Document14 : <size:16><color:#0b0c10><back:#66fcf1>(14)</back></color></size> stores
+
+            Document14 - -> DocumentService : in
+
+        card "<color:#1f2833><$ma_file_document{scale=.8}></color>\r  Agreement" as Document15 <<Document>>
+
+    
+
+
+
+    CustomerService - -> Document15 : <size:16><color:#0b0c10><back:#66fcf1>(15)</back></color></size> creates
+
+            Document15 - -> AgreementService : in
+
+        card "<color:#1f2833><$ma_message_outline{scale=.8}></color>\r  Agreements by criteria" as Conversation16 <<Conversation>>
+
+    
+
+
+
+    Customer - -> Conversation16 : <size:16><color:#0b0c10><back:#66fcf1>(16)</back></color></size> requests
+
+            Conversation16 - -> AgreementService : in
+
+        card "<color:#1f2833><$ma_file_document{scale=.8}></color>\r  Agreements" as Document17 <<Document>>
+
+    
+
+
+
+    Document17 <- - AgreementService : <size:16><color:#0b0c10><back:#66fcf1>(17)</back></color></size> returns
+
+            Customer <- - Document17 : to
+
+        card "<color:#1f2833><$ma_message_outline{scale=.8}></color>\r  Documents by criteria" as Conversation18 <<Conversation>>
+
+    
+
+
+
+    Customer - -> Conversation18 : <size:16><color:#0b0c10><back:#66fcf1>(18)</back></color></size> requests
+
+            Conversation18 - -> DocumentService : in
+
+        card "<color:#1f2833><$ma_file_document{scale=.8}></color>\r  Documents" as Document19 <<Document>>
+
+    
+
+
+
+    Document19 <- - DocumentService : <size:16><color:#0b0c10><back:#66fcf1>(19)</back></color></size> returns
+
+            Customer <- - Document19 : in
+
+    
+
+}
+
+
+@enduml
+
+PlantUML version 1.2022.6(Tue Jun 21 17:34:49 UTC 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: null
+--></g></svg>
