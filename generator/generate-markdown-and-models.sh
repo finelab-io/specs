@@ -28,11 +28,11 @@ https://github.com/finelab-io/asyncapi-template-spring-cloud-stream.git \
 -p binder=kafka \
 -p actuator=true \
 -p artifactId=product-service-provider-app \
--p groupId=dk.finelab \
+-p groupId=io.finelab \
 -p springBootVersion=2.7.3 \
 -p springCloudStreamVersion=3.2.4  \
 -p springCloudVersion=2021.0.3 \
--p javaPackage=dk.finelab.product.service.app \
+-p javaPackage=io.finelab.product.service.app \
 -p view=provider \
 --force-write \
 
@@ -45,16 +45,16 @@ https://github.com/finelab-io/asyncapi-template-spring-cloud-stream.git \
 -p binder=kafka \
 -p actuator=true \
 -p artifactId=product-service-model \
--p groupId=dk.finelab \
+-p groupId=io.finelab \
 -p springBootVersion=2.7.3 \
 -p springCloudStreamVersion=3.2.4  \
 -p springCloudVersion=2021.0.3 \
--p javaPackage=dk.finelab.product.service.model \
+-p javaPackage=io.finelab.product.service.model \
 -p view=provider \
 -p artifactType=library \
 --force-write \
 
-echo '* product-service-client'
+echo '* product-service-client-app'
 
 ag \
 ../domains/sales/product/product-service.yaml \
@@ -63,13 +63,12 @@ https://github.com/finelab-io/asyncapi-template-spring-cloud-stream.git \
 -p binder=kafka \
 -p actuator=true \
 -p artifactId=product-service-client-app \
--p groupId=dk.finelab \
+-p groupId=io.finelab \
 -p springBootVersion=2.7.3 \
 -p springCloudStreamVersion=3.2.4  \
 -p springCloudVersion=2021.0.3 \
--p javaPackage=dk.finelab.product.service.client.app \
+-p javaPackage=io.finelab.product.service.client.app \
 -p view=client \
--p artifactType=library \
 --force-write \
 
 echo
@@ -88,10 +87,10 @@ openapi-generator-cli generate \
 -i ../domains/sales/product/product-api.yaml \
 -g spring \
 -t ../generator/spring/templates \
--p apiPackage=dk.finelab.product.api \
--p modelPackage=dk.finelab.product.api.model \
+-p apiPackage=io.finelab.product.api \
+-p modelPackage=io.finelab.product.api.model \
 -o ../models/product-api-model \
--p groupId=dk.finelab \
+-p groupId=io.finelab \
 -p artifactId=product-api-model \
 -p bigDecimalAsString=true \
 -p interfaceOnly=true \

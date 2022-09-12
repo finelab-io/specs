@@ -1,0 +1,14 @@
+io/finelab/product/service/model/ProductInformation$QuoteCriteria$AllowValues.class
+io/finelab/product/service/model/MatchCriterion.class
+io/finelab/product/service/model/ProductInformation$QuoteCriteria$AllowLimit.class
+io/finelab/product/service/model/CriterionAllowValue.class
+io/finelab/product/service/model/ProductPrice$MatchCriteria.class
+io/finelab/product/service/model/Criterion$Type.class
+io/finelab/product/service/model/Criterion.class
+io/finelab/product/service/model/Criterion$AllowLimit.class
+io/finelab/product/service/model/ProductCatalog.class
+io/finelab/product/service/model/ProductInformation$QuoteCriteria$Type.class
+io/finelab/product/service/model/ProductInformation$QuoteCriteria.class
+io/finelab/product/service/model/Criterion$AllowValues.class
+io/finelab/product/service/model/ProductPrice.class
+io/finelab/product/service/model/ProductInformation.class

@@ -4,22 +4,10 @@ spring:
       definition: handleSalesProductCatalog;handleSalesProductInformation;handleSalesProductPrice
     stream:
       bindings:
-        handleSalesProductCatalog-in-0:
+        handleSalesProductCatalog-out-0:
           destination: sales.product.catalog
-        handleSalesProductInformation-in-0:
+        handleSalesProductInformation-out-0:
           destination: sales.product.information
-        handleSalesProductPrice-in-0:
+        handleSalesProductPrice-out-0:
           destination: sales.product.price
-logging:
-  level:
-    root: info
-    org:
-      springframework: info
-server:
-  port: 8080
-management:
-  endpoints:
-    web:
-      exposure:
-        include: '*'
 
