@@ -2,12 +2,31 @@
 
 # OpenAPI
 
-## Install
+## Generate 
+
+## markdown
+https://davidgarcia.dev/posts/openapi-to-markdown/
+
+### Install
+´´´
+  npm install -g widdershins
+´´´
+
+### Use
+´´´
+  widdershins \
+  https://raw.githubusercontent.com/finelab-io/specs/main/domains/sales/product/product-api.yaml \
+  -o markdown/2022-09-12-product-api.md
+´´´
+
+## spring
+
+### Install
 ´´´
 npm install -g @openapitools/openapi-generator-cli
 ´´´
 
-## Generate
+### Use
 * https://github.com/OpenAPITools/openapi-generator#3---usage
 * https://github.com/OpenAPITools/openapi-generator/blob/master/docs/generators/java.md
 * https://github.com/OpenAPITools/openapi-generator/tree/master/samples
@@ -16,11 +35,13 @@ npm install -g @openapitools/openapi-generator-cli
 openapi-generator-cli help generate
 ´´´
 * To get a list of language specific options available, please run
-* spring
+
+
+* To get a list of language specific options available, please run
 ´´´
 openapi-generator-cli config-help -g spring
 ´´´
-* markdown
+
 * To get the generator templates, please run and pick the right template
 ´´´
 cd generator/spring/templates
