@@ -8,16 +8,16 @@ info:
     url: https://www.apache.org/licenses/LICENSE-2.0
   contact:
     name: API support
-    email: api@finelab.id
+    email: api@finelab.io
       
 externalDocs:
   description: Product API
-  url: https://docs.finelab.io/sales/product-api
+  url: https://docs.finelab.io/posts/product-api
 servers:
-  - description: local
-    url: http://localhost:8080
   - description: test
     url: https://test-api.finelab.io
+  - description: prod
+    url: https://api.finelab.io
 tags:
   - name: Sales    
 paths:
@@ -266,6 +266,10 @@ components:
     CatalogPage:
       type: object
       properties:
+        url:
+          type: string
+          description: url to the page
+          example: https://api.finelab.io/catalogs
         items: 
           type: array
           items:
@@ -279,6 +283,7 @@ components:
         url:
           type: string
           description: unique identifier for the catalog.
+          example: https://api.finelab.io/catalogs/1234
         tenant_name: 
           type: string
           description: tenant to which catalog belongs.
@@ -335,6 +340,7 @@ components:
         url:
           type: string
           description: unique identifier for the catalog.
+          example: https://api.finelab.io/catalogs/1234
         tenant_name: 
           type: string
           description: tenant to which catalog belongs.
@@ -387,6 +393,10 @@ components:
     ProductPage:
       type: object
       properties:
+        url:
+          type: string
+          description: url to the page
+          example: https://api.finelab.io/products
         items: 
           type: array
           items:
@@ -399,9 +409,11 @@ components:
         url:
           type: string
           description: unique identifier for the product.
+          example: https://api.finelab.io/products/81236871
         catalog_url:
           type: string
           description: tenant to which catalog belongs.
+          example: https://api.finelab.io/catalogs/127635
         number: 
           type: string
           description: unique number in catalog for the product.
@@ -434,9 +446,11 @@ components:
         url:
           type: string
           description: unique identifier for the product.
+          example: https://api.finelab.io/products/127635
         catalog_url:
           type: string
           description: tenant to which catalog belongs.
+          example: https://api.finelab.io/products/127635233
         number: 
           type: string
           description: unique number in catalog for the product.
@@ -514,6 +528,10 @@ components:
     PricePage:
       type: object
       properties:
+        url:
+          type: string
+          description: url to the page
+          example: https://api.finelab.io/prices
         items: 
           type: array
           items:
@@ -530,7 +548,6 @@ components:
         product_id:
           type: string
           description: unique identifier for the product to which the price belongs.
-          example: urn:finelab:price:private_customers:private_insurance:da_DK:7000
         amount:
           type: number
           description: unique identifier for the product to which the price belongs.
@@ -575,6 +592,7 @@ components:
         url:
           type: string
           description: unique identifier for the price.
+          example: https://api.finelab.io/prices/127635233
         product_url:
           type: string
           description: unique identifier for the product to which the price belongs.
