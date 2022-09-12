@@ -14,10 +14,10 @@ externalDocs:
   description: Product API
   url: https://docs.finelab.io/posts/product-api
 servers:
-  - description: test
-    url: https://test-api.finelab.io
   - description: prod
     url: https://api.finelab.io
+  - description: test
+    url: https://test-api.finelab.io
 tags:
   - name: Sales    
 paths:

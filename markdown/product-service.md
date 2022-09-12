@@ -145,7 +145,7 @@ The `ProductInformation` contains information about the published product.
 | quote_criteria.allow_limit.max_value | string | - | - | - | - |
 | quote_criteria.allow_limit.max_inclusive | string | - | - | - | - |
 | revision | integer | revision of the product. | - | - | - |
-| published_at" | string | date and time at which the product is pusblished. | - | format (`date-time`) | - |
+| published_at | string | date and time at which the product is pusblished. | - | format (`date-time`) | - |
 | expired_at | string | date and time at which the product is expired and can be removed. | - | format (`date-time`) | - |
 
 > Examples of payload _(generated)_
@@ -180,7 +180,7 @@ The `ProductInformation` contains information about the published product.
     }
   ],
   "revision": 1,
-  "published_at\"": "2019-08-24T14:15:22Z",
+  "published_at": "2019-08-24T14:15:22Z",
   "expired_at": "2019-08-24T14:15:22Z"
 }
 ```
@@ -224,7 +224,7 @@ The `ProductPriceEvent` contains information about the published product price.
 | match_criteria.value | string | the value to match for the criterion | - | - | - |
 | display_name | string | displayed name. | - | - | - |
 | revision | integer | revision of the catalog. | - | - | - |
-| published_at" | string | date and time at which the catalog is pusblished. | - | format (`datetime`) | - |
+| published_at | string | date and time at which the catalog is pusblished. | - | format (`datetime`) | - |
 | valid_from | string | date and time from which the catalog is valid. | - | format (`datetime`) | - |
 | valid_to | string | date and time to which the catalog is valid. | - | format (`datetime`) | - |
 | expired_at | string | date and time at which the catalog is expired and can be removed. | - | format (`datetime`) | - |
@@ -245,7 +245,7 @@ The `ProductPriceEvent` contains information about the published product price.
   ],
   "display_name": "string",
   "revision": 0,
-  "published_at\"": "string",
+  "published_at": "string",
   "valid_from": "string",
   "valid_to": "string",
   "expired_at": "string"

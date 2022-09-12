@@ -5,7 +5,7 @@ language_tabs:
 language_clients:
   - http: ""
 toc_footers:
-  - <a href="https://docs.finelab.io/sales/product-api">Product API</a>
+  - <a href="https://docs.finelab.io/posts/product-api">Product API</a>
 includes: []
 search: true
 highlight_theme: darkula
@@ -23,11 +23,11 @@ The Product API exposes catalog, products and prices information.
 
 Base URLs:
 
-* <a href="http://localhost:8080">http://localhost:8080</a>
+* <a href="https://api.finelab.io">https://api.finelab.io</a>
 
 * <a href="https://test-api.finelab.io">https://test-api.finelab.io</a>
 
-Email: <a href="mailto:api@finelab.id">API support</a> 
+Email: <a href="mailto:api@finelab.io">API support</a> 
 License: <a href="https://www.apache.org/licenses/LICENSE-2.0">Apache 2.0</a>
 
 # Authentication
@@ -53,15 +53,15 @@ License: <a href="https://www.apache.org/licenses/LICENSE-2.0">Apache 2.0</a>
 > Code samples
 
 ```http
-GET http://localhost:8080/catalogs HTTP/1.1
-Host: localhost:8080
+GET https://api.finelab.io/catalogs HTTP/1.1
+Host: api.finelab.io
 Accept: application/json
 
 ```
 
 `GET /catalogs`
 
-Get product catalogs
+Get product catalogs.
 
 > Example responses
 
@@ -69,10 +69,11 @@ Get product catalogs
 
 ```json
 {
+  "url": "https://api.finelab.io/catalogs",
   "items": [
     {
       "id": "string",
-      "url": "string",
+      "url": "https://api.finelab.io/catalogs/1234",
       "tenant_name": "finelab",
       "business_unit_name": "private_customers",
       "content_language": "da_DK",
@@ -110,8 +111,8 @@ oauth2 ( Scopes: read:catalog )
 > Code samples
 
 ```http
-GET http://localhost:8080/catalogs/{id} HTTP/1.1
-Host: localhost:8080
+GET https://api.finelab.io/catalogs/{id} HTTP/1.1
+Host: api.finelab.io
 Accept: application/json
 
 ```
@@ -133,7 +134,7 @@ Get product catalog by id
 ```json
 {
   "id": "string",
-  "url": "string",
+  "url": "https://api.finelab.io/catalogs/1234",
   "tenant_name": "finelab",
   "business_unit_name": "private_customers",
   "content_language": "da_DK",
@@ -141,11 +142,12 @@ Get product catalog by id
   "name": "private_insurance",
   "display_name": "Privatforsikring",
   "products": {
+    "url": "https://api.finelab.io/products",
     "items": [
       {
         "id": "string",
-        "url": "string",
-        "catalog_url": "string",
+        "url": "https://api.finelab.io/products/81236871",
+        "catalog_url": "https://api.finelab.io/catalogs/127635",
         "number": "7000",
         "name": "car_insurance",
         "display_name": "Bilforsikring",
@@ -185,8 +187,8 @@ oauth2 ( Scopes: read:catalog )
 > Code samples
 
 ```http
-GET http://localhost:8080/products HTTP/1.1
-Host: localhost:8080
+GET https://api.finelab.io/products HTTP/1.1
+Host: api.finelab.io
 Accept: application/json
 
 ```
@@ -201,11 +203,12 @@ Get products
 
 ```json
 {
+  "url": "https://api.finelab.io/products",
   "items": [
     {
       "id": "string",
-      "url": "string",
-      "catalog_url": "string",
+      "url": "https://api.finelab.io/products/81236871",
+      "catalog_url": "https://api.finelab.io/catalogs/127635",
       "number": "7000",
       "name": "car_insurance",
       "display_name": "Bilforsikring",
@@ -238,8 +241,8 @@ oauth2 ( Scopes: read:product )
 > Code samples
 
 ```http
-GET http://localhost:8080/products/{id} HTTP/1.1
-Host: localhost:8080
+GET https://api.finelab.io/products/{id} HTTP/1.1
+Host: api.finelab.io
 Accept: application/json
 
 ```
@@ -261,8 +264,8 @@ Get product by id
 ```json
 {
   "id": "string",
-  "url": "string",
-  "catalog_url": "string",
+  "url": "https://api.finelab.io/products/127635",
+  "catalog_url": "https://api.finelab.io/products/127635233",
   "number": "7000",
   "name": "car_insurance",
   "display_name": "Bilforsikring",
@@ -289,11 +292,12 @@ Get product by id
     }
   ],
   "prices": {
+    "url": "https://api.finelab.io/prices",
     "items": [
       {
         "id": "string",
         "url": "string",
-        "product_id": "urn:finelab:price:private_customers:private_insurance:da_DK:7000",
+        "product_id": "string",
         "amount": 100,
         "charged": "per_month",
         "match_criteria": [
@@ -339,8 +343,8 @@ oauth2 ( Scopes: read:product )
 > Code samples
 
 ```http
-GET http://localhost:8080/prices HTTP/1.1
-Host: localhost:8080
+GET https://api.finelab.io/prices HTTP/1.1
+Host: api.finelab.io
 Accept: application/json
 
 ```
@@ -355,11 +359,12 @@ Get prices
 
 ```json
 {
+  "url": "https://api.finelab.io/prices",
   "items": [
     {
       "id": "string",
       "url": "string",
-      "product_id": "urn:finelab:price:private_customers:private_insurance:da_DK:7000",
+      "product_id": "string",
       "amount": 100,
       "charged": "per_month",
       "match_criteria": [
@@ -400,8 +405,8 @@ oauth2 ( Scopes: read:price )
 > Code samples
 
 ```http
-GET http://localhost:8080/prices/{id} HTTP/1.1
-Host: localhost:8080
+GET https://api.finelab.io/prices/{id} HTTP/1.1
+Host: api.finelab.io
 Accept: application/json
 
 ```
@@ -423,7 +428,7 @@ Get price by id
 ```json
 {
   "id": "string",
-  "url": "string",
+  "url": "https://api.finelab.io/prices/127635233",
   "product_url": "string",
   "amount": 100,
   "charged": "per_month",
@@ -468,10 +473,11 @@ oauth2 ( Scopes: read:price )
 
 ```json
 {
+  "url": "https://api.finelab.io/catalogs",
   "items": [
     {
       "id": "string",
-      "url": "string",
+      "url": "https://api.finelab.io/catalogs/1234",
       "tenant_name": "finelab",
       "business_unit_name": "private_customers",
       "content_language": "da_DK",
@@ -493,6 +499,7 @@ oauth2 ( Scopes: read:price )
 
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
+|url|string|false|none|url to the page|
 |items|[[CatalogPageItem](#schemacatalogpageitem)]|false|none|none|
 
 <h2 id="tocS_CatalogPageItem">CatalogPageItem</h2>
@@ -505,7 +512,7 @@ oauth2 ( Scopes: read:price )
 ```json
 {
   "id": "string",
-  "url": "string",
+  "url": "https://api.finelab.io/catalogs/1234",
   "tenant_name": "finelab",
   "business_unit_name": "private_customers",
   "content_language": "da_DK",
@@ -549,7 +556,7 @@ oauth2 ( Scopes: read:price )
 ```json
 {
   "id": "string",
-  "url": "string",
+  "url": "https://api.finelab.io/catalogs/1234",
   "tenant_name": "finelab",
   "business_unit_name": "private_customers",
   "content_language": "da_DK",
@@ -557,11 +564,12 @@ oauth2 ( Scopes: read:price )
   "name": "private_insurance",
   "display_name": "Privatforsikring",
   "products": {
+    "url": "https://api.finelab.io/products",
     "items": [
       {
         "id": "string",
-        "url": "string",
-        "catalog_url": "string",
+        "url": "https://api.finelab.io/products/81236871",
+        "catalog_url": "https://api.finelab.io/catalogs/127635",
         "number": "7000",
         "name": "car_insurance",
         "display_name": "Bilforsikring",
@@ -608,11 +616,12 @@ oauth2 ( Scopes: read:price )
 
 ```json
 {
+  "url": "https://api.finelab.io/products",
   "items": [
     {
       "id": "string",
-      "url": "string",
-      "catalog_url": "string",
+      "url": "https://api.finelab.io/products/81236871",
+      "catalog_url": "https://api.finelab.io/catalogs/127635",
       "number": "7000",
       "name": "car_insurance",
       "display_name": "Bilforsikring",
@@ -629,6 +638,7 @@ oauth2 ( Scopes: read:price )
 
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
+|url|string|false|none|url to the page|
 |items|[[ProductPageItem](#schemaproductpageitem)]|false|none|none|
 
 <h2 id="tocS_ProductPageItem">ProductPageItem</h2>
@@ -641,8 +651,8 @@ oauth2 ( Scopes: read:price )
 ```json
 {
   "id": "string",
-  "url": "string",
-  "catalog_url": "string",
+  "url": "https://api.finelab.io/products/81236871",
+  "catalog_url": "https://api.finelab.io/catalogs/127635",
   "number": "7000",
   "name": "car_insurance",
   "display_name": "Bilforsikring",
@@ -677,8 +687,8 @@ oauth2 ( Scopes: read:price )
 ```json
 {
   "id": "string",
-  "url": "string",
-  "catalog_url": "string",
+  "url": "https://api.finelab.io/products/127635",
+  "catalog_url": "https://api.finelab.io/products/127635233",
   "number": "7000",
   "name": "car_insurance",
   "display_name": "Bilforsikring",
@@ -705,11 +715,12 @@ oauth2 ( Scopes: read:price )
     }
   ],
   "prices": {
+    "url": "https://api.finelab.io/prices",
     "items": [
       {
         "id": "string",
         "url": "string",
-        "product_id": "urn:finelab:price:private_customers:private_insurance:da_DK:7000",
+        "product_id": "string",
         "amount": 100,
         "charged": "per_month",
         "match_criteria": [
@@ -841,11 +852,12 @@ oauth2 ( Scopes: read:price )
 
 ```json
 {
+  "url": "https://api.finelab.io/prices",
   "items": [
     {
       "id": "string",
       "url": "string",
-      "product_id": "urn:finelab:price:private_customers:private_insurance:da_DK:7000",
+      "product_id": "string",
       "amount": 100,
       "charged": "per_month",
       "match_criteria": [
@@ -870,6 +882,7 @@ oauth2 ( Scopes: read:price )
 
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
+|url|string|false|none|url to the page|
 |items|[[PricePageItem](#schemapricepageitem)]|false|none|none|
 
 <h2 id="tocS_PricePageItem">PricePageItem</h2>
@@ -883,7 +896,7 @@ oauth2 ( Scopes: read:price )
 {
   "id": "string",
   "url": "string",
-  "product_id": "urn:finelab:price:private_customers:private_insurance:da_DK:7000",
+  "product_id": "string",
   "amount": 100,
   "charged": "per_month",
   "match_criteria": [
@@ -929,7 +942,7 @@ oauth2 ( Scopes: read:price )
 ```json
 {
   "id": "string",
-  "url": "string",
+  "url": "https://api.finelab.io/prices/127635233",
   "product_url": "string",
   "amount": 100,
   "charged": "per_month",
