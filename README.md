@@ -16,7 +16,8 @@ https://davidgarcia.dev/posts/openapi-to-markdown/
 ´´´
   widdershins \
   https://raw.githubusercontent.com/finelab-io/specs/main/domains/sales/product/product-api.yaml \
-  -o markdown/2022-09-12-product-api.md
+  -o markdown/2022-09-12-product-api.md \
+  --language_tabs http:HTTP
 ´´´
 
 ## spring

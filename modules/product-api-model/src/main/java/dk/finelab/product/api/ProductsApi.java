@@ -23,7 +23,7 @@ import java.util.Map;
 import java.util.Optional;
 import javax.annotation.Generated;
 
-@Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2022-09-12T10:45:54.887260+02:00[Europe/Copenhagen]")
+@Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2022-09-12T12:26:12.844058+02:00[Europe/Copenhagen]")
 @Validated
 public interface ProductsApi {
 
