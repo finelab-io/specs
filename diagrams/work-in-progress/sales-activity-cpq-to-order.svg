@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="967px" preserveAspectRatio="none" style="width:1021px;height:967px;background:#FFFFFF;" version="1.1" viewBox="0 0 1021 967" width="1021px" zoomAndPan="magnify"><defs/><g><ellipse cx="119.5" cy="48.6982" fill="#222222" rx="10" ry="10" style="stroke:#222222;stroke-width:1.0;"/><rect fill="#F1F1F1" height="33.9688" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="112" x="63.5" y="186.6357"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="92" x="73.5" y="207.7744">Select Product</text><rect fill="#F1F1F1" height="33.9688" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="171" x="34" y="294.5732"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="151" x="44" y="315.7119">Configure Quote Criteria</text><rect fill="#F1F1F1" height="33.9688" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="100" x="69.5" y="446.5107"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="80" x="79.5" y="467.6494">Check Quote</text><rect fill="#F1F1F1" height="33.9688" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="145" x="47" y="500.4795"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="125" x="57" y="521.6182">Enter Customer Info</text><rect fill="#F1F1F1" height="33.9688" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="149" x="45" y="554.4482"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="129" x="55" y="575.5869">Check Customer Info</text><rect fill="#F1F1F1" height="33.9688" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="93" x="73" y="608.417"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="73" x="83" y="629.5557">Place Order</text><polygon fill="#F1F1F1" points="119.5,402.5107,131.5,414.5107,119.5,426.5107,107.5,414.5107,119.5,402.5107" style="stroke:#181818;stroke-width:0.5;"/><rect fill="#F1F1F1" height="33.9688" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="197" x="21" y="880.0024"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="177" x="31" y="901.1411">Show Order Process Started</text><ellipse cx="119.5" cy="944.9712" rx="11" ry="11" style="stroke:#222222;stroke-width:1.0;fill:none;"/><ellipse cx="119.5" cy="944.9712" fill="#222222" rx="6" ry="6" style="stroke:#111111;stroke-width:1.0;"/><line style="stroke:#000000;stroke-width:1.5;" x1="15" x2="15" y1="12.7451" y2="955.9712"/><rect fill="#F1F1F1" height="33.9688" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="94" x="232" y="78.6982"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="74" x="242" y="99.8369">Get Catalog</text><line style="stroke:#000000;stroke-width:1.5;" x1="222" x2="222" y1="12.7451" y2="955.9712"/><rect fill="#F1F1F1" height="33.9688" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="102" x="340.5" y="132.667"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="82" x="350.5" y="153.8057">Get Products</text><rect fill="#F1F1F1" height="33.9688" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="95" x="344" y="240.6045"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="75" x="354" y="261.7432">Get Product</text><line style="stroke:#000000;stroke-width:1.5;" x1="334" x2="334" y1="12.7451" y2="955.9712"/><rect fill="#F1F1F1" height="33.9688" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="151" x="453" y="348.542"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="131" x="463" y="369.6807">Get Quote By Criteria</text><line style="stroke:#000000;stroke-width:1.5;" x1="447" x2="447" y1="12.7451" y2="955.9712"/><rect fill="#F1F1F1" height="33.9688" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="110" x="614" y="662.3857"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="90" x="624" y="683.5244">Validate Order</text><polygon fill="#F1F1F1" points="641.5,716.3545,696.5,716.3545,708.5,728.3545,696.5,740.3545,641.5,740.3545,629.5,728.3545,641.5,716.3545" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="47" x="673" y="750.5649">success</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="55" x="641.5" y="732.1626">Validation</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="111" x="708.5" y="725.7603">Constraint Violation</text><rect fill="#F1F1F1" height="33.9688" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="72" x="633" y="772.0649"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="52" x="643" y="793.2036">produce</text><line style="stroke:#000000;stroke-width:1.5;" x1="608" x2="608" y1="12.7451" y2="955.9712"/><rect fill="#F1F1F1" height="33.9688" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="132" x="848" y="826.0337"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="112" x="858" y="847.1724">OrderPlacedEvent</text><line style="stroke:#000000;stroke-width:1.5;" x1="824.5" x2="824.5" y1="12.7451" y2="955.9712"/><line style="stroke:#000000;stroke-width:1.5;" x1="1001.5" x2="1001.5" y1="12.7451" y2="955.9712"/><line style="stroke:#181818;stroke-width:1.0;" x1="119.5" x2="119.5" y1="480.4795" y2="500.4795"/><polygon fill="#181818" points="115.5,490.4795,119.5,500.4795,123.5,490.4795,119.5,494.4795" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="119.5" x2="119.5" y1="534.4482" y2="554.4482"/><polygon fill="#181818" points="115.5,544.4482,119.5,554.4482,123.5,544.4482,119.5,548.4482" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="119.5" x2="119.5" y1="588.417" y2="608.417"/><polygon fill="#181818" points="115.5,598.417,119.5,608.417,123.5,598.417,119.5,602.417" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="119.5" x2="119.5" y1="426.5107" y2="446.5107"/><polygon fill="#181818" points="115.5,436.5107,119.5,446.5107,123.5,436.5107,119.5,440.5107" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="119.5" x2="119.5" y1="913.9712" y2="933.9712"/><polygon fill="#181818" points="115.5,923.9712,119.5,933.9712,123.5,923.9712,119.5,927.9712" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="669" x2="669" y1="696.3545" y2="716.3545"/><polygon fill="#181818" points="665,706.3545,669,716.3545,673,706.3545,669,710.3545" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="669" x2="669" y1="740.3545" y2="772.0649"/><polygon fill="#181818" points="665,762.0649,669,772.0649,673,762.0649,669,766.0649" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="119.5" x2="119.5" y1="58.6982" y2="63.6982"/><line style="stroke:#181818;stroke-width:1.0;" x1="119.5" x2="279" y1="63.6982" y2="63.6982"/><line style="stroke:#181818;stroke-width:1.0;" x1="279" x2="279" y1="63.6982" y2="78.6982"/><polygon fill="#181818" points="275,68.6982,279,78.6982,283,68.6982,279,72.6982" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="279" x2="279" y1="112.667" y2="117.667"/><line style="stroke:#181818;stroke-width:1.0;" x1="279" x2="391.5" y1="117.667" y2="117.667"/><line style="stroke:#181818;stroke-width:1.0;" x1="391.5" x2="391.5" y1="117.667" y2="132.667"/><polygon fill="#181818" points="387.5,122.667,391.5,132.667,395.5,122.667,391.5,126.667" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="391.5" x2="391.5" y1="166.6357" y2="171.6357"/><line style="stroke:#181818;stroke-width:1.0;" x1="391.5" x2="119.5" y1="171.6357" y2="171.6357"/><line style="stroke:#181818;stroke-width:1.0;" x1="119.5" x2="119.5" y1="171.6357" y2="186.6357"/><polygon fill="#181818" points="115.5,176.6357,119.5,186.6357,123.5,176.6357,119.5,180.6357" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="119.5" x2="119.5" y1="220.6045" y2="225.6045"/><line style="stroke:#181818;stroke-width:1.0;" x1="119.5" x2="391.5" y1="225.6045" y2="225.6045"/><line style="stroke:#181818;stroke-width:1.0;" x1="391.5" x2="391.5" y1="225.6045" y2="240.6045"/><polygon fill="#181818" points="387.5,230.6045,391.5,240.6045,395.5,230.6045,391.5,234.6045" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="391.5" x2="391.5" y1="274.5732" y2="279.5732"/><line style="stroke:#181818;stroke-width:1.0;" x1="391.5" x2="119.5" y1="279.5732" y2="279.5732"/><line style="stroke:#181818;stroke-width:1.0;" x1="119.5" x2="119.5" y1="279.5732" y2="294.5732"/><polygon fill="#181818" points="115.5,284.5732,119.5,294.5732,123.5,284.5732,119.5,288.5732" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="119.5" x2="119.5" y1="328.542" y2="333.542"/><line style="stroke:#181818;stroke-width:1.0;" x1="119.5" x2="528.5" y1="333.542" y2="333.542"/><line style="stroke:#181818;stroke-width:1.0;" x1="528.5" x2="528.5" y1="333.542" y2="348.542"/><polygon fill="#181818" points="524.5,338.542,528.5,348.542,532.5,338.542,528.5,342.542" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="119.5" x2="119.5" y1="642.3857" y2="647.3857"/><line style="stroke:#181818;stroke-width:1.0;" x1="119.5" x2="669" y1="647.3857" y2="647.3857"/><line style="stroke:#181818;stroke-width:1.0;" x1="669" x2="669" y1="647.3857" y2="662.3857"/><polygon fill="#181818" points="665,652.3857,669,662.3857,673,652.3857,669,656.3857" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="708.5" x2="755.5" y1="728.3545" y2="728.3545"/><polygon fill="#181818" points="751.5,581.4326,755.5,571.4326,759.5,581.4326,755.5,577.4326" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="755.5" x2="755.5" y1="414.5107" y2="728.3545"/><line style="stroke:#181818;stroke-width:1.0;" x1="755.5" x2="131.5" y1="414.5107" y2="414.5107"/><polygon fill="#181818" points="141.5,410.5107,131.5,414.5107,141.5,418.5107,137.5,414.5107" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="528.5" x2="528.5" y1="382.5107" y2="387.5107"/><line style="stroke:#181818;stroke-width:1.0;" x1="528.5" x2="119.5" y1="387.5107" y2="387.5107"/><line style="stroke:#181818;stroke-width:1.0;" x1="119.5" x2="119.5" y1="387.5107" y2="402.5107"/><polygon fill="#181818" points="115.5,392.5107,119.5,402.5107,123.5,392.5107,119.5,396.5107" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="669" x2="669" y1="806.0337" y2="811.0337"/><line style="stroke:#181818;stroke-width:1.0;" x1="669" x2="914" y1="811.0337" y2="811.0337"/><line style="stroke:#181818;stroke-width:1.0;" x1="914" x2="914" y1="811.0337" y2="826.0337"/><polygon fill="#181818" points="910,816.0337,914,826.0337,918,816.0337,914,820.0337" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="914" x2="914" y1="860.0024" y2="865.0024"/><line style="stroke:#181818;stroke-width:1.0;" x1="914" x2="119.5" y1="865.0024" y2="865.0024"/><line style="stroke:#181818;stroke-width:1.0;" x1="119.5" x2="119.5" y1="865.0024" y2="880.0024"/><polygon fill="#181818" points="115.5,870.0024,119.5,880.0024,123.5,870.0024,119.5,874.0024" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="18" lengthAdjust="spacing" textLength="119" x="59" y="29.4531">Customer UX</text><text fill="#000000" font-family="sans-serif" font-size="18" lengthAdjust="spacing" textLength="102" x="227" y="29.4531">Catalog API</text><text fill="#000000" font-family="sans-serif" font-size="18" lengthAdjust="spacing" textLength="103" x="339" y="29.4531">Product API</text><text fill="#000000" font-family="sans-serif" font-size="18" lengthAdjust="spacing" textLength="89" x="483" y="29.4531">Quote API</text><text fill="#000000" font-family="sans-serif" font-size="18" lengthAdjust="spacing" textLength="87" x="672.75" y="29.4531">Order API</text><text fill="#000000" font-family="sans-serif" font-size="18" lengthAdjust="spacing" textLength="167" x="829.5" y="29.4531">topic: order.placed</text><!--MD5=[6c755c243b1438cbb32fb12a797725d8]
+@startuml
+  !include <cloudinsight/kafka>
+
+|Customer UX|
+start
+  |Catalog API|
+  :Get Catalog;
+  |Product API|
+  :Get Products;
+  |Customer UX|
+  :Select Product;
+  |Product API|
+  :Get Product;
+  |Customer UX|
+  :Configure Quote Criteria;
+  |Quote API|
+  :Get Quote By Criteria;
+  |Customer UX|
+  repeat
+    :Check Quote;
+    :Enter Customer Info;
+    :Check Customer Info;
+    :Place Order;
+    |Order API|
+    :Validate Order;
+  repeat while (Validation) is (Constraint Violation) not (success)
+  |Order API|
+  :produce; 
+  |topic: order.placed|
+  :OrderPlacedEvent;
+  |Customer UX|
+  :Show Order Process Started;
+stop      
+@enduml
+
+@startuml
+sprite $kafka [48x48/16] {
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+0000000000000005CFFD8000000000000000000000000000
+000000000000009FFFFFFC10000000000000000000000000
+00000000000007FFFDCFFFB0000000000000000000000000
+0000000000000FFF6003EFF4000000000000000000000000
+0000000000004FFB00006FF8000000000000000000000000
+0000000000006FF800004FF9000000000000000000000000
+0000000000004FFB00006FF8000000000000000000000000
+0000000000000EFF6003EFF4000000464100000000000000
+00000000000005FFFEEFFFA000007FFFFF80000000000000
+000000000000008FFFFFFC000009FFFFFFF9000000000000
+0000000000000003AFFD7000005FFFB8BFFF500000000000
+00000000000000002FF4000000CFF70006FFC00000000000
+00000000000000002FF4000000FFF00000EFF00000000000
+00000000000000002FF4000000FFE00000EFF00000000000
+000000000000002AFFFFC50000EFF40003FFD00000000000
+00000000000006FFFFFFFFB02CFFFF646EFF800000000000
+0000000000005FFFFFFFFFFCFFFFFFFFFFFC000000000000
+000000000001FFFFB658FFFFFF71BFFFFFB1000000000000
+000000000007FFF600002EFFE20003898400000000000000
+00000000000BFFC0000006FFF10000000000000000000000
+00000000000DFF90000003FFF40000000000000000000000
+00000000000DFF90000003FFF30000000000000000000000
+00000000000AFFD0000007FFF10000000000000000000000
+000000000006FFF800005FFFF30005ACA600000000000000
+000000000000EFFFC77AFFFFFF83DFFFFFD2000000000000
+0000000000004FFFFFFFFFFAFFFFFFFFFFFE100000000000
+00000000000004EFFFFFFF701AFFFE525DFF800000000000
+0000000000000018CFFE820000EFF30002FFD00000000000
+00000000000000002FF6000000FFE00000EFF00000000000
+00000000000000002FF6000000EFF10000FFF00000000000
+00000000000000002FF6000000BFF80008FFB00000000000
+0000000000000003AFFE6000004FFFC9CFFF400000000000
+000000000000007FFFFFFC100007FFFFFFF8000000000000
+00000000000005FFFFEFFFA000005EFFFE60000000000000
+0000000000000EFF7004FFF3000000242000000000000000
+0000000000004FFC00007FF8000000000000000000000000
+0000000000005FF800004FF9000000000000000000000000
+0000000000004FFB00006FF8000000000000000000000000
+0000000000001FFF5002EFF5000000000000000000000000
+00000000000008FFFCCFFFC0000000000000000000000000
+000000000000009FFFFFFC10000000000000000000000000
+0000000000000005CFFD8000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+}
+
+|Customer UX|
+start
+  |Catalog API|
+  :Get Catalog;
+  |Product API|
+  :Get Products;
+  |Customer UX|
+  :Select Product;
+  |Product API|
+  :Get Product;
+  |Customer UX|
+  :Configure Quote Criteria;
+  |Quote API|
+  :Get Quote By Criteria;
+  |Customer UX|
+  repeat
+    :Check Quote;
+    :Enter Customer Info;
+    :Check Customer Info;
+    :Place Order;
+    |Order API|
+    :Validate Order;
+  repeat while (Validation) is (Constraint Violation) not (success)
+  |Order API|
+  :produce; 
+  |topic: order.placed|
+  :OrderPlacedEvent;
+  |Customer UX|
+  :Show Order Process Started;
+stop      
+@enduml
+
+PlantUML version 1.2022.6(Tue Jun 21 17:34:49 UTC 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: null
+--></g></svg>

@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="1260px" preserveAspectRatio="none" style="width:3741px;height:1260px;background:#FFFFFF;" version="1.1" viewBox="0 0 3741 1260" width="3741px" zoomAndPan="magnify"><defs/><g><!--MD5=[b06b7ad1e953f8d397d6a51e111aa189]
+cluster ExternalServices--><g id="cluster_ExternalServices"><rect height="325" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:1.0;fill:none;" width="1130" x="7" y="929.5"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="137" x="503.5" y="944.4951">External Services</text></g><!--MD5=[1ac1708a6cd37ebd31824241d5d12d4e]
+cluster SectorServices--><g id="cluster_SectorServices"><rect height="258" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:1.0;fill:none;" width="194" x="919" y="972.5"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="116" x="958" y="987.4951">Sector Service</text></g><!--MD5=[52af3c791adad2c6b532eac1ab14ae7f]
+cluster GovermentServices--><g id="cluster_GovermentServices"><rect height="258" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:1.0;fill:none;" width="864" x="31" y="972.5"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="152" x="387" y="987.4951">Goverment Service</text></g><!--MD5=[0f55af71f47b880b4ed744687b2b38a7]
+cluster BackOfficeServices--><g id="cluster_BackOfficeServices"><rect height="618" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:1.0;fill:none;" width="1661" x="1161" y="496.5"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="162" x="1910.5" y="511.4951">Back Office Services</text></g><!--MD5=[515f45b3e91069ef4ddfe2be9200ca66]
+cluster Pim--><g id="cluster_Pim"><rect height="300" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:1.0;fill:none;" width="576" x="2222" y="539.5"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="221" x="2399.5" y="554.4951">Product Information Service</text></g><!--MD5=[845a772feaf8776d18e12449c8d14232]
+cluster Communcation Service--><g id="cluster_Communcation Service"><rect height="343" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:1.0;fill:none;" width="216" x="1982" y="734.5"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="181" x="1999.5" y="749.4951">Communcation Service</text></g><!--MD5=[83da805845857f00513a744fc54b8213]
+cluster BusinessService--><g id="cluster_BusinessService"><rect height="551" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:1.0;fill:none;" width="626" x="1185" y="539.5"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="135" x="1430.5" y="554.4951">Business Service</text></g><!--MD5=[b880b4d62780fccbd1021c81ee0a4772]
+cluster Processes--><g id="cluster_Processes"><rect height="273" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:1.0;fill:none;" width="1281" x="2454" y="159.5"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="83" x="3053" y="174.4951">Processes</text></g><!--MD5=[41d0042fbff3ccd0c0d764c02dddef47]
+cluster Sales Process--><g id="cluster_Sales Process"><rect height="206" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:1.0;fill:none;" width="481" x="2478" y="202.5"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="111" x="2663" y="217.4951">Sales Process</text></g><!--MD5=[d93ef8e4f8492a88cbb65ff85628abcb]
+cluster Signig Process--><g id="cluster_Signig Process"><rect height="206" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:1.0;fill:none;" width="133" x="2983" y="202.5"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="117" x="2991" y="217.4951">Signig Process</text></g><!--MD5=[7630d2ed90742b7c33bf322a219e227a]
+cluster Customer Process--><g id="cluster_Customer Process"><rect height="206" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:1.0;fill:none;" width="571" x="3140" y="202.5"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="146" x="3352.5" y="217.4951">Customer Process</text></g><!--MD5=[47162761e851855eafd9fc9f5d78b575]
+entity SectorCustomerAPI--><g id="elem_SectorCustomerAPI"><rect fill="#F1F1F1" height="22.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="162" x="935" y="1192.5"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="142" x="945" y="1208.4951">Sector Customer API</text></g><!--MD5=[1e6579d6308b43669e48a9b41dcfe4f2]
+entity SectorCustomerTopic--><g id="elem_SectorCustomerTopic"><path d="M937.5,1036.5 C937.5,1026.5 1016.1,1026.5 1016.1,1026.5 C1016.1,1026.5 1094.7,1026.5 1094.7,1036.5 L1094.7,1064.7 C1094.7,1074.7 1016.1,1074.7 1016.1,1074.7 C1016.1,1074.7 937.5,1074.7 937.5,1064.7 L937.5,1036.5 " fill="#F1F1F1" style="stroke:#181818;stroke-width:0.5;"/><path d="M937.5,1036.5 C937.5,1046.5 1016.1,1046.5 1016.1,1046.5 C1016.1,1046.5 1094.7,1046.5 1094.7,1036.5 " fill="none" style="stroke:#181818;stroke-width:0.5;"/><image height="19" width="19" x="947.5" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAATCAIAAAD9MqGbAAABpElEQVR4Xp2SwasBURTGBxGymaQUK2Ihm9lKUWI1ScrWSsnOf6CmlIWm2chKWVkpRYqU3TSlWCqyIiEb/gNfTU/HeRav9y2mb+75fjP33HOF538lsPfr9ZpIJBwOx2AwYCUmTvr9/mKxOJ1ObTbber1mVSpOCoKw2WxgYrFYq9ViVSpOlsvlQCCQyWQsFsv5fMZKs9mMRqP5fJ4lOQnhV6IoHg4H+H6/73Q6sYLPVSoVGvtC7na7eDxu+mQymcvlYObzORqhMU7ieIQfzWYzl8sF02g03G53vV6nyQ9yNBohh+d+v5ckCcdrGAZ4WZY7nc7j8aDhD7JUKmEqpsdI8JXj8UgDVB9kr9ezWq3oEz6bzYK8XC6Aq9XqYrGgyefvPkOh0LvPWq1mt9sxHuwct6rb7dIkJ9HMZDIJBoOn0wmvqVQKs4UZj8eAaZKT0HK5BHm/3+EVRfH5fKvVKp1Om+N5i5OapmGfmAHmYa7gVmElEoncbjea5CRCuq7DhMNhVVVZleoL2W63sVWPxzMcDlmVipPb7dbr9WI2hUKBlZg4+Xe9AAZvNCStaRlgAAAAAElFTkSuQmCC" y="1050.5"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="114" x="970.7" y="1066.3982">sector.customer</text></g><!--MD5=[6edeb922af8cb48c006753bc272ea565]
+entity PersonAPI--><g id="elem_PersonAPI"><rect fill="#F1F1F1" height="22.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="94" x="328" y="1192.5"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="74" x="338" y="1208.4951">Person API</text></g><!--MD5=[85a2abdcb2f99c62ecadce69dbac7458]
+entity OrganizationAPI--><g id="elem_OrganizationAPI"><rect fill="#F1F1F1" height="22.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="132" x="85" y="1192.5"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="112" x="95" y="1208.4951">Organization API</text></g><!--MD5=[fcb13a6a91ba7bce0ac40016cc9051e6]
+entity CarAPI--><g id="elem_CarAPI"><rect fill="#F1F1F1" height="22.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="68" x="760" y="1192.5"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="48" x="770" y="1208.4951">Car API</text></g><!--MD5=[35d09fe9d0616f9ea3d963a3c4f1b7ba]
+entity AddressAPI--><g id="elem_AddressAPI"><rect fill="#F1F1F1" height="22.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="102" x="534" y="1192.5"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="82" x="544" y="1208.4951">Address API</text></g><!--MD5=[beacf3d0c989b1b0e8f14e6a47566369]
+entity PersonTopic--><g id="elem_PersonTopic"><path d="M289.5,1036.5 C289.5,1026.5 375.1,1026.5 375.1,1026.5 C375.1,1026.5 460.7,1026.5 460.7,1036.5 L460.7,1064.7 C460.7,1074.7 375.1,1074.7 375.1,1074.7 C375.1,1074.7 289.5,1074.7 289.5,1064.7 L289.5,1036.5 " fill="#F1F1F1" style="stroke:#181818;stroke-width:0.5;"/><path d="M289.5,1036.5 C289.5,1046.5 375.1,1046.5 375.1,1046.5 C375.1,1046.5 460.7,1046.5 460.7,1036.5 " fill="none" style="stroke:#181818;stroke-width:0.5;"/><image height="19" width="19" x="299.5" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAATCAIAAAD9MqGbAAABpElEQVR4Xp2SwasBURTGBxGymaQUK2Ihm9lKUWI1ScrWSsnOf6CmlIWm2chKWVkpRYqU3TSlWCqyIiEb/gNfTU/HeRav9y2mb+75fjP33HOF538lsPfr9ZpIJBwOx2AwYCUmTvr9/mKxOJ1ObTbber1mVSpOCoKw2WxgYrFYq9ViVSpOlsvlQCCQyWQsFsv5fMZKs9mMRqP5fJ4lOQnhV6IoHg4H+H6/73Q6sYLPVSoVGvtC7na7eDxu+mQymcvlYObzORqhMU7ieIQfzWYzl8sF02g03G53vV6nyQ9yNBohh+d+v5ckCcdrGAZ4WZY7nc7j8aDhD7JUKmEqpsdI8JXj8UgDVB9kr9ezWq3oEz6bzYK8XC6Aq9XqYrGgyefvPkOh0LvPWq1mt9sxHuwct6rb7dIkJ9HMZDIJBoOn0wmvqVQKs4UZj8eAaZKT0HK5BHm/3+EVRfH5fKvVKp1Om+N5i5OapmGfmAHmYa7gVmElEoncbjea5CRCuq7DhMNhVVVZleoL2W63sVWPxzMcDlmVipPb7dbr9WI2hUKBlZg4+Xe9AAZvNCStaRlgAAAAAElFTkSuQmCC" y="1050.5"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="128" x="322.7" y="1066.3982">goverment.person</text></g><!--MD5=[c1c2736ce537bb978b606545e37e30e6]
+entity OrganizationTopic--><g id="elem_OrganizationTopic"><path d="M47.5,1036.5 C47.5,1026.5 151.1,1026.5 151.1,1026.5 C151.1,1026.5 254.7,1026.5 254.7,1036.5 L254.7,1064.7 C254.7,1074.7 151.1,1074.7 151.1,1074.7 C151.1,1074.7 47.5,1074.7 47.5,1064.7 L47.5,1036.5 " fill="#F1F1F1" style="stroke:#181818;stroke-width:0.5;"/><path d="M47.5,1036.5 C47.5,1046.5 151.1,1046.5 151.1,1046.5 C151.1,1046.5 254.7,1046.5 254.7,1036.5 " fill="none" style="stroke:#181818;stroke-width:0.5;"/><image height="19" width="19" x="57.5" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAATCAIAAAD9MqGbAAABpElEQVR4Xp2SwasBURTGBxGymaQUK2Ihm9lKUWI1ScrWSsnOf6CmlIWm2chKWVkpRYqU3TSlWCqyIiEb/gNfTU/HeRav9y2mb+75fjP33HOF538lsPfr9ZpIJBwOx2AwYCUmTvr9/mKxOJ1ObTbber1mVSpOCoKw2WxgYrFYq9ViVSpOlsvlQCCQyWQsFsv5fMZKs9mMRqP5fJ4lOQnhV6IoHg4H+H6/73Q6sYLPVSoVGvtC7na7eDxu+mQymcvlYObzORqhMU7ieIQfzWYzl8sF02g03G53vV6nyQ9yNBohh+d+v5ckCcdrGAZ4WZY7nc7j8aDhD7JUKmEqpsdI8JXj8UgDVB9kr9ezWq3oEz6bzYK8XC6Aq9XqYrGgyefvPkOh0LvPWq1mt9sxHuwct6rb7dIkJ9HMZDIJBoOn0wmvqVQKs4UZj8eAaZKT0HK5BHm/3+EVRfH5fKvVKp1Om+N5i5OapmGfmAHmYa7gVmElEoncbjea5CRCuq7DhMNhVVVZleoL2W63sVWPxzMcDlmVipPb7dbr9WI2hUKBlZg4+Xe9AAZvNCStaRlgAAAAAElFTkSuQmCC" y="1050.5"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="164" x="80.7" y="1066.3982">goverment.organization</text></g><!--MD5=[441ac84b3963849b3427e18f00d83e89]
+entity VehicleTopic--><g id="elem_VehicleTopic"><path d="M709,1036.5 C709,1026.5 794.1,1026.5 794.1,1026.5 C794.1,1026.5 879.2,1026.5 879.2,1036.5 L879.2,1064.7 C879.2,1074.7 794.1,1074.7 794.1,1074.7 C794.1,1074.7 709,1074.7 709,1064.7 L709,1036.5 " fill="#F1F1F1" style="stroke:#181818;stroke-width:0.5;"/><path d="M709,1036.5 C709,1046.5 794.1,1046.5 794.1,1046.5 C794.1,1046.5 879.2,1046.5 879.2,1036.5 " fill="none" style="stroke:#181818;stroke-width:0.5;"/><image height="19" width="19" x="719" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAATCAIAAAD9MqGbAAABpElEQVR4Xp2SwasBURTGBxGymaQUK2Ihm9lKUWI1ScrWSsnOf6CmlIWm2chKWVkpRYqU3TSlWCqyIiEb/gNfTU/HeRav9y2mb+75fjP33HOF538lsPfr9ZpIJBwOx2AwYCUmTvr9/mKxOJ1ObTbber1mVSpOCoKw2WxgYrFYq9ViVSpOlsvlQCCQyWQsFsv5fMZKs9mMRqP5fJ4lOQnhV6IoHg4H+H6/73Q6sYLPVSoVGvtC7na7eDxu+mQymcvlYObzORqhMU7ieIQfzWYzl8sF02g03G53vV6nyQ9yNBohh+d+v5ckCcdrGAZ4WZY7nc7j8aDhD7JUKmEqpsdI8JXj8UgDVB9kr9ezWq3oEz6bzYK8XC6Aq9XqYrGgyefvPkOh0LvPWq1mt9sxHuwct6rb7dIkJ9HMZDIJBoOn0wmvqVQKs4UZj8eAaZKT0HK5BHm/3+EVRfH5fKvVKp1Om+N5i5OapmGfmAHmYa7gVmElEoncbjea5CRCuq7DhMNhVVVZleoL2W63sVWPxzMcDlmVipPb7dbr9WI2hUKBlZg4+Xe9AAZvNCStaRlgAAAAAElFTkSuQmCC" y="1050.5"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="127" x="742.2" y="1066.3982">goverment.vehicle</text></g><!--MD5=[58d57b1aa38d2bec8ccdfb197f885f64]
+entity AddressTopic--><g id="elem_AddressTopic"><path d="M496,1036.5 C496,1026.5 585.1,1026.5 585.1,1026.5 C585.1,1026.5 674.2,1026.5 674.2,1036.5 L674.2,1064.7 C674.2,1074.7 585.1,1074.7 585.1,1074.7 C585.1,1074.7 496,1074.7 496,1064.7 L496,1036.5 " fill="#F1F1F1" style="stroke:#181818;stroke-width:0.5;"/><path d="M496,1036.5 C496,1046.5 585.1,1046.5 585.1,1046.5 C585.1,1046.5 674.2,1046.5 674.2,1036.5 " fill="none" style="stroke:#181818;stroke-width:0.5;"/><image height="19" width="19" x="506" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAATCAIAAAD9MqGbAAABpElEQVR4Xp2SwasBURTGBxGymaQUK2Ihm9lKUWI1ScrWSsnOf6CmlIWm2chKWVkpRYqU3TSlWCqyIiEb/gNfTU/HeRav9y2mb+75fjP33HOF538lsPfr9ZpIJBwOx2AwYCUmTvr9/mKxOJ1ObTbber1mVSpOCoKw2WxgYrFYq9ViVSpOlsvlQCCQyWQsFsv5fMZKs9mMRqP5fJ4lOQnhV6IoHg4H+H6/73Q6sYLPVSoVGvtC7na7eDxu+mQymcvlYObzORqhMU7ieIQfzWYzl8sF02g03G53vV6nyQ9yNBohh+d+v5ckCcdrGAZ4WZY7nc7j8aDhD7JUKmEqpsdI8JXj8UgDVB9kr9ezWq3oEz6bzYK8XC6Aq9XqYrGgyefvPkOh0LvPWq1mt9sxHuwct6rb7dIkJ9HMZDIJBoOn0wmvqVQKs4UZj8eAaZKT0HK5BHm/3+EVRfH5fKvVKp1Om+N5i5OapmGfmAHmYa7gVmElEoncbjea5CRCuq7DhMNhVVVZleoL2W63sVWPxzMcDlmVipPb7dbr9WI2hUKBlZg4+Xe9AAZvNCStaRlgAAAAAElFTkSuQmCC" y="1050.5"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="135" x="529.2" y="1066.3982">goverment.address</text></g><!--MD5=[6f0adf077ed487e31273cb3c7de2754d]
+entity ProductCatalogAPI--><g id="elem_ProductCatalogAPI"><rect fill="#F1F1F1" height="22.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="155" x="2238.5" y="801.5"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="135" x="2248.5" y="817.4951">Product Catalog API</text></g><!--MD5=[c7acabba92f496521483ca1dc00480bd]
+entity ProductInformationAPI--><g id="elem_ProductInformationAPI"><rect fill="#F1F1F1" height="22.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="180" x="2429" y="801.5"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="160" x="2439" y="817.4951">Product Information API</text></g><!--MD5=[f5f949d53e155721eceb18ec615a0caa]
+entity ProductPriceAPI--><g id="elem_ProductPriceAPI"><rect fill="#F1F1F1" height="22.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="137" x="2644.5" y="801.5"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="117" x="2654.5" y="817.4951">Product Price API</text></g><!--MD5=[ddb4404a084d0c57af56a57f506b844d]
+entity ProductCatalogTopic--><g id="elem_ProductCatalogTopic"><path d="M2238.5,603.5 C2238.5,593.5 2312.1,593.5 2312.1,593.5 C2312.1,593.5 2385.7,593.5 2385.7,603.5 L2385.7,631.7 C2385.7,641.7 2312.1,641.7 2312.1,641.7 C2312.1,641.7 2238.5,641.7 2238.5,631.7 L2238.5,603.5 " fill="#F1F1F1" style="stroke:#181818;stroke-width:0.5;"/><path d="M2238.5,603.5 C2238.5,613.5 2312.1,613.5 2312.1,613.5 C2312.1,613.5 2385.7,613.5 2385.7,603.5 " fill="none" style="stroke:#181818;stroke-width:0.5;"/><image height="19" width="19" x="2248.5" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAATCAIAAAD9MqGbAAABpElEQVR4Xp2SwasBURTGBxGymaQUK2Ihm9lKUWI1ScrWSsnOf6CmlIWm2chKWVkpRYqU3TSlWCqyIiEb/gNfTU/HeRav9y2mb+75fjP33HOF538lsPfr9ZpIJBwOx2AwYCUmTvr9/mKxOJ1ObTbber1mVSpOCoKw2WxgYrFYq9ViVSpOlsvlQCCQyWQsFsv5fMZKs9mMRqP5fJ4lOQnhV6IoHg4H+H6/73Q6sYLPVSoVGvtC7na7eDxu+mQymcvlYObzORqhMU7ieIQfzWYzl8sF02g03G53vV6nyQ9yNBohh+d+v5ckCcdrGAZ4WZY7nc7j8aDhD7JUKmEqpsdI8JXj8UgDVB9kr9ezWq3oEz6bzYK8XC6Aq9XqYrGgyefvPkOh0LvPWq1mt9sxHuwct6rb7dIkJ9HMZDIJBoOn0wmvqVQKs4UZj8eAaZKT0HK5BHm/3+EVRfH5fKvVKp1Om+N5i5OapmGfmAHmYa7gVmElEoncbjea5CRCuq7DhMNhVVVZleoL2W63sVWPxzMcDlmVipPb7dbr9WI2hUKBlZg4+Xe9AAZvNCStaRlgAAAAAElFTkSuQmCC" y="617.5"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="108" x="2267.7" y="633.3982">product.catalog</text></g><!--MD5=[d9718851442e85351f057880a76e821c]
+entity ProductInformationTopic--><g id="elem_ProductInformationTopic"><path d="M2421,603.5 C2421,593.5 2508.1,593.5 2508.1,593.5 C2508.1,593.5 2595.2,593.5 2595.2,603.5 L2595.2,631.7 C2595.2,641.7 2508.1,641.7 2508.1,641.7 C2508.1,641.7 2421,641.7 2421,631.7 L2421,603.5 " fill="#F1F1F1" style="stroke:#181818;stroke-width:0.5;"/><path d="M2421,603.5 C2421,613.5 2508.1,613.5 2508.1,613.5 C2508.1,613.5 2595.2,613.5 2595.2,603.5 " fill="none" style="stroke:#181818;stroke-width:0.5;"/><image height="19" width="19" x="2431" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAATCAIAAAD9MqGbAAABpElEQVR4Xp2SwasBURTGBxGymaQUK2Ihm9lKUWI1ScrWSsnOf6CmlIWm2chKWVkpRYqU3TSlWCqyIiEb/gNfTU/HeRav9y2mb+75fjP33HOF538lsPfr9ZpIJBwOx2AwYCUmTvr9/mKxOJ1ObTbber1mVSpOCoKw2WxgYrFYq9ViVSpOlsvlQCCQyWQsFsv5fMZKs9mMRqP5fJ4lOQnhV6IoHg4H+H6/73Q6sYLPVSoVGvtC7na7eDxu+mQymcvlYObzORqhMU7ieIQfzWYzl8sF02g03G53vV6nyQ9yNBohh+d+v5ckCcdrGAZ4WZY7nc7j8aDhD7JUKmEqpsdI8JXj8UgDVB9kr9ezWq3oEz6bzYK8XC6Aq9XqYrGgyefvPkOh0LvPWq1mt9sxHuwct6rb7dIkJ9HMZDIJBoOn0wmvqVQKs4UZj8eAaZKT0HK5BHm/3+EVRfH5fKvVKp1Om+N5i5OapmGfmAHmYa7gVmElEoncbjea5CRCuq7DhMNhVVVZleoL2W63sVWPxzMcDlmVipPb7dbr9WI2hUKBlZg4+Xe9AAZvNCStaRlgAAAAAElFTkSuQmCC" y="617.5"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="135" x="2450.2" y="633.3982">product.information</text></g><!--MD5=[9b4754ca3301b4844d19893520f58065]
+entity ProductPriceTopic--><g id="elem_ProductPriceTopic"><path d="M2630.5,603.5 C2630.5,593.5 2696.1,593.5 2696.1,593.5 C2696.1,593.5 2761.7,593.5 2761.7,603.5 L2761.7,631.7 C2761.7,641.7 2696.1,641.7 2696.1,641.7 C2696.1,641.7 2630.5,641.7 2630.5,631.7 L2630.5,603.5 " fill="#F1F1F1" style="stroke:#181818;stroke-width:0.5;"/><path d="M2630.5,603.5 C2630.5,613.5 2696.1,613.5 2696.1,613.5 C2696.1,613.5 2761.7,613.5 2761.7,603.5 " fill="none" style="stroke:#181818;stroke-width:0.5;"/><image height="19" width="19" x="2640.5" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAATCAIAAAD9MqGbAAABpElEQVR4Xp2SwasBURTGBxGymaQUK2Ihm9lKUWI1ScrWSsnOf6CmlIWm2chKWVkpRYqU3TSlWCqyIiEb/gNfTU/HeRav9y2mb+75fjP33HOF538lsPfr9ZpIJBwOx2AwYCUmTvr9/mKxOJ1ObTbber1mVSpOCoKw2WxgYrFYq9ViVSpOlsvlQCCQyWQsFsv5fMZKs9mMRqP5fJ4lOQnhV6IoHg4H+H6/73Q6sYLPVSoVGvtC7na7eDxu+mQymcvlYObzORqhMU7ieIQfzWYzl8sF02g03G53vV6nyQ9yNBohh+d+v5ckCcdrGAZ4WZY7nc7j8aDhD7JUKmEqpsdI8JXj8UgDVB9kr9ezWq3oEz6bzYK8XC6Aq9XqYrGgyefvPkOh0LvPWq1mt9sxHuwct6rb7dIkJ9HMZDIJBoOn0wmvqVQKs4UZj8eAaZKT0HK5BHm/3+EVRfH5fKvVKp1Om+N5i5OapmGfmAHmYa7gVmElEoncbjea5CRCuq7DhMNhVVVZleoL2W63sVWPxzMcDlmVipPb7dbr9WI2hUKBlZg4+Xe9AAZvNCStaRlgAAAAAElFTkSuQmCC" y="617.5"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="92" x="2659.7" y="633.3982">product.price</text></g><!--MD5=[f175f2b8a0ebb9c5b35816c1c31949e5]
+entity EmailAPI--><g id="elem_EmailAPI"><rect fill="#F1F1F1" height="22.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="81" x="2049.5" y="1039.5"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="61" x="2059.5" y="1055.4951">Email API</text></g><!--MD5=[c4c3c545a9973ad7a9b46bbb41177ac6]
+entity CommunicationEmailTopic--><g id="elem_CommunicationEmailTopic"><path d="M1997.5,798.5 C1997.5,788.5 2090.1,788.5 2090.1,788.5 C2090.1,788.5 2182.7,788.5 2182.7,798.5 L2182.7,826.7 C2182.7,836.7 2090.1,836.7 2090.1,836.7 C2090.1,836.7 1997.5,836.7 1997.5,826.7 L1997.5,798.5 " fill="#F1F1F1" style="stroke:#181818;stroke-width:0.5;"/><path d="M1997.5,798.5 C1997.5,808.5 2090.1,808.5 2090.1,808.5 C2090.1,808.5 2182.7,808.5 2182.7,798.5 " fill="none" style="stroke:#181818;stroke-width:0.5;"/><image height="19" width="19" x="2007.5" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAATCAIAAAD9MqGbAAABpElEQVR4Xp2SwasBURTGBxGymaQUK2Ihm9lKUWI1ScrWSsnOf6CmlIWm2chKWVkpRYqU3TSlWCqyIiEb/gNfTU/HeRav9y2mb+75fjP33HOF538lsPfr9ZpIJBwOx2AwYCUmTvr9/mKxOJ1ObTbber1mVSpOCoKw2WxgYrFYq9ViVSpOlsvlQCCQyWQsFsv5fMZKs9mMRqP5fJ4lOQnhV6IoHg4H+H6/73Q6sYLPVSoVGvtC7na7eDxu+mQymcvlYObzORqhMU7ieIQfzWYzl8sF02g03G53vV6nyQ9yNBohh+d+v5ckCcdrGAZ4WZY7nc7j8aDhD7JUKmEqpsdI8JXj8UgDVB9kr9ezWq3oEz6bzYK8XC6Aq9XqYrGgyefvPkOh0LvPWq1mt9sxHuwct6rb7dIkJ9HMZDIJBoOn0wmvqVQKs4UZj8eAaZKT0HK5BHm/3+EVRfH5fKvVKp1Om+N5i5OapmGfmAHmYa7gVmElEoncbjea5CRCuq7DhMNhVVVZleoL2W63sVWPxzMcDlmVipPb7dbr9WI2hUKBlZg4+Xe9AAZvNCStaRlgAAAAAElFTkSuQmCC" y="812.5"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="146" x="2026.7" y="828.3982">communication.email</text></g><!--MD5=[c93f18060464cc2109101ed6a043355b]
+entity BusinessCustomerAPI--><g id="elem_BusinessCustomerAPI"><rect fill="#F1F1F1" height="22.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="181" x="1201.5" y="801.5"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="161" x="1211.5" y="817.4951">Business Customer API</text></g><!--MD5=[cea338b7dcb34fd0c2c9abb0ab18cf13]
+entity BusinessAgreementAPI--><g id="elem_BusinessAgreementAPI"><rect fill="#F1F1F1" height="22.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="190" x="1418" y="801.5"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="170" x="1428" y="817.4951">Business Agreement API</text></g><!--MD5=[4c87aa65fe1cb6e2f5a0438f0c4ad226]
+entity BusinessOrderAPI--><g id="elem_BusinessOrderAPI"><rect fill="#F1F1F1" height="22.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="152" x="1643" y="801.5"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="132" x="1653" y="817.4951">Business Order API</text></g><!--MD5=[05d55a1f99fe30dffecb8f2dc5f7a864]
+entity BusinessCustomerTopic--><g id="elem_BusinessCustomerTopic"><path d="M1204,603.5 C1204,593.5 1292.1,593.5 1292.1,593.5 C1292.1,593.5 1380.2,593.5 1380.2,603.5 L1380.2,631.7 C1380.2,641.7 1292.1,641.7 1292.1,641.7 C1292.1,641.7 1204,641.7 1204,631.7 L1204,603.5 " fill="#F1F1F1" style="stroke:#181818;stroke-width:0.5;"/><path d="M1204,603.5 C1204,613.5 1292.1,613.5 1292.1,613.5 C1292.1,613.5 1380.2,613.5 1380.2,603.5 " fill="none" style="stroke:#181818;stroke-width:0.5;"/><image height="19" width="19" x="1214" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAATCAIAAAD9MqGbAAABpElEQVR4Xp2SwasBURTGBxGymaQUK2Ihm9lKUWI1ScrWSsnOf6CmlIWm2chKWVkpRYqU3TSlWCqyIiEb/gNfTU/HeRav9y2mb+75fjP33HOF538lsPfr9ZpIJBwOx2AwYCUmTvr9/mKxOJ1ObTbber1mVSpOCoKw2WxgYrFYq9ViVSpOlsvlQCCQyWQsFsv5fMZKs9mMRqP5fJ4lOQnhV6IoHg4H+H6/73Q6sYLPVSoVGvtC7na7eDxu+mQymcvlYObzORqhMU7ieIQfzWYzl8sF02g03G53vV6nyQ9yNBohh+d+v5ckCcdrGAZ4WZY7nc7j8aDhD7JUKmEqpsdI8JXj8UgDVB9kr9ezWq3oEz6bzYK8XC6Aq9XqYrGgyefvPkOh0LvPWq1mt9sxHuwct6rb7dIkJ9HMZDIJBoOn0wmvqVQKs4UZj8eAaZKT0HK5BHm/3+EVRfH5fKvVKp1Om+N5i5OapmGfmAHmYa7gVmElEoncbjea5CRCuq7DhMNhVVVZleoL2W63sVWPxzMcDlmVipPb7dbr9WI2hUKBlZg4+Xe9AAZvNCStaRlgAAAAAElFTkSuQmCC" y="617.5"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="133" x="1237.2" y="633.3982">business.customer</text></g><!--MD5=[f4d3a085b75776f76e60418820e10556]
+entity BusinessAgreementTopic--><g id="elem_BusinessAgreementTopic"><path d="M1417,603.5 C1417,593.5 1510.1,593.5 1510.1,593.5 C1510.1,593.5 1603.2,593.5 1603.2,603.5 L1603.2,631.7 C1603.2,641.7 1510.1,641.7 1510.1,641.7 C1510.1,641.7 1417,641.7 1417,631.7 L1417,603.5 " fill="#F1F1F1" style="stroke:#181818;stroke-width:0.5;"/><path d="M1417,603.5 C1417,613.5 1510.1,613.5 1510.1,613.5 C1510.1,613.5 1603.2,613.5 1603.2,603.5 " fill="none" style="stroke:#181818;stroke-width:0.5;"/><image height="19" width="19" x="1427" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAATCAIAAAD9MqGbAAABpElEQVR4Xp2SwasBURTGBxGymaQUK2Ihm9lKUWI1ScrWSsnOf6CmlIWm2chKWVkpRYqU3TSlWCqyIiEb/gNfTU/HeRav9y2mb+75fjP33HOF538lsPfr9ZpIJBwOx2AwYCUmTvr9/mKxOJ1ObTbber1mVSpOCoKw2WxgYrFYq9ViVSpOlsvlQCCQyWQsFsv5fMZKs9mMRqP5fJ4lOQnhV6IoHg4H+H6/73Q6sYLPVSoVGvtC7na7eDxu+mQymcvlYObzORqhMU7ieIQfzWYzl8sF02g03G53vV6nyQ9yNBohh+d+v5ckCcdrGAZ4WZY7nc7j8aDhD7JUKmEqpsdI8JXj8UgDVB9kr9ezWq3oEz6bzYK8XC6Aq9XqYrGgyefvPkOh0LvPWq1mt9sxHuwct6rb7dIkJ9HMZDIJBoOn0wmvqVQKs4UZj8eAaZKT0HK5BHm/3+EVRfH5fKvVKp1Om+N5i5OapmGfmAHmYa7gVmElEoncbjea5CRCuq7DhMNhVVVZleoL2W63sVWPxzMcDlmVipPb7dbr9WI2hUKBlZg4+Xe9AAZvNCStaRlgAAAAAElFTkSuQmCC" y="617.5"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="143" x="1450.2" y="633.3982">business.agreement</text></g><!--MD5=[d690aa5d51a2d185b647bf3a93eb1c9f]
+entity BusinessOrderTopic--><g id="elem_BusinessOrderTopic"><path d="M1624.5,1036.5 C1624.5,1026.5 1698.1,1026.5 1698.1,1026.5 C1698.1,1026.5 1771.7,1026.5 1771.7,1036.5 L1771.7,1064.7 C1771.7,1074.7 1698.1,1074.7 1698.1,1074.7 C1698.1,1074.7 1624.5,1074.7 1624.5,1064.7 L1624.5,1036.5 " fill="#F1F1F1" style="stroke:#181818;stroke-width:0.5;"/><path d="M1624.5,1036.5 C1624.5,1046.5 1698.1,1046.5 1698.1,1046.5 C1698.1,1046.5 1771.7,1046.5 1771.7,1036.5 " fill="none" style="stroke:#181818;stroke-width:0.5;"/><image height="19" width="19" x="1634.5" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAATCAIAAAD9MqGbAAABpElEQVR4Xp2SwasBURTGBxGymaQUK2Ihm9lKUWI1ScrWSsnOf6CmlIWm2chKWVkpRYqU3TSlWCqyIiEb/gNfTU/HeRav9y2mb+75fjP33HOF538lsPfr9ZpIJBwOx2AwYCUmTvr9/mKxOJ1ObTbber1mVSpOCoKw2WxgYrFYq9ViVSpOlsvlQCCQyWQsFsv5fMZKs9mMRqP5fJ4lOQnhV6IoHg4H+H6/73Q6sYLPVSoVGvtC7na7eDxu+mQymcvlYObzORqhMU7ieIQfzWYzl8sF02g03G53vV6nyQ9yNBohh+d+v5ckCcdrGAZ4WZY7nc7j8aDhD7JUKmEqpsdI8JXj8UgDVB9kr9ezWq3oEz6bzYK8XC6Aq9XqYrGgyefvPkOh0LvPWq1mt9sxHuwct6rb7dIkJ9HMZDIJBoOn0wmvqVQKs4UZj8eAaZKT0HK5BHm/3+EVRfH5fKvVKp1Om+N5i5OapmGfmAHmYa7gVmElEoncbjea5CRCuq7DhMNhVVVZleoL2W63sVWPxzMcDlmVipPb7dbr9WI2hUKBlZg4+Xe9AAZvNCStaRlgAAAAAElFTkSuQmCC" y="1050.5"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="104" x="1657.7" y="1066.3982">business.order</text></g><!--MD5=[20d16cc83a86dc7ccd46d6d72c8dcd66]
+entity SalesUX--><g id="elem_SalesUX"><rect fill="#F1F1F1" height="22.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="80" x="2686" y="256.5"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="60" x="2696" y="272.4951">Sales UX</text></g><!--MD5=[dd9bc2193d90b8203c153b66b9832f67]
+entity CatalogAPI--><g id="elem_CatalogAPI"><rect fill="#F1F1F1" height="22.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="97" x="2493.5" y="370.5"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="77" x="2503.5" y="386.4951">Catalog API</text></g><!--MD5=[e953944766117670df609b5c2a823f3e]
+entity QuoteAPI--><g id="elem_QuoteAPI"><rect fill="#F1F1F1" height="22.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="88" x="2633" y="370.5"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="68" x="2643" y="386.4951">Quote API</text></g><!--MD5=[3059682288490871bef09449d86ff0ca]
+entity OrderAPI--><g id="elem_OrderAPI"><rect fill="#F1F1F1" height="22.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="84" x="2807" y="370.5"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="64" x="2817" y="386.4951">Order API</text></g><!--MD5=[fb23f7f8117ec801ba48ddc0accab2b6]
+entity SigningUX--><g id="elem_SigningUX"><rect fill="#F1F1F1" height="22.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="94" x="3005" y="256.5"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="74" x="3015" y="272.4951">Signing UX</text></g><!--MD5=[782d0433c0a9eae88f261c90ef6734e2]
+entity SigningAPI--><g id="elem_SigningAPI"><rect fill="#F1F1F1" height="22.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="96" x="3004" y="370.5"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="76" x="3014" y="386.4951">Signing API</text></g><!--MD5=[2675b8c6d61d1d94ac55eb5a75e0427e]
+entity CustomerUX--><g id="elem_CustomerUX"><rect fill="#F1F1F1" height="22.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="111" x="3310.5" y="256.5"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="91" x="3320.5" y="272.4951">Customer UX</text></g><!--MD5=[5ced56f0b063a347e98f8b258af34f27]
+entity CustomerAPI--><g id="elem_CustomerAPI"><rect fill="#F1F1F1" height="22.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="113" x="3156.5" y="370.5"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="93" x="3166.5" y="386.4951">Customer API</text></g><!--MD5=[b2449bb0a81773c3781aaa747c16f8a1]
+entity AgreementAPI--><g id="elem_AgreementAPI"><rect fill="#F1F1F1" height="22.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="122" x="3305" y="370.5"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="102" x="3315" y="386.4951">Agreement API</text></g><!--MD5=[fd2f25a4a196163eb86256320459bc62]
+entity DocumentAPI--><g id="elem_DocumentAPI"><rect fill="#F1F1F1" height="22.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="118" x="3462" y="370.5"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="98" x="3472" y="386.4951">Document API</text></g><!--MD5=[bd25121fb3db9d81f38a68388bcdab20]
+entity CaseAPI--><g id="elem_CaseAPI"><rect fill="#F1F1F1" height="22.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="80" x="3615" y="370.5"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="60" x="3625" y="386.4951">Case API</text></g><!--MD5=[ae78ca0dd1f49bdd788e5556d70823ac]
+entity Customer--><g id="elem_Customer"><ellipse cx="3052" cy="14" fill="#F1F1F1" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;"/><path d="M3052,22 L3052,49 M3039,30 L3065,30 M3052,49 L3039,64 M3052,49 L3065,64 " fill="none" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="68" x="3018" y="78.4951">Customer</text></g><!--MD5=[b9d68aad5db241590019f9da2e762018]
+reverse link SectorCustomerTopic to SectorCustomerAPI--><g id="link_SectorCustomerTopic_SectorCustomerAPI"><path d="M1016,1080.05 C1016,1114.21 1016,1169.61 1016,1192.31 " fill="none" id="SectorCustomerTopic-backto-SectorCustomerAPI" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="1016,1074.76,1012,1083.76,1016,1079.76,1020,1083.76,1016,1074.76" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[080f2bb00090901332c743d7c349f9a4]
+reverse link PersonTopic to PersonAPI--><g id="link_PersonTopic_PersonAPI"><path d="M375,1080.05 C375,1114.21 375,1169.61 375,1192.31 " fill="none" id="PersonTopic-backto-PersonAPI" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="375,1074.76,371,1083.76,375,1079.76,379,1083.76,375,1074.76" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="59" x="382" y="1143.5669">produces</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="71" x="376" y="1158.6997">person info</text></g><!--MD5=[124094355777be8accd616c611d94985]
+reverse link OrganizationTopic to OrganizationAPI--><g id="link_OrganizationTopic_OrganizationAPI"><path d="M151,1080.05 C151,1114.21 151,1169.61 151,1192.31 " fill="none" id="OrganizationTopic-backto-OrganizationAPI" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="151,1074.76,147,1083.76,151,1079.76,155,1083.76,151,1074.76" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="59" x="181" y="1143.5669">produces</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="117" x="152" y="1158.6997">OrganizationEvent</text></g><!--MD5=[c1de5643afe113ff3435d7b1852f337d]
+reverse link VehicleTopic to CarAPI--><g id="link_VehicleTopic_CarAPI"><path d="M794,1080.05 C794,1114.21 794,1169.61 794,1192.31 " fill="none" id="VehicleTopic-backto-CarAPI" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="794,1074.76,790,1083.76,794,1079.76,798,1083.76,794,1074.76" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="59" x="806.5" y="1143.5669">produces</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="82" x="795" y="1158.6997">VehicleEvent</text></g><!--MD5=[86244ec47fc9fcec8dbfabb756095fa4]
+reverse link AddressTopic to AddressAPI--><g id="link_AddressTopic_AddressAPI"><path d="M585,1080.05 C585,1114.21 585,1169.61 585,1192.31 " fill="none" id="AddressTopic-backto-AddressAPI" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="585,1074.76,581,1083.76,585,1079.76,589,1083.76,585,1074.76" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="59" x="600.5" y="1143.5669">produces</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="88" x="586" y="1158.6997">AddressEvent</text></g><!--MD5=[89600d3f6305e10df0a38012b311d017]
+reverse link ProductCatalogTopic to ProductCatalogAPI--><g id="link_ProductCatalogTopic_ProductCatalogAPI"><path d="M2294.74,646.34 C2290.74,654.19 2287.06,662.94 2285,671.5 C2273.38,719.91 2298.84,778.13 2310.53,801.28 " fill="none" id="ProductCatalogTopic-backto-ProductCatalogAPI" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="2297.26,641.58,2289.5157,647.6648,2294.9219,645.9996,2296.5871,651.4058,2297.26,641.58" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="50" x="2328" y="692.0669">(c) emit</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="134" x="2286" y="707.1997">ProductCatalogEvent</text></g><!--MD5=[b44020411383086666fee15b0a70fbc5]
+reverse link ProductInformationTopic to ProductInformationAPI--><g id="link_ProductInformationTopic_ProductInformationAPI"><path d="M2477.3,645.65 C2470.66,653.28 2464.57,662.09 2461,671.5 C2453.59,691.03 2455.25,698.42 2461,718.5 C2470.58,751.98 2496.1,785.12 2509.88,801.29 " fill="none" id="ProductInformationTopic-backto-ProductInformationAPI" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="2481.03,641.53,2472.0276,645.5247,2477.6773,645.2394,2477.9626,650.889,2481.03,641.53" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="51" x="2515.5" y="692.0669">(a) emit</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="158" x="2462" y="707.1997">ProductInformationEvent</text></g><!--MD5=[965e01f8cd7b4d232f8df1252726b42e]
+reverse link ProductPriceTopic to ProductPriceAPI--><g id="link_ProductPriceTopic_ProductPriceAPI"><path d="M2690.9,646.98 C2689.7,654.89 2688.6,663.51 2688,671.5 C2686.44,692.33 2685.27,697.79 2688,718.5 C2692.07,749.33 2703.42,784.45 2709.33,801.36 " fill="none" id="ProductPriceTopic-backto-ProductPriceAPI" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="2691.74,641.63,2686.4,649.9055,2690.969,646.5702,2694.3043,651.1392,2691.74,641.63" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="51" x="2721.5" y="692.0669">(a) emit</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="116" x="2689" y="707.1997">ProductPriceEvent</text></g><!--MD5=[8165079ceb3d2b7913a5d53d32e8226f]
+reverse link CommunicationEmailTopic to EmailAPI--><g id="link_CommunicationEmailTopic_EmailAPI"><path d="M2090,841.77 C2090,894.35 2090,1004.99 2090,1039.2 " fill="none" id="CommunicationEmailTopic-backto-EmailAPI" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="2090,836.56,2086,845.56,2090,841.56,2094,845.56,2090,836.56" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[5d673fd828a138cb35fc1073035b25ea]
+reverse link BusinessCustomerTopic to BusinessCustomerAPI--><g id="link_BusinessCustomerTopic_BusinessCustomerAPI"><path d="M1292,646.92 C1292,690.62 1292,772.29 1292,801.11 " fill="none" id="BusinessCustomerTopic-backto-BusinessCustomerAPI" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="1292,641.78,1288,650.78,1292,646.78,1296,650.78,1292,641.78" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[bac4f8d01e999b9b245ee817064c6e47]
+reverse link BusinessAgreementTopic to BusinessAgreementAPI--><g id="link_BusinessAgreementTopic_BusinessAgreementAPI"><path d="M1510.44,646.92 C1511.12,690.62 1512.39,772.29 1512.84,801.11 " fill="none" id="BusinessAgreementTopic-backto-BusinessAgreementAPI" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="1510.36,641.78,1506.5149,650.8472,1510.4457,646.7793,1514.5137,650.7101,1510.36,641.78" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[ec62eb6a2237e95723c75e9101bd99e8]
+reverse link BusinessOrderTopic to BusinessOrderAPI--><g id="link_BusinessOrderTopic_BusinessOrderAPI"><path d="M1700.51,1021.28 C1705.2,968.63 1715.07,857.67 1718.1,823.64 " fill="none" id="BusinessOrderTopic-backto-BusinessOrderAPI" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="1700.05,1026.5,1704.8328,1017.8904,1700.4936,1021.5197,1696.8643,1017.1806,1700.05,1026.5" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="59" x="1743.5" y="887.0669">consume</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="114" x="1718" y="902.1997">OrderPlacedEvent</text></g><!--MD5=[01dc8938efbc5a3a2cc033e637f83ff7]
+link BusinessOrderAPI to BusinessOrderTopic--><g id="link_BusinessOrderAPI_BusinessOrderTopic"><path d="M1695.73,823.56 C1677.17,831.2 1650.35,841.4 1626,847.5 C1596.83,854.81 1511.72,843.79 1492,866.5 C1437.5,929.28 1551.93,991.16 1631.05,1024.43 " fill="none" id="BusinessOrderAPI-to-BusinessOrderTopic" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="1635.73,1026.38,1628.9686,1019.2187,1631.1167,1024.4519,1625.8836,1026.6,1635.73,1026.38" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="29" x="1547.5" y="879.5669">emit</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="138" x="1493" y="894.6997">OrderCreatedEvent &amp;</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="107" x="1510.5" y="909.8325">OrderEmailEvent</text></g><!--MD5=[f5960e8602ce05a949c76a127969beeb]
+link BusinessOrderAPI to BusinessCustomerAPI--><g id="link_BusinessOrderAPI_BusinessCustomerAPI"><path d="M1715.6,801.48 C1707.56,777.64 1684.91,721.63 1643.5,699.5 C1593.72,672.89 1572.58,693.09 1516.5,699.5 C1463.69,705.54 1447.86,703.38 1400,726.5 C1362.17,744.78 1325.5,778.36 1306.15,797.7 " fill="none" id="BusinessOrderAPI-to-BusinessCustomerAPI" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="1302.51,801.37,1311.688,797.7973,1306.0312,797.8202,1306.0083,792.1634,1302.51,801.37" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="43" x="1558.5" y="684.5669">screen</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="121" x="1521.5" y="699.6997">business customer</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="73" x="1545.5" y="714.8325">information</text></g><!--MD5=[13ba46f69e0e37aa59845f582087709f]
+reverse link SectorCustomerAPI to BusinessOrderAPI--><g id="link_SectorCustomerAPI_BusinessOrderAPI"><path d="M1033.08,1189.05 C1109.55,1128.91 1418.98,886.83 1470,866.5 C1534.88,840.65 1558.09,863.82 1626,847.5 C1650.57,841.6 1677.59,831.26 1696.14,823.53 " fill="none" id="SectorCustomerAPI-backto-BusinessOrderAPI" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="1028.79,1192.42,1038.3385,1190.0064,1032.7221,1189.3315,1033.397,1183.7151,1028.79,1192.42" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="43" x="1418" y="1040.0669">screen</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="105" x="1389" y="1055.1997">sector customer</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="73" x="1405" y="1070.3325">information</text></g><!--MD5=[bfb4b9938cf3efecdda9676047ff71a0]
+link BusinessOrderAPI to CommunicationEmailTopic--><g id="link_BusinessOrderAPI_CommunicationEmailTopic"><path d="M1795.42,812.5 C1852.37,812.5 1930.58,812.5 1992.1,812.5 " fill="none" id="BusinessOrderAPI-to-CommunicationEmailTopic" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="1997.25,812.5,1988.25,808.5,1992.25,812.5,1988.25,816.5,1997.25,812.5" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="29" x="1881.75" y="775.5669">emit</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="142" x="1825.25" y="790.6997">OrderRejectedEvent &amp;</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="162" x="1817.25" y="805.8325">OrderRejectedEmailEvent</text></g><!--MD5=[cd69b34eada2074317d928f47943b516]
+link BusinessCustomerAPI to PersonTopic--><g id="link_BusinessCustomerAPI_PersonTopic"><path d="M1201.28,816.43 C1013.67,822.98 595.5,840.32 536,866.5 C464.62,897.9 412.58,978.92 389.02,1021.86 " fill="none" id="BusinessCustomerAPI-to-PersonTopic" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="386.56,1026.39,394.3662,1020.3848,388.9433,1021.9945,387.3335,1016.5716,386.56,1026.39" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="66" x="546" y="887.0669">consumes</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="80" x="541" y="902.1997">PersonEvent</text></g><!--MD5=[5a0b5e7589f5ddb5107033acc0e51898]
+link BusinessCustomerAPI to OrganizationTopic--><g id="link_BusinessCustomerAPI_OrganizationTopic"><path d="M1201.25,815.73 C980.54,821.55 427.94,838.74 349,866.5 C267.03,895.33 199.83,978.57 169.08,1022.15 " fill="none" id="BusinessCustomerAPI-to-OrganizationTopic" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="166.04,1026.5,174.4674,1021.403,168.8987,1022.3978,167.9039,1016.8291,166.04,1026.5" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="66" x="373.5" y="887.0669">consumes</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="109" x="354" y="902.1997">OrgnizationEvent</text></g><!--MD5=[b1b0ccfee91d59db752604a89a7e4159]
+link BusinessAgreementAPI to VehicleTopic--><g id="link_BusinessAgreementAPI_VehicleTopic"><path d="M1485.07,823.64 C1462.44,831.43 1429.57,841.79 1400,847.5 C1187.62,888.48 1108.83,817.84 919,921.5 C873.79,946.19 834.7,992.61 812.77,1022.24 " fill="none" id="BusinessAgreementAPI-to-VehicleTopic" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="809.66,1026.49,818.2101,1021.6018,812.6187,1022.4593,811.7611,1016.8679,809.66,1026.49" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="66" x="1078" y="887.0669">consumes</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="82" x="1072" y="902.1997">VehicleEvent</text></g><!--MD5=[db8703c83c576701e9945e216631b5fe]
+link BusinessAgreementAPI to AddressTopic--><g id="link_BusinessAgreementAPI_AddressTopic"><path d="M1486.52,823.59 C1463.91,831.69 1430.32,842.5 1400,847.5 C1278.45,867.52 964.65,833.38 846,866.5 C804.8,878 802.73,900.4 762,913.5 C731.77,923.22 718.93,906.4 691,921.5 C648.84,944.3 616.76,991.4 599.43,1021.67 " fill="none" id="BusinessAgreementAPI-to-AddressTopic" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="596.78,1026.38,604.6851,1020.5055,599.2361,1022.0248,597.7167,1016.5758,596.78,1026.38" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="66" x="857" y="887.0669">consumes</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="82" x="851" y="902.1997">VehicleEvent</text></g><!--MD5=[22d10c0f231b7593248efadbc69e6a00]
+link BusinessCustomerAPI to AddressTopic--><g id="link_BusinessCustomerAPI_AddressTopic"><path d="M1201.22,816.24 C1039.05,821.87 712.49,836.78 670,866.5 C617.98,902.9 597.01,979.49 589.2,1021.11 " fill="none" id="BusinessCustomerAPI-to-AddressTopic" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="588.27,1026.26,593.8259,1018.1278,589.1707,1021.3418,585.9567,1016.6867,588.27,1026.26" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="66" x="681" y="887.0669">consumes</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="82" x="675" y="902.1997">VehicleEvent</text></g><!--MD5=[017e40cb360d34f4f4d36c043d2061c8]
+link SalesUX to CatalogAPI--><g id="link_SalesUX_CatalogAPI"><path d="M2685.78,272.6 C2640.43,278.08 2570.71,289.4 2553,308.5 C2538.87,323.75 2538.35,349.11 2539.79,365.3 " fill="none" id="SalesUX-to-CatalogAPI" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="2540.34,370.41,2543.366,361.0375,2539.8114,365.438,2535.4109,361.8833,2540.34,370.41" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="92" x="2554" y="321.5669">(1) getCatalog</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="70" x="2565" y="336.6997">getProduct</text></g><!--MD5=[1d4bd8e3424fa61fca299e2a935d8791]
+link SalesUX to QuoteAPI--><g id="link_SalesUX_QuoteAPI"><path d="M2696.59,278.51 C2682.89,284.83 2667.89,294.49 2660,308.5 C2649.83,326.55 2659.23,350.44 2667.57,365.65 " fill="none" id="SalesUX-to-QuoteAPI" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="2670.1,370.07,2669.1008,360.272,2667.6162,365.7305,2662.1577,364.246,2670.1,370.07" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="144" x="2661" y="329.0669">(2) getQuoteByCriteria</text></g><!--MD5=[1294475f99de9557ac849db9b8bb7e6a]
+link SalesUX to OrderAPI--><g id="link_SalesUX_OrderAPI"><path d="M2758.79,278.6 C2775.64,285.05 2795.59,294.82 2810,308.5 C2826.86,324.5 2838.09,349.44 2844.01,365.36 " fill="none" id="SalesUX-to-OrderAPI" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="2845.81,370.39,2846.5367,360.568,2844.122,365.6836,2839.0064,363.2688,2845.81,370.39" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="92" x="2833" y="329.0669">(3) placeOrder</text></g><!--MD5=[45c78ee11572183328677080c55e98fd]
+link QuoteAPI to ProductPriceTopic--><g id="link_QuoteAPI_ProductPriceTopic"><path d="M2677.82,392.55 C2680.55,426.22 2689.44,535.77 2693.7,588.13 " fill="none" id="QuoteAPI-to-ProductPriceTopic" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="2694.12,593.32,2697.3874,584.0289,2693.7201,588.336,2689.4131,584.6687,2694.12,593.32" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="81" x="2702.5" y="461.5669">(d) consume</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="116" x="2685" y="476.6997">ProductPriceEvent</text></g><!--MD5=[cd0b8b3545a985b14f5d4d6bcce7f963]
+link CatalogAPI to ProductCatalogTopic--><g id="link_CatalogAPI_ProductCatalogTopic"><path d="M2493.38,392.53 C2459,401.85 2413.88,418.89 2384,448.5 C2344.68,487.46 2325.52,551.32 2317.3,588.06 " fill="none" id="CatalogAPI-to-ProductCatalogTopic" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="2316.16,593.28,2321.995,585.3457,2317.231,588.3961,2314.1807,583.6321,2316.16,593.28" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="81" x="2411.5" y="461.5669">(b) consume</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="134" x="2385" y="476.6997">ProductCatalogEvent</text></g><!--MD5=[ff15115422dff322374a0483f30d9a70]
+link CatalogAPI to ProductInformationTopic--><g id="link_CatalogAPI_ProductInformationTopic"><path d="M2540.54,392.55 C2535.65,426.22 2519.73,535.77 2512.12,588.13 " fill="none" id="CatalogAPI-to-ProductInformationTopic" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="2511.37,593.32,2516.6161,584.9846,2512.0851,588.3714,2508.6983,583.8404,2511.37,593.32" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="81" x="2558.5" y="461.5669">(b) consume</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="134" x="2532" y="476.6997">ProductCatalogEvent</text></g><!--MD5=[3d26c7cbd776147cb527df0b067eeec5]
+link OrderAPI to BusinessOrderTopic--><g id="link_OrderAPI_BusinessOrderTopic"><path d="M2848.64,392.7 C2846.25,457.88 2831.69,814.44 2798,847.5 C2668.05,975.03 2158.1,875.23 1982,921.5 C1892.97,944.89 1796.78,993.77 1742.31,1023.89 " fill="none" id="OrderAPI-to-BusinessOrderTopic" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="1737.81,1026.39,1747.62,1025.5158,1742.1808,1023.9618,1743.7348,1018.5226,1737.81,1026.39" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="169" x="2832" y="699.5669">(5) emit OrderPlacedEvent</text></g><!--MD5=[087167d717501bca917f8524dd6d6b1b]
+link SigningUX to SigningAPI--><g id="link_SigningUX_SigningAPI"><path d="M3052,278.84 C3052,298.59 3052,341.8 3052,365.01 " fill="none" id="SigningUX-to-SigningAPI" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="3052,370.19,3056,361.19,3052,365.19,3048,361.19,3052,370.19" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[519b6fa03fc2851ba167a827a7778755]
+link SigningAPI to BusinessOrderTopic--><g id="link_SigningAPI_BusinessOrderTopic"><path d="M3053.45,392.74 C3059.03,435.86 3075.66,605.71 3010,718.5 C2961.74,801.39 2925.35,810.17 2837,847.5 C2666.18,919.68 2609.72,897.12 2425,913.5 C2375.96,917.85 2030.04,910.72 1982,921.5 C1891.15,941.89 1794.05,992.74 1740.2,1023.87 " fill="none" id="SigningAPI-to-BusinessOrderTopic" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="1735.76,1026.44,1745.5541,1025.4026,1740.0897,1023.9393,1741.553,1018.475,1735.76,1026.44" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="81" x="3054" y="692.0669">(6) consume</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="123" x="3035" y="707.1997">OrderCreatedEvent</text></g><!--MD5=[00a359ce0bf7430f5472b4833b44e0ad]
+link CustomerUX to CustomerAPI--><g id="link_CustomerUX_CustomerAPI"><path d="M3352.15,278.64 C3324.39,298.96 3261.94,344.68 3231.03,367.3 " fill="none" id="CustomerUX-to-CustomerAPI" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="3226.71,370.47,3236.3404,368.4074,3230.7524,367.5274,3231.6324,361.9394,3226.71,370.47" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[c7608e1f463854482abfbf18c48ce13e]
+link CustomerUX to AgreementAPI--><g id="link_CustomerUX_AgreementAPI"><path d="M3366,278.84 C3366,298.59 3366,341.8 3366,365.01 " fill="none" id="CustomerUX-to-AgreementAPI" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="3366,370.19,3370,361.19,3366,365.19,3362,361.19,3366,370.19" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[e93f3f50e0d2049fc81a885f95b06b08]
+link CustomerUX to DocumentAPI--><g id="link_CustomerUX_DocumentAPI"><path d="M3380.03,278.64 C3408.16,298.96 3471.42,344.68 3502.73,367.3 " fill="none" id="CustomerUX-to-DocumentAPI" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="3507.11,370.47,3502.1537,361.9591,3503.0559,367.5436,3497.4714,368.4458,3507.11,370.47" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[56884490dcee1b7e634e7abd7a1b228d]
+link CustomerUX to CaseAPI--><g id="link_CustomerUX_CaseAPI"><path d="M3391.9,278.54 C3445.27,299.22 3567.24,346.49 3624.39,368.64 " fill="none" id="CustomerUX-to-CaseAPI" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="3629.05,370.44,3622.0973,363.4644,3624.3862,368.6374,3619.2132,370.9264,3629.05,370.44" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[7f385672b9a7f5ba2025d8a6bc6b6d49]
+link Customer to SalesUX--><g id="link_Customer_SalesUX"><path d="M3017.71,65.85 C2997.07,78.83 2970.36,95.86 2947,111.5 C2870.65,162.6 2781.64,226.33 2744.13,253.38 " fill="none" id="Customer-to-SalesUX" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="2739.82,256.49,2749.4586,254.4658,2743.8741,253.5636,2744.7763,247.9791,2739.82,256.49" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="90" x="2950.5" y="124.5669">searching and</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="95" x="2948" y="139.6997">buying product</text></g><!--MD5=[08978e082a6e1a951ba69c9416fceef9]
+link Customer to SigningUX--><g id="link_Customer_SigningUX"><path d="M3052,81.66 C3052,131.1 3052,216.32 3052,251.07 " fill="none" id="Customer-to-SigningUX" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="3052,256.2,3056,247.2,3052,251.2,3048,247.2,3052,256.2" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="109" x="3053" y="132.0669">signing comtacts</text></g><!--MD5=[daec948df631c681a03c3b9c87f24e8c]
+link Customer to CustomerUX--><g id="link_Customer_CustomerUX"><path d="M3086.19,61.89 C3110.45,74.67 3143.46,92.97 3171,111.5 C3241.4,158.86 3318.42,224.66 3350.57,252.83 " fill="none" id="Customer-to-CustomerUX" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="3354.62,256.39,3350.4976,247.4454,3350.8633,253.0904,3345.2183,253.4561,3354.62,256.39" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="231" x="3216" y="132.0669">manage agreements and payments</text></g><!--MD5=[41832708d99751db1052c1b5677c7501]
+@startuml
+  !include <cloudinsight/kafka>
+
+  actor Customer
+
+  rectangle "External Services" as ExternalServices {
+
+    rectangle "Sector Service" as SectorServices {
+      card "Sector Customer API" as SectorCustomerAPI  
+      database "<$kafka*0.4> sector.customer" as SectorCustomerTopic 
+
+      SectorCustomerAPI -u-> SectorCustomerTopic
+    }
+
+    rectangle "Goverment Service" as GovermentServices{
+      card "Person API" as PersonAPI
+      card "Organization API" as OrganizationAPI
+      card "Car API" as CarAPI
+      card "Address API" as AddressAPI
+
+      database "<$kafka*0.4> goverment.person" as PersonTopic 
+      database "<$kafka*0.4> goverment.organization" as OrganizationTopic 
+      database "<$kafka*0.4> goverment.vehicle" as VehicleTopic 
+      database "<$kafka*0.4> goverment.address" as AddressTopic 
+
+       PersonAPI -u-> PersonTopic : produces\nperson info
+       OrganizationAPI -u-> OrganizationTopic : produces\nOrganizationEvent
+       CarAPI -u-> VehicleTopic : produces\nVehicleEvent
+       AddressAPI -u-> AddressTopic : produces\nAddressEvent
+
+    }
+  } 
+
+
+  rectangle "Back Office Services" as BackOfficeServices {
+
+    rectangle "Product Information Service" as Pim {
+
+      card "Product Catalog API" as ProductCatalogAPI 
+      card "Product Information API" as ProductInformationAPI 
+      card "Product Price API" as ProductPriceAPI
+
+      database "<$kafka*0.4>product.catalog" as ProductCatalogTopic 
+      database "<$kafka*0.4>product.information" as ProductInformationTopic 
+      database "<$kafka*0.4>product.price" as ProductPriceTopic 
+
+      ProductCatalogAPI -u->  ProductCatalogTopic  : (c) emit\nProductCatalogEvent
+      ProductInformationAPI -u->  ProductInformationTopic  : (a) emit\nProductInformationEvent
+      ProductPriceAPI -u->  ProductPriceTopic  : (a) emit\nProductPriceEvent
+
+    } 
+
+    rectangle "Communcation Service" {
+      card "Email API" as EmailAPI 
+      database "<$kafka*0.4>communication.email" as CommunicationEmailTopic 
+      'card "Email Sender" as EmailSender 
+      EmailAPI -u-> CommunicationEmailTopic
+      'EmailAPI -d-> EmailSender : send order email
+    }
+
+    rectangle "Business Service" as BusinessService{
+      card "Business Customer API" as BusinessCustomerAPI
+      card "Business Agreement API" as BusinessAgreementAPI
+      card "Business Order API" as BusinessOrderAPI
+      database "<$kafka*0.4> business.customer" as BusinessCustomerTopic 
+      database "<$kafka*0.4> business.agreement" as BusinessAgreementTopic 
+      database "<$kafka*0.4> business.order" as BusinessOrderTopic 
+
+      BusinessCustomerAPI -u-> BusinessCustomerTopic
+      BusinessAgreementAPI -u-> BusinessAgreementTopic
+      BusinessOrderAPI -u-> BusinessOrderTopic : consume\n OrderPlacedEvent
+      BusinessOrderAPI -> BusinessCustomerAPI : screen\n business customer\n information 
+      BusinessOrderAPI -u-> SectorCustomerAPI : screen\n sector customer\n information
+      BusinessOrderAPI -> BusinessOrderTopic : emit\nOrderCreatedEvent &\n OrderEmailEvent
+      BusinessOrderAPI -> CommunicationEmailTopic : emit\nOrderRejectedEvent &\n OrderRejectedEmailEvent
+
+      BusinessCustomerAPI -d-> PersonTopic  : consumes\n PersonEvent
+      BusinessCustomerAPI -d-> OrganizationTopic : consumes\n OrgnizationEvent
+      BusinessAgreementAPI -d-> VehicleTopic : consumes\n VehicleEvent
+      BusinessAgreementAPI -d-> AddressTopic : consumes\n VehicleEvent
+      BusinessCustomerAPI -d-> AddressTopic : consumes\n VehicleEvent
+
+    }
+
+  }
+
+  rectangle Processes {
+
+    rectangle "Sales Process" {
+
+      card "Sales UX" as SalesUX 
+      card "Catalog API" as CatalogAPI 
+      card "Quote API" as QuoteAPI
+      card "Order API" as OrderAPI 
+
+
+      SalesUX - -> CatalogAPI : (1) getCatalog\ngetProduct 
+      SalesUX - -> QuoteAPI : (2) getQuoteByCriteria
+      SalesUX - -> OrderAPI : (3) placeOrder
+
+      QuoteAPI -d-> ProductPriceTopic : (d) consume\nProductPriceEvent
+
+      CatalogAPI -d-> ProductCatalogTopic : (b) consume\nProductCatalogEvent
+      CatalogAPI -d-> ProductInformationTopic : (b) consume\nProductCatalogEvent
+
+      OrderAPI -d-> BusinessOrderTopic : (5) emit OrderPlacedEvent
+
+    }
+
+    rectangle "Signig Process" {
+      card "Signing UX" as SigningUX 
+      card "Signing API" as SigningAPI 
+      SigningUX - -> SigningAPI 
+      SigningAPI - -> BusinessOrderTopic : (6) consume\n OrderCreatedEvent
+    }
+   
+    rectangle "Customer Process" {
+
+      card "Customer UX" as CustomerUX 
+      card "Customer API" as CustomerAPI 
+      card "Agreement API" as AgreementAPI 
+      card "Document API" as DocumentAPI 
+      card "Case API" as CaseAPI 
+
+      CustomerUX - -> CustomerAPI 
+      CustomerUX - -> AgreementAPI 
+      CustomerUX - -> DocumentAPI 
+      CustomerUX - -> CaseAPI 
+
+    }
+
+  }
+
+  Customer - -> SalesUX : searching and\nbuying product
+  Customer - -> SigningUX : signing comtacts
+  Customer - -> CustomerUX : manage agreements and payments
+
+@endmindmap
+
+@startuml
+sprite $kafka [48x48/16] {
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+0000000000000005CFFD8000000000000000000000000000
+000000000000009FFFFFFC10000000000000000000000000
+00000000000007FFFDCFFFB0000000000000000000000000
+0000000000000FFF6003EFF4000000000000000000000000
+0000000000004FFB00006FF8000000000000000000000000
+0000000000006FF800004FF9000000000000000000000000
+0000000000004FFB00006FF8000000000000000000000000
+0000000000000EFF6003EFF4000000464100000000000000
+00000000000005FFFEEFFFA000007FFFFF80000000000000
+000000000000008FFFFFFC000009FFFFFFF9000000000000
+0000000000000003AFFD7000005FFFB8BFFF500000000000
+00000000000000002FF4000000CFF70006FFC00000000000
+00000000000000002FF4000000FFF00000EFF00000000000
+00000000000000002FF4000000FFE00000EFF00000000000
+000000000000002AFFFFC50000EFF40003FFD00000000000
+00000000000006FFFFFFFFB02CFFFF646EFF800000000000
+0000000000005FFFFFFFFFFCFFFFFFFFFFFC000000000000
+000000000001FFFFB658FFFFFF71BFFFFFB1000000000000
+000000000007FFF600002EFFE20003898400000000000000
+00000000000BFFC0000006FFF10000000000000000000000
+00000000000DFF90000003FFF40000000000000000000000
+00000000000DFF90000003FFF30000000000000000000000
+00000000000AFFD0000007FFF10000000000000000000000
+000000000006FFF800005FFFF30005ACA600000000000000
+000000000000EFFFC77AFFFFFF83DFFFFFD2000000000000
+0000000000004FFFFFFFFFFAFFFFFFFFFFFE100000000000
+00000000000004EFFFFFFF701AFFFE525DFF800000000000
+0000000000000018CFFE820000EFF30002FFD00000000000
+00000000000000002FF6000000FFE00000EFF00000000000
+00000000000000002FF6000000EFF10000FFF00000000000
+00000000000000002FF6000000BFF80008FFB00000000000
+0000000000000003AFFE6000004FFFC9CFFF400000000000
+000000000000007FFFFFFC100007FFFFFFF8000000000000
+00000000000005FFFFEFFFA000005EFFFE60000000000000
+0000000000000EFF7004FFF3000000242000000000000000
+0000000000004FFC00007FF8000000000000000000000000
+0000000000005FF800004FF9000000000000000000000000
+0000000000004FFB00006FF8000000000000000000000000
+0000000000001FFF5002EFF5000000000000000000000000
+00000000000008FFFCCFFFC0000000000000000000000000
+000000000000009FFFFFFC10000000000000000000000000
+0000000000000005CFFD8000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+}
+
+  actor Customer
+
+  rectangle "External Services" as ExternalServices {
+
+    rectangle "Sector Service" as SectorServices {
+      card "Sector Customer API" as SectorCustomerAPI  
+      database "<$kafka*0.4> sector.customer" as SectorCustomerTopic 
+
+      SectorCustomerAPI -u-> SectorCustomerTopic
+    }
+
+    rectangle "Goverment Service" as GovermentServices{
+      card "Person API" as PersonAPI
+      card "Organization API" as OrganizationAPI
+      card "Car API" as CarAPI
+      card "Address API" as AddressAPI
+
+      database "<$kafka*0.4> goverment.person" as PersonTopic 
+      database "<$kafka*0.4> goverment.organization" as OrganizationTopic 
+      database "<$kafka*0.4> goverment.vehicle" as VehicleTopic 
+      database "<$kafka*0.4> goverment.address" as AddressTopic 
+
+       PersonAPI -u-> PersonTopic : produces\nperson info
+       OrganizationAPI -u-> OrganizationTopic : produces\nOrganizationEvent
+       CarAPI -u-> VehicleTopic : produces\nVehicleEvent
+       AddressAPI -u-> AddressTopic : produces\nAddressEvent
+
+    }
+  } 
+
+
+  rectangle "Back Office Services" as BackOfficeServices {
+
+    rectangle "Product Information Service" as Pim {
+
+      card "Product Catalog API" as ProductCatalogAPI 
+      card "Product Information API" as ProductInformationAPI 
+      card "Product Price API" as ProductPriceAPI
+
+      database "<$kafka*0.4>product.catalog" as ProductCatalogTopic 
+      database "<$kafka*0.4>product.information" as ProductInformationTopic 
+      database "<$kafka*0.4>product.price" as ProductPriceTopic 
+
+      ProductCatalogAPI -u->  ProductCatalogTopic  : (c) emit\nProductCatalogEvent
+      ProductInformationAPI -u->  ProductInformationTopic  : (a) emit\nProductInformationEvent
+      ProductPriceAPI -u->  ProductPriceTopic  : (a) emit\nProductPriceEvent
+
+    } 
+
+    rectangle "Communcation Service" {
+      card "Email API" as EmailAPI 
+      database "<$kafka*0.4>communication.email" as CommunicationEmailTopic 
+      EmailAPI -u-> CommunicationEmailTopic
+    }
+
+    rectangle "Business Service" as BusinessService{
+      card "Business Customer API" as BusinessCustomerAPI
+      card "Business Agreement API" as BusinessAgreementAPI
+      card "Business Order API" as BusinessOrderAPI
+      database "<$kafka*0.4> business.customer" as BusinessCustomerTopic 
+      database "<$kafka*0.4> business.agreement" as BusinessAgreementTopic 
+      database "<$kafka*0.4> business.order" as BusinessOrderTopic 
+
+      BusinessCustomerAPI -u-> BusinessCustomerTopic
+      BusinessAgreementAPI -u-> BusinessAgreementTopic
+      BusinessOrderAPI -u-> BusinessOrderTopic : consume\n OrderPlacedEvent
+      BusinessOrderAPI -> BusinessCustomerAPI : screen\n business customer\n information 
+      BusinessOrderAPI -u-> SectorCustomerAPI : screen\n sector customer\n information
+      BusinessOrderAPI -> BusinessOrderTopic : emit\nOrderCreatedEvent &\n OrderEmailEvent
+      BusinessOrderAPI -> CommunicationEmailTopic : emit\nOrderRejectedEvent &\n OrderRejectedEmailEvent
+
+      BusinessCustomerAPI -d-> PersonTopic  : consumes\n PersonEvent
+      BusinessCustomerAPI -d-> OrganizationTopic : consumes\n OrgnizationEvent
+      BusinessAgreementAPI -d-> VehicleTopic : consumes\n VehicleEvent
+      BusinessAgreementAPI -d-> AddressTopic : consumes\n VehicleEvent
+      BusinessCustomerAPI -d-> AddressTopic : consumes\n VehicleEvent
+
+    }
+
+  }
+
+  rectangle Processes {
+
+    rectangle "Sales Process" {
+
+      card "Sales UX" as SalesUX 
+      card "Catalog API" as CatalogAPI 
+      card "Quote API" as QuoteAPI
+      card "Order API" as OrderAPI 
+
+
+      SalesUX - -> CatalogAPI : (1) getCatalog\ngetProduct 
+      SalesUX - -> QuoteAPI : (2) getQuoteByCriteria
+      SalesUX - -> OrderAPI : (3) placeOrder
+
+      QuoteAPI -d-> ProductPriceTopic : (d) consume\nProductPriceEvent
+
+      CatalogAPI -d-> ProductCatalogTopic : (b) consume\nProductCatalogEvent
+      CatalogAPI -d-> ProductInformationTopic : (b) consume\nProductCatalogEvent
+
+      OrderAPI -d-> BusinessOrderTopic : (5) emit OrderPlacedEvent
+
+    }
+
+    rectangle "Signig Process" {
+      card "Signing UX" as SigningUX 
+      card "Signing API" as SigningAPI 
+      SigningUX - -> SigningAPI 
+      SigningAPI - -> BusinessOrderTopic : (6) consume\n OrderCreatedEvent
+    }
+   
+    rectangle "Customer Process" {
+
+      card "Customer UX" as CustomerUX 
+      card "Customer API" as CustomerAPI 
+      card "Agreement API" as AgreementAPI 
+      card "Document API" as DocumentAPI 
+      card "Case API" as CaseAPI 
+
+      CustomerUX - -> CustomerAPI 
+      CustomerUX - -> AgreementAPI 
+      CustomerUX - -> DocumentAPI 
+      CustomerUX - -> CaseAPI 
+
+    }
+
+  }
+
+  Customer - -> SalesUX : searching and\nbuying product
+  Customer - -> SigningUX : signing comtacts
+  Customer - -> CustomerUX : manage agreements and payments
+
+@endmindmap
+
+PlantUML version 1.2022.6(Tue Jun 21 17:34:49 UTC 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: null
+--></g></svg>
